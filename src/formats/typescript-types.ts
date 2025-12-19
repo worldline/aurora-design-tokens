@@ -1,0 +1,13 @@
+import type { Format } from 'style-dictionary/types'
+
+const capitalize = (s: string): string => `${s[0].toUpperCase()}${s.slice(1)}`
+
+export const typescriptTypes = {
+  name: 'typescript/types',
+  format: ({ dictionary, options }) => {
+    const types = Array.from(dictionary.tokenMap.values())
+      .map(({ name }) => `  | '${name.split('-').map(capitalize).join('')}'`)
+      .join('\n')
+    return `export type ${String(options.typeName)} = ${types}`
+  },
+} satisfies Format

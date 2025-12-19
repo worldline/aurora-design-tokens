@@ -1,0 +1,42 @@
+{
+  "heading2": {
+    "xxl": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fonts.primary}",
+        "fontSize": "{heading.xxl.size}",
+        "fontWeight": 400,
+        "letterSpacing": "{heading.xxl.spacing}",
+        "lineHeight": "{heading.xxl.lineHeight}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "subheading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{heading.Subheading.font}",
+        "fontSize": "{heading.Subheading.size}",
+        "fontWeight": 400,
+        "letterSpacing": "{dimensions.4}",
+        "lineHeight": "{dimensions.24}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    }
+  },
+  "label2": {
+    "medium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{label.medium.font}",
+        "fontSize": "{label.medium.size}",
+        "fontWeight": 500,
+        "letterSpacing": "0%",
+        "lineHeight": "150%",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    }
+  }
+}

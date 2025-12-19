@@ -1,0 +1,43 @@
+{
+  "name": "@worldline/aurora-design-tokens",
+  "version": "0.0.1",
+  "description": "create style sheets from design tokens files",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    "./style.css": "./build/css/style.css",
+    "./colors.ts": "./build/css/colors.ts",
+    "./typographies.ts": "./build/css/typographies.ts",
+    "./variables.js": "./build/variables.js"
+  },
+  "files": [
+    "build/css/style.css",
+    "build/css/colors.ts",
+    "build/css/typographies.ts",
+    "build/variables.js"
+  ],
+  "scripts": {
+    "build": "node src/build.ts",
+    "build:watch": "node --watch --watch-path src --watch-path tokens src/build.ts",
+    "lint": "eslint src",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "pack": "npm run build && npm pack",
+    "publish": "npm run build && npm publish"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@types/node": "25.0.3",
+    "eslint": "9.39.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-import-resolver-typescript": "4.4.4",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-prettier": "5.5.4",
+    "prettier": "3.7.4",
+    "style-dictionary": "5.1.1",
+    "typescript-eslint": "8.48.1",
+    "vitest": "4.0.16"
+  }
+}

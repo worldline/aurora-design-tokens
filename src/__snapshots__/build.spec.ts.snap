@@ -1,0 +1,195 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`build > should output the consolidated CSS file 1`] = `
+"/* variables.css */
+:root {
+  --au-neutral-50: #fafafa;
+  --au-neutral-100: #f5f5f5;
+  --au-neutral-200: #e9eaeb;
+  --au-neutral-300: #d5d7da;
+  --au-neutral-400: #a4a7ae;
+  --au-neutral-500: #717680;
+  --au-neutral-600: #535862;
+  --au-neutral-700: #414651;
+  --au-neutral-800: #252b37;
+  --au-neutral-900: #101828;
+  --au-neutral-white: #ffffff;
+  --au-neutral-black: #000000;
+  --au-neutral-transparant: #ffffff00;
+  --au-mint-50: #eaf9f6;
+  --au-mint-100: #d2f2eb;
+  --au-mint-200: #a8e5d8;
+  --au-mint-300: #7dd8c5;
+  --au-mint-400: #5ccdb7;
+  --au-mint-500: #45beaa;
+  --au-mint-600: #39a592;
+  --au-mint-700: #2d8978;
+  --au-mint-800: #216e5f;
+  --au-mint-900: #13493e;
+  --au-blue-50: #f0f9ff;
+  --au-blue-100: #e0f2fe;
+  --au-blue-200: #b9e6fe;
+  --au-blue-300: #7cd4fd;
+  --au-blue-400: #36bffa;
+  --au-blue-500: #0ba5ec;
+  --au-blue-600: #0086c9;
+  --au-blue-700: #026aa2;
+  --au-blue-800: #065986;
+  --au-blue-900: #0b4a6f;
+  --au-red-50: #fef3f2;
+  --au-red-100: #fee4e2;
+  --au-red-200: #fecdca;
+  --au-red-300: #fda29b;
+  --au-red-400: #f97066;
+  --au-red-500: #f04438;
+  --au-red-600: #d92d20;
+  --au-red-700: #b42318;
+  --au-red-800: #912018;
+  --au-red-900: #7a271a;
+  --au-green-50: #ecfdf3;
+  --au-green-100: #d1fadf;
+  --au-green-200: #a6f4c5;
+  --au-green-300: #6ce9a6;
+  --au-green-400: #32d583;
+  --au-green-500: #32d583;
+  --au-green-600: #039855;
+  --au-green-700: #027a48;
+  --au-green-800: #05603a;
+  --au-green-900: #054f31;
+  --au-orange-50: #fffaeb;
+  --au-orange-100: #fef0c7;
+  --au-orange-200: #fedf89;
+  --au-orange-300: #fec84b;
+  --au-orange-400: #fdb022;
+  --au-orange-500: #f79009;
+  --au-orange-600: #dc6803;
+  --au-orange-700: #b54708;
+  --au-orange-800: #93370d;
+  --au-orange-900: #7a2e0e;
+  --au-brand-primary: #45beaa;
+  --au-dimensions-0: 0;
+  --au-dimensions-1: 1px;
+  --au-dimensions-2: 2px;
+  --au-dimensions-4: 4px;
+  --au-dimensions-8: 8px;
+  --au-dimensions-10: 10px;
+  --au-dimensions-16: 16px;
+  --au-dimensions-20: 20px;
+  --au-dimensions-24: 24px;
+  --au-dimensions-30: 30px;
+  --au-dimensions-32: 32px;
+  --au-dimensions-999: 999px;
+  --au-dimensions-0-5: 0.5px;
+  --au-fonts-primary: inter;
+  --au-fonts-secondary: coiny;
+  --au-fontweight-thin: 400rem;
+  --au-padding-none: var(--au-dimensions-0);
+  --au-padding-small: var(--au-dimensions-8);
+  --au-padding-medium: var(--au-dimensions-16);
+  --au-padding-large: var(--au-dimensions-24);
+  --au-border-width-none: var(--au-dimensions-0);
+  --au-border-width-thin: var(--au-dimensions-0-5);
+  --au-border-width-default: var(--au-dimensions-1);
+  --au-border-width-thick: var(--au-dimensions-2);
+  --au-border-width-heavy: var(--au-dimensions-4);
+  --au-border-radius-none: var(--au-dimensions-0);
+  --au-border-radius-small: var(--au-dimensions-2);
+  --au-border-radius-medium: var(--au-dimensions-4);
+  --au-border-radius-large: var(--au-dimensions-8);
+  --au-border-radius-rounded: var(--au-dimensions-999);
+}
+
+/* darkmode.css */
+.dark {
+  --au-color: #ffffff;
+  --au-border-default-primary: var(--au-neutral-800);
+  --au-border-subtile-primary: var(--au-neutral-700);
+  --au-border-strong-primary: var(--au-neutral-700);
+  --au-border-interactive-primary: var(--au-brand-primary);
+  --au-border-transparant-primary: var(--au-neutral-transparant);
+  --au-content-neutral-base: var(--au-neutral-50);
+  --au-content-neutral-secondary: var(--au-neutral-200);
+  --au-content-neutral-tertiary: var(--au-neutral-300);
+  --au-content-neutral-invert: var(--au-neutral-black);
+  --au-content-neutral-white: var(--au-neutral-white);
+  --au-content-neutral-black: var(--au-neutral-black);
+  --au-background-base-default: var(--au-neutral-900);
+  --au-background-base-hover: var(--au-neutral-900);
+  --au-background-soft-default: var(--au-neutral-800);
+  --au-background-elevated-default: var(--au-neutral-700);
+  --au-background-transparant-default: var(--au-neutral-transparant);
+  --au-background-interactive-primary: var(--au-brand-primary);
+  --au-feedback-error-primary: var(--au-red-400);
+  --au-feedback-error-secondary: var(--au-red-200);
+  --au-feedback-error-tertiary: var(--au-red-50);
+  --au-border-feedback-error: var(--au-feedback-error-primary);
+  --au-background-feedback-error: var(--au-feedback-error-primary);
+}
+
+/* large.css */
+:root {
+  --au-heading-subheading-weight: 0;
+  --au-label-medium-weight: 0;
+  --au-heading-xxl-font-family: var(--au-fonts-primary);
+  --au-heading-xxl-size: var(--au-dimensions-32);
+  --au-heading-xxl-font-weight: var(--au-fontweight-thin);
+  --au-heading-xxl-line-height: var(--au-dimensions-8);
+  --au-heading-xxl-spacing: var(--au-dimensions-8);
+  --au-heading-subheading-font: var(--au-fonts-primary);
+  --au-heading-subheading-size: var(--au-dimensions-24);
+  --au-label-medium-font: var(--au-fonts-primary);
+  --au-label-medium-size: var(--au-dimensions-20);
+  --au-heading2-xxl: 400 var(--au-heading-xxl-size)/var(--au-heading-xxl-spacing) var(--au-fonts-primary);
+  --au-heading2-subheading: 400 var(--au-heading-subheading-size)/2var(--au-dimensions-4) var(--au-heading-subheading-font);
+  --au-label2-medium: 500 var(--au-label-medium-size)/150% var(--au-label-medium-font);
+}
+
+/* lightmode.css */
+:root {
+  --au-color: #ffffff;
+  --au-border-default-primary: var(--au-neutral-100);
+  --au-border-subtile-primary: var(--au-neutral-200);
+  --au-border-strong-primary: var(--au-neutral-300);
+  --au-border-interactive-primary: var(--au-brand-primary);
+  --au-border-transparant-primary: var(--au-neutral-transparant);
+  --au-content-neutral-base: var(--au-neutral-900);
+  --au-content-neutral-secondary: var(--au-neutral-700);
+  --au-content-neutral-tertiary: var(--au-neutral-600);
+  --au-content-neutral-invert: var(--au-neutral-white);
+  --au-content-neutral-white: var(--au-neutral-white);
+  --au-content-neutral-black: var(--au-neutral-black);
+  --au-background-base-default: var(--au-neutral-white);
+  --au-background-base-hover: var(--au-neutral-white);
+  --au-background-soft-default: var(--au-neutral-100);
+  --au-background-elevated-default: var(--au-neutral-200);
+  --au-background-transparant-default: var(--au-neutral-transparant);
+  --au-background-interactive-primary: var(--au-brand-primary);
+  --au-feedback-error-primary: var(--au-red-500);
+  --au-feedback-error-secondary: var(--au-red-300);
+  --au-feedback-error-tertiary: var(--au-red-100);
+  --au-border-feedback-error: var(--au-feedback-error-primary);
+  --au-background-feedback-error: var(--au-feedback-error-primary);
+}
+
+/* small.css */
+@media (max-width: 1250px) {
+  :root {
+    --au-heading-subheading-weight: 0;
+    --au-label-medium-weight: 0;
+    --au-heading-xxl-font-family: var(--au-fonts-primary);
+    --au-heading-xxl-size: var(--au-dimensions-24);
+    --au-heading-xxl-font-weight: var(--au-fontweight-thin);
+    --au-heading-xxl-line-height: var(--au-dimensions-10);
+    --au-heading-xxl-spacing: var(--au-dimensions-8);
+    --au-heading-subheading-font: var(--au-fonts-primary);
+    --au-heading-subheading-size: var(--au-dimensions-16);
+    --au-label-medium-font: var(--au-fonts-primary);
+    --au-label-medium-size: var(--au-dimensions-16);
+    --au-heading2-xxl: 400 var(--au-heading-xxl-size)/var(--au-heading-xxl-line-height) var(--au-fonts-primary);
+    --au-heading2-subheading: 400 var(--au-heading-subheading-size)/2var(--au-dimensions-4) var(--au-heading-subheading-font);
+    --au-label2-medium: 500 var(--au-label-medium-size)/150% var(--au-label-medium-font);
+  }
+}
+
+"
+`;
