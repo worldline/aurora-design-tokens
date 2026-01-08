@@ -43,7 +43,7 @@ const colorModeFactory: ConfigFactory = (mode) => ({
           format: 'typescript/types',
           destination: 'colors.ts',
           options: {
-            typeName: 'DSColor',
+            typeName: 'AuColor',
           },
           filter: (token: TransformedToken) =>
             token.filePath.includes('alias-color.'),
@@ -87,11 +87,10 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
           format: typescriptTypes.name,
           destination: 'typographies.ts',
           options: {
-            typeName: 'DSTypography',
+            typeName: 'AuTypography',
           },
           filter: (token: TransformedToken) =>
-            token.filePath.includes('text.styles') ||
-            token.filePath.includes('alias-typography'),
+            token.filePath.includes('text.styles'),
         },
       ],
     },

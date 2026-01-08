@@ -8,6 +8,8 @@ export const typescriptTypes = {
     const types = Array.from(dictionary.tokenMap.values())
       .map(({ name }) => `  | '${name.split('-').map(capitalize).join('')}'`)
       .join('\n')
-    return `export type ${String(options.typeName)} = ${types}`
+      .concat('\n')
+    return `export type ${String(options.typeName)} =
+${types}`
   },
 } satisfies Format
