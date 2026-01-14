@@ -1,12 +1,12 @@
 import type { Format } from 'style-dictionary/types'
 
-const capitalize = (s: string): string => `${s[0].toUpperCase()}${s.slice(1)}`
+const decapitalize = (s: string): string => `${s[0].toLowerCase()}${s.slice(1)}`
 
 export const typescriptTypes = {
   name: 'typescript/types',
   format: ({ dictionary, options }) => {
     const types = Array.from(dictionary.tokenMap.values())
-      .map(({ name }) => `  | '${name.split('-').map(capitalize).join('')}'`)
+      .map(({ name }) => `  | '${decapitalize(name)}'`)
       .join('\n')
       .concat('\n')
     return `export type ${String(options.typeName)} =

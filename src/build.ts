@@ -4,10 +4,16 @@ import { config } from './config.ts'
 import { globalsConfig } from './configs/globals.ts'
 import { modes } from './configs/modes.ts'
 import { typescriptTypes } from './formats/typescript-types.ts'
+import { typography } from './preprocessors/typography.ts'
 import { mergeCssFiles } from './scripts/merge-css-files.ts'
+import { auroraCssTransformGroup } from './transforms/aurora-css-transform-group.ts'
+import { gradient } from './transforms/gradient.ts'
 import { zeroPx } from './transforms/zero-px.ts'
 
+StyleDictionary.registerPreprocessor(typography)
 StyleDictionary.registerTransform(zeroPx)
+StyleDictionary.registerTransform(gradient)
+StyleDictionary.registerTransformGroup(auroraCssTransformGroup)
 StyleDictionary.registerFormat(typescriptTypes)
 
 const dictionaries = [

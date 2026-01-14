@@ -1,0 +1,190 @@
+import type { PreprocessedTokens } from 'style-dictionary/types'
+import { describe, it, expect } from 'vitest'
+
+import { typography } from './typography.ts'
+
+describe('typography', () => {
+  it('should split typography tokens with object values', () => {
+    const input: PreprocessedTokens = {
+      heading: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '2rem',
+          fontWeight: '700',
+          letterSpacing: '{variable}',
+          lineHeight: '1.5',
+          textTransform: 'uppercase',
+          textDecoration: 'underline',
+        },
+      },
+      body: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '1rem',
+          fontWeight: '400',
+          letterSpacing: '{variable}',
+          lineHeight: '1.5',
+          textTransform: 'lowercase',
+          textDecoration: 'strikethrough',
+        },
+      },
+    }
+
+    const output = typography.preprocessor(input)
+
+    expect(output).toEqual({
+      heading: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '2rem',
+          fontWeight: '700',
+          lineHeight: '1.5',
+        },
+      },
+      'heading.letterSpacing': {
+        $type: 'typography',
+        $value: '{variable}',
+      },
+      'heading.textTransform': { $type: 'typography', $value: 'uppercase' },
+      'heading.textDecoration': {
+        $type: 'typography',
+        $value: 'underline',
+      },
+      body: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '1rem',
+          fontWeight: '400',
+          lineHeight: '1.5',
+        },
+      },
+      'body.letterSpacing': {
+        $type: 'typography',
+        $value: '{variable}',
+      },
+      'body.textTransform': { $type: 'typography', $value: 'lowercase' },
+      'body.textDecoration': {
+        $type: 'typography',
+        $value: 'strikethrough',
+      },
+    })
+  })
+
+  it('should split nested typography tokens with object values', () => {
+    const input: PreprocessedTokens = {
+      group: {
+        heading: {
+          $type: 'typography',
+          $value: {
+            fontFamily: 'Arial',
+            fontSize: '2rem',
+            fontWeight: '700',
+            letterSpacing: '{variable}',
+            lineHeight: '1.5',
+            textTransform: 'uppercase',
+            textDecoration: 'underline',
+          },
+        },
+      },
+    }
+
+    const output = typography.preprocessor(input)
+
+    expect(output).toEqual({
+      group: {
+        heading: {
+          $type: 'typography',
+          $value: {
+            fontFamily: 'Arial',
+            fontSize: '2rem',
+            fontWeight: '700',
+            lineHeight: '1.5',
+          },
+        },
+        'heading.letterSpacing': {
+          $type: 'typography',
+          $value: '{variable}',
+        },
+        'heading.textTransform': { $type: 'typography', $value: 'uppercase' },
+        'heading.textDecoration': { $type: 'typography', $value: 'underline' },
+      },
+    })
+  })
+
+  it('should filter out unnecessary textTransform and textDecoration tokens', () => {
+    const input: PreprocessedTokens = {
+      caption: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '0.875rem',
+          fontWeight: '400',
+          letterSpacing: '{variable}',
+          lineHeight: '1.25',
+          textTransform: 'none',
+          textDecoration: 'none',
+        },
+      },
+    }
+
+    const output = typography.preprocessor(input)
+
+    expect(output).toEqual({
+      caption: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '0.875rem',
+          fontWeight: '400',
+          lineHeight: '1.25',
+        },
+      },
+      'caption.letterSpacing': {
+        $type: 'typography',
+        $value: '{variable}',
+      },
+    })
+  })
+
+  it('should leave non-typography tokens untouched', () => {
+    const input: PreprocessedTokens = {
+      colorPrimary: {
+        $type: 'color',
+        $value: '#ff0000',
+      },
+      spacingSmall: {
+        $type: 'dimension',
+        $value: '8px',
+      },
+      nested: {
+        colorSecondary: {
+          $type: 'color',
+          $value: '#00ff00',
+        },
+      },
+    }
+
+    const output = typography.preprocessor(input)
+
+    expect(output).toEqual({
+      colorPrimary: {
+        $type: 'color',
+        $value: '#ff0000',
+      },
+      spacingSmall: {
+        $type: 'dimension',
+        $value: '8px',
+      },
+      nested: {
+        colorSecondary: {
+          $type: 'color',
+          $value: '#00ff00',
+        },
+      },
+    })
+  })
+})

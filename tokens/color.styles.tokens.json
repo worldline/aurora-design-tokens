@@ -1,0 +1,19 @@
+{
+  "glow": {
+    "$type": "gradient",
+    "$value": {
+      "type": "radial",
+      "angle": 180,
+      "stops": [
+        {
+          "color": "#ffffff80",
+          "position": 0
+        },
+        {
+          "color": "#ffffff00",
+          "position": 1
+        }
+      ]
+    }
+  }
+}

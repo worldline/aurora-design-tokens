@@ -1,0 +1,34 @@
+{
+  "focus-ring": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "{border-width.thick}",
+        "color": "#53bda4"
+      },
+      {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "2px",
+        "color": "{surface.invert}"
+      }
+    ]
+  },
+  "button-primary-shadow": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "-2px",
+        "blur": "0px",
+        "spread": "0px",
+        "color": "#0a0d120d",
+        "inset": true
+      }
+    ]
+  }
+}

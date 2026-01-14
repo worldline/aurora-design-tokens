@@ -1,0 +1,208 @@
+{
+  "font-family": {
+    "display": {
+      "$type": "string",
+      "$value": "raleway"
+    },
+    "body": {
+      "$type": "string",
+      "$value": "inter"
+    }
+  },
+  "font-size": {
+    "metrics-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.40}"
+    },
+    "metrics-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.32}"
+    },
+    "metrics-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.24}"
+    },
+    "display-2xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.48}"
+    },
+    "display-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.40}"
+    },
+    "display-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.32}"
+    },
+    "display-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.24}"
+    },
+    "display-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.20}"
+    },
+    "display-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.16}"
+    },
+    "text-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.20}"
+    },
+    "text-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.16}"
+    },
+    "text-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.14}"
+    },
+    "text-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.12}"
+    },
+    "text-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.10}"
+    }
+  },
+  "line-height": {
+    "metrics-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.48}"
+    },
+    "metrics-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.40}"
+    },
+    "metrics-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.32}"
+    },
+    "display-2xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.64}"
+    },
+    "display-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.56}"
+    },
+    "display-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.48}"
+    },
+    "display-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.32}"
+    },
+    "display-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.24}"
+    },
+    "display-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.20}"
+    },
+    "text-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.32}"
+    },
+    "text-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.24}"
+    },
+    "text-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.20}"
+    },
+    "text-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.16}"
+    },
+    "text-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.16}"
+    }
+  },
+  "letter-spacing": {
+    "metrics-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "metrics-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "metrics-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-2xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "display-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "text-xl": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "text-lg": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "text-md": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "text-sm": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    },
+    "text-xs": {
+      "$type": "dimension",
+      "$value": "{dimensions.0}"
+    }
+  },
+  "font-weight": {
+    "light": {
+      "$type": "string",
+      "$value": "light"
+    },
+    "regular": {
+      "$type": "string",
+      "$value": "regular"
+    },
+    "medium": {
+      "$type": "string",
+      "$value": "medium"
+    },
+    "semibold": {
+      "$type": "string",
+      "$value": "semibold"
+    },
+    "bold": {
+      "$type": "string",
+      "$value": "bold"
+    }
+  }
+}

@@ -5,13 +5,14 @@ import {
   logWarningLevels,
   transformGroups,
 } from 'style-dictionary/enums'
-import type { Config } from 'style-dictionary/types'
+import type { Config, TransformedToken } from 'style-dictionary/types'
 
 import { config } from '../config.ts'
-import { zeroPx } from '../transforms/zero-px.ts'
+import { typography } from '../preprocessors/typography.ts'
+import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
 
 export const globalsConfig = {
-  source: ['tokens/global-*.json', 'tokens/alias-dimensions*.json'],
+  source: ['tokens/global.*.json', 'tokens/color.styles.*.json'],
   log: {
     warnings: logWarningLevels.warn,
     verbosity: logVerbosityLevels.verbose,
@@ -21,14 +22,17 @@ export const globalsConfig = {
   },
   platforms: {
     css: {
-      transformGroup: transformGroups.css,
+      transformGroup: auroraCssTransformGroup.name,
       buildPath: config.cssBuildPath,
       prefix: config.cssVariablePrefix,
-      transforms: ['color/hex', zeroPx.name],
+      preprocessors: [typography.name],
       files: [
         {
           format: formats.cssVariables,
           destination: config.globalCssVariablesFile,
+          filter: (token: TransformedToken) =>
+            token.filePath.includes('global.') ||
+            token.filePath.includes('color.styles.'),
           options: {
             outputReferences: true,
           },
