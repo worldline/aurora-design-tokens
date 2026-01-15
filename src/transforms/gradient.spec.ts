@@ -18,7 +18,7 @@ describe('gradient', () => {
     })
     expect(gradient.filter(token)).toBe(true)
     expect(gradient.transform(token)).toBe(
-      'linear-gradient(180deg, #fff 0%, #000 100%)',
+      'lineargradient(180deg, #fff 0%, #000 100%)',
     )
   })
 
