@@ -1,11 +1,14 @@
 {
   "name": "@worldline/aurora-design-tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create style sheets from design tokens files",
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=24"
+  },
   "exports": {
     "./style.css": "./build/css/style.css",
     "./colors.ts": "./build/css/colors.ts",
