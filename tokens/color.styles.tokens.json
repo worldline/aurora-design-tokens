@@ -6,11 +6,11 @@
       "angle": 180,
       "stops": [
         {
-          "color": "#ffffff80",
+          "color": "{colors.alpha.white.500}",
           "position": 0
         },
         {
-          "color": "#ffffff00",
+          "color": "{colors.alpha.white.1000}",
           "position": 1
         }
       ]

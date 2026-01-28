@@ -1,5 +1,121 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`build > should output the colors typescript file 1`] = `
+"export type AuColor =
+  | 'neutralLight50'
+  | 'neutralLight100'
+  | 'neutralLight200'
+  | 'neutralLight300'
+  | 'neutralLight400'
+  | 'neutralLight500'
+  | 'neutralLight600'
+  | 'neutralLight700'
+  | 'neutralLight800'
+  | 'neutralLight900'
+  | 'neutralLightWhite'
+  | 'neutralDark50'
+  | 'neutralDark100'
+  | 'neutralDark200'
+  | 'neutralDark300'
+  | 'neutralDark400'
+  | 'neutralDark500'
+  | 'neutralDark600'
+  | 'neutralDark700'
+  | 'neutralDark800'
+  | 'neutralDark900'
+  | 'neutralDarkBlack'
+  | 'alphaWhite50'
+  | 'alphaWhite100'
+  | 'alphaWhite200'
+  | 'alphaWhite300'
+  | 'alphaWhite400'
+  | 'alphaWhite500'
+  | 'alphaWhite600'
+  | 'alphaWhite700'
+  | 'alphaWhite800'
+  | 'alphaWhite900'
+  | 'alphaWhite1000'
+  | 'brandPrimary50'
+  | 'brandPrimary100'
+  | 'brandPrimary200'
+  | 'brandPrimary300'
+  | 'brandPrimary400'
+  | 'brandPrimary500'
+  | 'brandPrimary600'
+  | 'brandPrimary700'
+  | 'brandPrimary800'
+  | 'brandPrimary900'
+  | 'feedbackError50'
+  | 'feedbackError100'
+  | 'feedbackError200'
+  | 'feedbackError300'
+  | 'feedbackError400'
+  | 'feedbackError500'
+  | 'feedbackError600'
+  | 'feedbackError700'
+  | 'feedbackError800'
+  | 'feedbackError900'
+  | 'feedbackWarning50'
+  | 'feedbackWarning100'
+  | 'feedbackWarning200'
+  | 'feedbackWarning300'
+  | 'feedbackWarning400'
+  | 'feedbackWarning500'
+  | 'feedbackWarning600'
+  | 'feedbackWarning700'
+  | 'feedbackWarning800'
+  | 'feedbackWarning900'
+  | 'feedbackSuccess50'
+  | 'feedbackSuccess100'
+  | 'feedbackSuccess200'
+  | 'feedbackSuccess300'
+  | 'feedbackSuccess400'
+  | 'feedbackSuccess500'
+  | 'feedbackSuccess600'
+  | 'feedbackSuccess700'
+  | 'feedbackSuccess800'
+  | 'feedbackSuccess900'
+  | 'surfacePage'
+  | 'surfaceInvert'
+  | 'surfaceDisabled'
+  | 'surfaceNeutralLow'
+  | 'surfaceNeutralLowHover'
+  | 'surfaceNeutralMedium'
+  | 'surfaceNeutralMediumHover'
+  | 'surfaceNeutralHigh'
+  | 'surfaceNeutralHighHover'
+  | 'surfaceBrandSolid'
+  | 'surfaceBrandSolidHover'
+  | 'surfaceBrandSubtile'
+  | 'surfaceSuccessSolid'
+  | 'surfaceSuccessSubtile'
+  | 'surfaceWarningSolid'
+  | 'surfaceWarningSubtile'
+  | 'surfaceErrorSolid'
+  | 'surfaceErrorSubtile'
+  | 'contentPrimary'
+  | 'contentSecondary'
+  | 'contentTertiary'
+  | 'contentPlaceholder'
+  | 'contentInvert'
+  | 'contentDisabled'
+  | 'contentBrand'
+  | 'contentOnBrand'
+  | 'contentOnBrandHover'
+  | 'contentError'
+  | 'contentWarning'
+  | 'contentSuccess'
+  | 'borderDisabled'
+  | 'borderNeutralLow'
+  | 'borderNeutralMedium'
+  | 'borderNeutralHigh'
+  | 'borderBrandSolid'
+  | 'borderBrandSubtile'
+  | 'borderErrorSolid'
+  | 'borderErrorSubtile'
+"
+`;
+
 exports[`build > should output the consolidated CSS file 1`] = `
 "/* variables.css */
 :root {
@@ -25,16 +141,17 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-colors-neutral-dark-800: #181d27;
   --au-colors-neutral-dark-900: #121621;
   --au-colors-neutral-dark-black: #000000;
-  --au-colors-alpha-alpha-white-50: #fffffffa;
-  --au-colors-alpha-alpha-white-100: #fffffff0;
-  --au-colors-alpha-alpha-white-200: #ffffffeb;
-  --au-colors-alpha-alpha-white-300: #ffffffcc;
-  --au-colors-alpha-alpha-white-400: #ffffff8f;
-  --au-colors-alpha-alpha-white-500: #ffffff80;
-  --au-colors-alpha-alpha-white-600: #ffffff59;
-  --au-colors-alpha-alpha-white-700: #ffffff29;
-  --au-colors-alpha-alpha-white-800: #ffffff14;
-  --au-colors-alpha-alpha-white-900: #ffffff08;
+  --au-colors-alpha-white-50: #fffffffa;
+  --au-colors-alpha-white-100: #fffffff0;
+  --au-colors-alpha-white-200: #ffffffeb;
+  --au-colors-alpha-white-300: #ffffffcc;
+  --au-colors-alpha-white-400: #ffffff8f;
+  --au-colors-alpha-white-500: #ffffff80;
+  --au-colors-alpha-white-600: #ffffff59;
+  --au-colors-alpha-white-700: #ffffff29;
+  --au-colors-alpha-white-800: #ffffff14;
+  --au-colors-alpha-white-900: #ffffff08;
+  --au-colors-alpha-white-1000: #ffffff00;
   --au-colors-brand-primary-50: #f1f8f8;
   --au-colors-brand-primary-100: #e6f0ef;
   --au-colors-brand-primary-200: #b3cecd;
@@ -75,16 +192,8 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-colors-feedback-success-700: #067647; 
   --au-colors-feedback-success-800: #085d3a; 
   --au-colors-feedback-success-900: #053321; 
-  --au-colors-pink-50: #fff2f4;
-  --au-colors-pink-100: #ffe1e4; 
-  --au-colors-pink-200: #fdc4ca; 
-  --au-colors-pink-300: #f7a6ae; 
-  --au-colors-pink-400: #f08791; 
-  --au-colors-pink-500: #d97881; 
-  --au-colors-pink-600: #c86a73; 
-  --au-colors-pink-700: #af5961; 
-  --au-colors-pink-800: #8e3b42; 
-  --au-colors-pink-900: #7a242b; 
+  --au-typography-font-family-primary: Raleway;
+  --au-typography-font-family-secondary: Inter;
   --au-dimensions-0: 0;
   --au-dimensions-1: 1px;
   --au-dimensions-2: 2px;
@@ -95,11 +204,13 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-dimensions-12: 12px;
   --au-dimensions-14: 14px;
   --au-dimensions-16: 16px;
+  --au-dimensions-18: 18px;
   --au-dimensions-20: 20px;
   --au-dimensions-24: 24px;
   --au-dimensions-32: 32px;
   --au-dimensions-40: 40px;
   --au-dimensions-48: 48px;
+  --au-dimensions-52: 52px;
   --au-dimensions-56: 56px;
   --au-dimensions-64: 64px;
   --au-dimensions-72: 72px;
@@ -111,458 +222,88 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-dimensions-120: 120px;
   --au-dimensions-128: 128px;
   --au-dimensions-max: 9999px;
-  --au-glow: radial-gradient(circle, #ffffff80 0%, #ffffff00 100%);
-}
-
-/* darkmode.css */
-.dark {
-  --au-button-primary-shadow: 0 -2px 0 0 #0a0d120d;
-  --au-button-primary-sm-padding-vertical: var(--au-dimensions-10);
-  --au-button-primary-sm-padding-horizontal: var(--au-dimensions-12);
-  --au-button-primary-sm-gap: var(--au-dimensions-4);
-  --au-button-primary-md-padding-vertical: var(--au-dimensions-10);
-  --au-button-primary-md-padding-horizontal: var(--au-dimensions-16);
-  --au-button-primary-md-gap: var(--au-dimensions-6);
-  --au-button-secondary-sm-padding-vertical: var(--au-dimensions-10);
-  --au-button-secondary-sm-padding-horizontal: var(--au-dimensions-12);
-  --au-button-secondary-sm-gap: var(--au-dimensions-4);
-  --au-button-secondary-md-padding-vertical: var(--au-dimensions-10);
-  --au-button-secondary-md-padding-horizontal: var(--au-dimensions-16);
-  --au-button-secondary-md-gap: var(--au-dimensions-6);
-  --au-button-link-sm-gap: var(--au-dimensions-4);
-  --au-button-link-md-gap: var(--au-dimensions-6);
-  --au-inputfield-placeholder-border-radius: var(--au-dimensions-4);
-  --au-inputfield-filled-border-radius: var(--au-dimensions-4);
-  --au-inputfield-selected-border-radius: var(--au-dimensions-4);
-  --au-inputfield-disabled-border-radius: var(--au-dimensions-4);
-  --au-content-primary: var(--au-colors-neutral-dark-50);
-  --au-content-secondary: var(--au-colors-neutral-dark-300);
-  --au-content-tertiary: var(--au-colors-neutral-dark-300);
-  --au-content-placeholder: var(--au-colors-neutral-dark-400);
-  --au-content-invert: var(--au-colors-neutral-dark-900);
-  --au-content-disabled: var(--au-colors-neutral-dark-400);
-  --au-content-brand: var(--au-colors-brand-primary-300);
-  --au-content-on-brand: var(--au-colors-neutral-light-white);
-  --au-content-on-brand-hover: var(--au-colors-alpha-alpha-white-200);
-  --au-content-error: var(--au-colors-feedback-error-300);
-  --au-content-warning: var(--au-colors-feedback-warning-300);
-  --au-content-success: var(--au-colors-feedback-success-300);
-  --au-surface-page: var(--au-colors-neutral-dark-900);
-  --au-surface-invert: var(--au-colors-neutral-dark-900);
-  --au-surface-neutral-low: var(--au-colors-neutral-dark-800);
-  --au-surface-neutral-low-hover: var(--au-colors-neutral-dark-700);
-  --au-surface-neutral-medium: var(--au-colors-neutral-dark-700);
-  --au-surface-neutral-medium-hover: var(--au-colors-neutral-dark-600);
-  --au-surface-neutral-high: var(--au-colors-neutral-dark-600);
-  --au-surface-neutral-high-hover: var(--au-colors-neutral-dark-500);
-  --au-surface-brand-solid: var(--au-colors-brand-primary-500);
-  --au-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
-  --au-surface-brand-subtile: var(--au-colors-brand-primary-800);
-  --au-surface-disabled: var(--au-colors-neutral-dark-700);
-  --au-surface-error-solid: var(--au-colors-feedback-error-400);
-  --au-surface-error-subtile: var(--au-colors-feedback-error-800);
-  --au-surface-warning-solid: var(--au-colors-feedback-warning-400);
-  --au-surface-warning-subtile: var(--au-colors-feedback-warning-800);
-  --au-surface-success-solid: var(--au-colors-feedback-success-400);
-  --au-surface-success-subtile: var(--au-colors-feedback-success-800);
-  --au-border-neutral-low: var(--au-colors-neutral-dark-600);
-  --au-border-neutral-medium: var(--au-colors-neutral-dark-500);
-  --au-border-neutral-high: var(--au-colors-neutral-dark-400);
-  --au-border-brand-solid: var(--au-colors-brand-primary-500);
-  --au-border-brand-subtile: var(--au-colors-brand-primary-500);
-  --au-border-disabled: var(--au-colors-neutral-dark-600);
-  --au-button-primary-sm-radius: var(--au-radius-lg);
-  --au-button-primary-sm-border-width: var(--au-border-width-thin);
-  --au-button-primary-md-radius: var(--au-radius-lg);
-  --au-button-primary-md-border-width: var(--au-border-width-thin);
-  --au-button-primary-default-background: var(--au-surface-brand-solid);
-  --au-button-primary-default-border: var(--au-border-brand-subtile);
-  --au-button-primary-default-content: var(--au-content-on-brand);
-  --au-button-primary-hover-background: var(--au-surface-brand-solid-hover);
-  --au-button-primary-hover-border: var(--au-border-brand-subtile);
-  --au-button-primary-hover-content: var(--au-content-on-brand);
-  --au-button-primary-disabled-background: var(--au-surface-disabled);
-  --au-button-primary-disabled-border: var(--au-border-disabled);
-  --au-button-primary-disabled-content: var(--au-content-disabled);
-  --au-button-secondary-sm-radius: var(--au-radius-lg);
-  --au-button-secondary-sm-border-width: var(--au-border-width-thin);
-  --au-button-secondary-md-radius: var(--au-radius-lg);
-  --au-button-secondary-md-border-width: var(--au-border-width-thin);
-  --au-button-secondary-default-background: var(--au-surface-neutral-low);
-  --au-button-secondary-default-border: var(--au-border-neutral-medium);
-  --au-button-secondary-default-content: var(--au-content-primary);
-  --au-button-secondary-hover-background: var(--au-surface-neutral-low-hover);
-  --au-button-secondary-hover-border: var(--au-border-neutral-medium);
-  --au-button-secondary-hover-content: var(--au-content-primary);
-  --au-button-secondary-disabled-background: var(--au-surface-neutral-low);
-  --au-button-secondary-disabled-border: var(--au-border-neutral-medium);
-  --au-button-secondary-disabled-content: var(--au-content-disabled);
-  --au-button-link-sm-radius: var(--au-radius-xs);
-  --au-button-link-md-radius: var(--au-radius-xs);
-  --au-button-link-default-content: var(--au-content-primary);
-  --au-button-link-hover-content: var(--au-content-primary);
-  --au-button-link-disabled-content: var(--au-content-disabled);
-  --au-inputfield-placeholder-background: var(--au-content-invert);
-  --au-inputfield-placeholder-border: var(--au-border-neutral-low);
-  --au-inputfield-placeholder-icons: var(--au-content-secondary);
-  --au-inputfield-placeholder-text: var(--au-content-placeholder);
-  --au-inputfield-placeholder-label: var(--au-content-secondary);
-  --au-inputfield-placeholder-helper-text: var(--au-content-secondary);
-  --au-inputfield-filled-background: var(--au-surface-neutral-low);
-  --au-inputfield-filled-border: var(--au-border-neutral-low);
-  --au-inputfield-filled-icons: var(--au-content-secondary);
-  --au-inputfield-filled-text: var(--au-content-primary);
-  --au-inputfield-filled-label: var(--au-content-secondary);
-  --au-inputfield-filled-helper-text: var(--au-content-secondary);
-  --au-inputfield-selected-background: var(--au-surface-neutral-low);
-  --au-inputfield-selected-border: var(--au-border-brand-solid);
-  --au-inputfield-selected-icons: var(--au-content-secondary);
-  --au-inputfield-selected-text: var(--au-content-primary);
-  --au-inputfield-selected-label: var(--au-content-secondary);
-  --au-inputfield-selected-helper-text: var(--au-content-secondary);
-  --au-inputfield-disabled-background: var(--au-surface-disabled);
-  --au-inputfield-disabled-border: var(--au-border-neutral-high);
-  --au-inputfield-disabled-icons: var(--au-content-secondary);
-  --au-inputfield-disabled-text: var(--au-content-secondary);
-  --au-inputfield-disabled-label: var(--au-content-secondary);
-  --au-inputfield-disabled-helper-text: var(--au-content-secondary);
-  --au-focus-ring: 0 0 0 var(--au-border-width-thick) #53bda4, 0 0 0 2px var(--au-surface-invert);
-}
-
-/* lightmode.css */
-:root {
-  --au-button-primary-shadow: 0 -2px 0 0 #0a0d120d;
-  --au-button-primary-sm-padding-vertical: var(--au-dimensions-10);
-  --au-button-primary-sm-padding-horizontal: var(--au-dimensions-12);
-  --au-button-primary-sm-gap: var(--au-dimensions-4);
-  --au-button-primary-md-padding-vertical: var(--au-dimensions-10);
-  --au-button-primary-md-padding-horizontal: var(--au-dimensions-16);
-  --au-button-primary-md-gap: var(--au-dimensions-6);
-  --au-button-secondary-sm-padding-vertical: var(--au-dimensions-10);
-  --au-button-secondary-sm-padding-horizontal: var(--au-dimensions-12);
-  --au-button-secondary-sm-gap: var(--au-dimensions-4);
-  --au-button-secondary-md-padding-vertical: var(--au-dimensions-10);
-  --au-button-secondary-md-padding-horizontal: var(--au-dimensions-16);
-  --au-button-secondary-md-gap: var(--au-dimensions-6);
-  --au-button-link-sm-gap: var(--au-dimensions-4);
-  --au-button-link-md-gap: var(--au-dimensions-6);
-  --au-inputfield-placeholder-border-radius: var(--au-dimensions-4);
-  --au-inputfield-filled-border-radius: var(--au-dimensions-4);
-  --au-inputfield-selected-border-radius: var(--au-dimensions-4);
-  --au-inputfield-disabled-border-radius: var(--au-dimensions-4);
-  --au-content-primary: var(--au-colors-neutral-dark-900);
-  --au-content-secondary: var(--au-colors-neutral-light-600);
-  --au-content-tertiary: var(--au-colors-neutral-light-300);
-  --au-content-placeholder: var(--au-colors-neutral-light-600);
-  --au-content-invert: var(--au-colors-neutral-light-white);
-  --au-content-disabled: var(--au-colors-neutral-light-400);
-  --au-content-brand: var(--au-colors-brand-primary-500);
-  --au-content-on-brand: var(--au-colors-neutral-light-white);
-  --au-content-on-brand-hover: var(--au-colors-alpha-alpha-white-200);
-  --au-content-error: var(--au-colors-feedback-error-700);
-  --au-content-warning: var(--au-colors-feedback-warning-700);
-  --au-content-success: var(--au-colors-feedback-success-700);
-  --au-surface-page: var(--au-colors-neutral-light-white);
-  --au-surface-invert: var(--au-colors-neutral-light-white);
-  --au-surface-neutral-low: var(--au-colors-neutral-light-50);
-  --au-surface-neutral-low-hover: var(--au-colors-neutral-light-100);
-  --au-surface-neutral-medium: var(--au-colors-neutral-light-white);
-  --au-surface-neutral-medium-hover: var(--au-colors-neutral-light-50);
-  --au-surface-neutral-high: var(--au-colors-neutral-light-100);
-  --au-surface-neutral-high-hover: var(--au-colors-neutral-light-200);
-  --au-surface-brand-solid: var(--au-colors-brand-primary-500);
-  --au-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
-  --au-surface-brand-subtile: var(--au-colors-brand-primary-200);
-  --au-surface-disabled: var(--au-colors-neutral-light-100);
-  --au-surface-error-solid: var(--au-colors-feedback-error-500);
-  --au-surface-error-subtile: var(--au-colors-feedback-error-100);
-  --au-surface-warning-solid: var(--au-colors-feedback-warning-500);
-  --au-surface-warning-subtile: var(--au-colors-feedback-warning-100);
-  --au-surface-success-solid: var(--au-colors-feedback-success-500);
-  --au-surface-success-subtile: var(--au-colors-feedback-success-100);
-  --au-border-neutral-low: var(--au-colors-neutral-light-100);
-  --au-border-neutral-medium: var(--au-colors-neutral-light-200);
-  --au-border-neutral-high: var(--au-colors-neutral-light-300);
-  --au-border-brand-solid: var(--au-colors-brand-primary-500);
-  --au-border-brand-subtile: var(--au-colors-brand-primary-300);
-  --au-border-disabled: var(--au-colors-neutral-light-300);
-  --au-button-primary-sm-radius: var(--au-radius-lg);
-  --au-button-primary-sm-border-width: var(--au-border-width-thin);
-  --au-button-primary-md-radius: var(--au-radius-lg);
-  --au-button-primary-md-border-width: var(--au-border-width-thin);
-  --au-button-primary-default-background: var(--au-surface-brand-solid);
-  --au-button-primary-default-border: var(--au-border-brand-subtile);
-  --au-button-primary-default-content: var(--au-content-on-brand);
-  --au-button-primary-hover-background: var(--au-surface-brand-solid-hover);
-  --au-button-primary-hover-border: var(--au-border-brand-subtile);
-  --au-button-primary-hover-content: var(--au-content-on-brand);
-  --au-button-primary-disabled-background: var(--au-surface-disabled);
-  --au-button-primary-disabled-border: var(--au-border-disabled);
-  --au-button-primary-disabled-content: var(--au-content-disabled);
-  --au-button-secondary-sm-radius: var(--au-radius-lg);
-  --au-button-secondary-sm-border-width: var(--au-border-width-thin);
-  --au-button-secondary-md-radius: var(--au-radius-lg);
-  --au-button-secondary-md-border-width: var(--au-border-width-thin);
-  --au-button-secondary-default-background: var(--au-surface-neutral-low);
-  --au-button-secondary-default-border: var(--au-border-neutral-medium);
-  --au-button-secondary-default-content: var(--au-content-primary);
-  --au-button-secondary-hover-background: var(--au-surface-neutral-low-hover);
-  --au-button-secondary-hover-border: var(--au-border-neutral-medium);
-  --au-button-secondary-hover-content: var(--au-content-primary);
-  --au-button-secondary-disabled-background: var(--au-surface-neutral-low);
-  --au-button-secondary-disabled-border: var(--au-border-neutral-medium);
-  --au-button-secondary-disabled-content: var(--au-content-disabled);
-  --au-button-link-sm-radius: var(--au-radius-xs);
-  --au-button-link-md-radius: var(--au-radius-xs);
-  --au-button-link-default-content: var(--au-content-primary);
-  --au-button-link-hover-content: var(--au-content-primary);
-  --au-button-link-disabled-content: var(--au-content-disabled);
-  --au-inputfield-placeholder-background: var(--au-content-invert);
-  --au-inputfield-placeholder-border: var(--au-border-neutral-low);
-  --au-inputfield-placeholder-icons: var(--au-content-secondary);
-  --au-inputfield-placeholder-text: var(--au-content-placeholder);
-  --au-inputfield-placeholder-label: var(--au-content-secondary);
-  --au-inputfield-placeholder-helper-text: var(--au-content-secondary);
-  --au-inputfield-filled-background: var(--au-surface-neutral-low);
-  --au-inputfield-filled-border: var(--au-border-neutral-low);
-  --au-inputfield-filled-icons: var(--au-content-secondary);
-  --au-inputfield-filled-text: var(--au-content-primary);
-  --au-inputfield-filled-label: var(--au-content-secondary);
-  --au-inputfield-filled-helper-text: var(--au-content-secondary);
-  --au-inputfield-selected-background: var(--au-surface-neutral-low);
-  --au-inputfield-selected-border: var(--au-border-brand-solid);
-  --au-inputfield-selected-icons: var(--au-content-secondary);
-  --au-inputfield-selected-text: var(--au-content-primary);
-  --au-inputfield-selected-label: var(--au-content-secondary);
-  --au-inputfield-selected-helper-text: var(--au-content-secondary);
-  --au-inputfield-disabled-background: var(--au-surface-disabled);
-  --au-inputfield-disabled-border: var(--au-border-neutral-high);
-  --au-inputfield-disabled-icons: var(--au-content-secondary);
-  --au-inputfield-disabled-text: var(--au-content-secondary);
-  --au-inputfield-disabled-label: var(--au-content-secondary);
-  --au-inputfield-disabled-helper-text: var(--au-content-secondary);
-  --au-focus-ring: 0 0 0 var(--au-border-width-thick) #53bda4, 0 0 0 2px var(--au-surface-invert);
-}
-
-/* viewport-1.css */
-:root {
-  --au-font-family-display: raleway;
-  --au-font-family-body: inter;
-  --au-font-weight-light: light;
-  --au-font-weight-regular: regular;
-  --au-font-weight-medium: medium;
-  --au-font-weight-semibold: semibold;
-  --au-font-weight-bold: bold;
-  --au-display-md-semibold-letter-spacing: -2%;
   --au-radius-none: var(--au-dimensions-0);
-  --au-radius-xs: var(--au-dimensions-2);
-  --au-radius-md: var(--au-dimensions-4);
-  --au-radius-lg: var(--au-dimensions-8);
-  --au-radius-xl: var(--au-dimensions-12);
-  --au-radius-2xl: var(--au-dimensions-16);
-  --au-radius-3xl: var(--au-dimensions-20);
-  --au-radius-4xl: var(--au-dimensions-24);
+  --au-radius-2xs: var(--au-dimensions-2);
+  --au-radius-xs: var(--au-dimensions-4);
+  --au-radius-sm: var(--au-dimensions-8);
+  --au-radius-md: var(--au-dimensions-12);
+  --au-radius-lg: var(--au-dimensions-16);
+  --au-radius-xl: var(--au-dimensions-20);
+  --au-radius-2xl: var(--au-dimensions-24);
   --au-radius-rounded: var(--au-dimensions-max);
-  --au-border-width-none: var(--au-dimensions-0);
-  --au-border-width-thin: var(--au-dimensions-1);
-  --au-border-width-medium: var(--au-dimensions-2);
-  --au-border-width-thick: var(--au-dimensions-4);
-  --au-spacing-none: var(--au-dimensions-0);
-  --au-spacing-3xs: var(--au-dimensions-2);
-  --au-spacing-2xs: var(--au-dimensions-4);
-  --au-spacing-xs: var(--au-dimensions-6);
-  --au-spacing-sm: var(--au-dimensions-8);
-  --au-spacing-md: var(--au-dimensions-10);
-  --au-spacing-lg: var(--au-dimensions-12);
-  --au-spacing-xl: var(--au-dimensions-16);
-  --au-spacing-2xl: var(--au-dimensions-20);
-  --au-spacing-3xl: var(--au-dimensions-24);
-  --au-spacing-4xl: var(--au-dimensions-32);
-  --au-spacing-5xl: var(--au-dimensions-40);
-  --au-spacing-6xl: var(--au-dimensions-48);
-  --au-spacing-7xl: var(--au-dimensions-64);
-  --au-spacing-8xl: var(--au-dimensions-80);
-  --au-spacing-9xl: var(--au-dimensions-96);
-  --au-spacing-10xl: var(--au-dimensions-128);
-  --au-font-size-metrics-lg: var(--au-dimensions-40);
-  --au-font-size-metrics-md: var(--au-dimensions-32);
-  --au-font-size-metrics-sm: var(--au-dimensions-24);
-  --au-font-size-display-2xl: var(--au-dimensions-48);
-  --au-font-size-display-xl: var(--au-dimensions-40);
-  --au-font-size-display-lg: var(--au-dimensions-32);
-  --au-font-size-display-md: var(--au-dimensions-24);
-  --au-font-size-display-sm: var(--au-dimensions-20);
-  --au-font-size-display-xs: var(--au-dimensions-16);
-  --au-font-size-text-xl: var(--au-dimensions-20);
-  --au-font-size-text-lg: var(--au-dimensions-16);
-  --au-font-size-text-md: var(--au-dimensions-14);
-  --au-font-size-text-sm: var(--au-dimensions-12);
-  --au-font-size-text-xs: var(--au-dimensions-10);
-  --au-line-height-metrics-lg: var(--au-dimensions-48);
-  --au-line-height-metrics-md: var(--au-dimensions-40);
-  --au-line-height-metrics-sm: var(--au-dimensions-32);
-  --au-line-height-display-2xl: var(--au-dimensions-64);
-  --au-line-height-display-xl: var(--au-dimensions-56);
-  --au-line-height-display-lg: var(--au-dimensions-48);
-  --au-line-height-display-md: var(--au-dimensions-32);
-  --au-line-height-display-sm: var(--au-dimensions-24);
-  --au-line-height-display-xs: var(--au-dimensions-20);
-  --au-line-height-text-xl: var(--au-dimensions-32);
-  --au-line-height-text-lg: var(--au-dimensions-24);
-  --au-line-height-text-md: var(--au-dimensions-20);
-  --au-line-height-text-sm: var(--au-dimensions-16);
-  --au-line-height-text-xs: var(--au-dimensions-16);
-  --au-letter-spacing-metrics-lg: var(--au-dimensions-0);
-  --au-letter-spacing-metrics-md: var(--au-dimensions-0);
-  --au-letter-spacing-metrics-sm: var(--au-dimensions-0);
-  --au-letter-spacing-display-2xl: var(--au-dimensions-0);
-  --au-letter-spacing-display-xl: var(--au-dimensions-0);
-  --au-letter-spacing-display-lg: var(--au-dimensions-0);
-  --au-letter-spacing-display-md: var(--au-dimensions-0);
-  --au-letter-spacing-display-sm: var(--au-dimensions-0);
-  --au-letter-spacing-display-xs: var(--au-dimensions-0);
-  --au-letter-spacing-text-xl: var(--au-dimensions-0);
-  --au-letter-spacing-text-lg: var(--au-dimensions-0);
-  --au-letter-spacing-text-md: var(--au-dimensions-0);
-  --au-letter-spacing-text-sm: var(--au-dimensions-0);
-  --au-letter-spacing-text-xs: var(--au-dimensions-0);
-  --au-metrics-lg-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-  --au-metrics-lg-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-  --au-metrics-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-  --au-metrics-lg-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-  --au-metrics-md-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-  --au-metrics-md-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-  --au-metrics-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-  --au-metrics-md-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-  --au-metrics-sm-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-  --au-metrics-sm-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-  --au-metrics-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-  --au-metrics-sm-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-  --au-display-2xl-regular: var(--au-font-weight-regular) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-  --au-display-2xl-medium: var(--au-font-weight-medium) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-  --au-display-2xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-  --au-display-2xl-bold: var(--au-font-weight-bold) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-  --au-display-xl-regular: var(--au-font-weight-regular) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-  --au-display-xl-medium: var(--au-font-weight-medium) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-  --au-display-xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-  --au-display-xl-bold: var(--au-font-weight-bold) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-  --au-display-lg-regular: var(--au-font-weight-regular) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-  --au-display-lg-medium: var(--au-font-weight-medium) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-  --au-display-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-  --au-display-lg-bold: var(--au-font-weight-bold) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-  --au-display-md-regular: var(--au-font-weight-regular) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-  --au-display-md-medium: var(--au-font-weight-medium) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-  --au-display-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-  --au-display-md-bold: var(--au-font-weight-bold) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-  --au-display-sm-regular: var(--au-font-weight-regular) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-  --au-display-sm-medium: var(--au-font-weight-medium) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-  --au-display-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-  --au-display-sm-bold: var(--au-font-weight-bold) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-  --au-display-xs-regular: var(--au-font-weight-regular) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-  --au-display-xs-medium: var(--au-font-weight-medium) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-  --au-display-xs-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-  --au-display-xs-bold: var(--au-font-weight-bold) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-  --au-text-xl-regular: var(--au-font-weight-regular) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-  --au-text-xl-medium: var(--au-font-weight-medium) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-  --au-text-xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-  --au-text-xl-bold: var(--au-font-weight-bold) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-  --au-text-lg-regular: var(--au-font-weight-regular) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-  --au-text-lg-medium: var(--au-font-weight-medium) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-  --au-text-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-  --au-text-lg-bold: var(--au-font-weight-bold) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-  --au-text-md-regular: var(--au-font-weight-regular) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-  --au-text-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-  --au-text-md-medium: var(--au-font-weight-medium) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-  --au-text-md-bold: var(--au-font-weight-bold) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-  --au-text-sm-regular: var(--au-font-weight-regular) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-  --au-text-sm-medium: var(--au-font-weight-medium) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-  --au-text-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-  --au-text-sm-bold: var(--au-font-weight-bold) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-  --au-text-xs-regular: var(--au-font-weight-regular) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-  --au-text-xs-medium: var(--au-font-weight-medium) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-  --au-text-xs-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-  --au-text-xs-bold: var(--au-font-weight-bold) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-  --au-metrics-lg-regular-letter-spacing: var(--au-letter-spacing-metrics-lg);
-  --au-metrics-lg-medium-letter-spacing: var(--au-letter-spacing-metrics-lg);
-  --au-metrics-lg-semibold-letter-spacing: var(--au-letter-spacing-metrics-lg);
-  --au-metrics-lg-bold-letter-spacing: var(--au-letter-spacing-metrics-lg);
-  --au-metrics-md-regular-letter-spacing: var(--au-letter-spacing-metrics-md);
-  --au-metrics-md-medium-letter-spacing: var(--au-letter-spacing-metrics-md);
-  --au-metrics-md-semibold-letter-spacing: var(--au-letter-spacing-metrics-md);
-  --au-metrics-md-bold-letter-spacing: var(--au-letter-spacing-metrics-md);
-  --au-metrics-sm-regular-letter-spacing: var(--au-letter-spacing-metrics-sm);
-  --au-metrics-sm-medium-letter-spacing: var(--au-letter-spacing-metrics-sm);
-  --au-metrics-sm-semibold-letter-spacing: var(--au-letter-spacing-metrics-sm);
-  --au-metrics-sm-bold-letter-spacing: var(--au-letter-spacing-metrics-sm);
-  --au-display-2xl-regular-letter-spacing: var(--au-letter-spacing-display-2xl);
-  --au-display-2xl-medium-letter-spacing: var(--au-letter-spacing-display-2xl);
-  --au-display-2xl-semibold-letter-spacing: var(--au-letter-spacing-display-2xl);
-  --au-display-2xl-bold-letter-spacing: var(--au-letter-spacing-display-2xl);
-  --au-display-xl-regular-letter-spacing: var(--au-letter-spacing-display-xl);
-  --au-display-xl-medium-letter-spacing: var(--au-letter-spacing-display-xl);
-  --au-display-xl-semibold-letter-spacing: var(--au-letter-spacing-display-xl);
-  --au-display-xl-bold-letter-spacing: var(--au-letter-spacing-display-xl);
-  --au-display-lg-regular-letter-spacing: var(--au-letter-spacing-display-lg);
-  --au-display-lg-medium-letter-spacing: var(--au-letter-spacing-display-lg);
-  --au-display-lg-semibold-letter-spacing: var(--au-letter-spacing-display-lg);
-  --au-display-lg-bold-letter-spacing: var(--au-letter-spacing-display-lg);
-  --au-display-md-regular-letter-spacing: var(--au-letter-spacing-display-md);
-  --au-display-md-medium-letter-spacing: var(--au-letter-spacing-display-md);
-  --au-display-md-bold-letter-spacing: var(--au-letter-spacing-display-md);
-  --au-display-sm-regular-letter-spacing: var(--au-letter-spacing-display-sm);
-  --au-display-sm-medium-letter-spacing: var(--au-letter-spacing-display-sm);
-  --au-display-sm-semibold-letter-spacing: var(--au-letter-spacing-display-sm);
-  --au-display-sm-bold-letter-spacing: var(--au-letter-spacing-display-sm);
-  --au-display-xs-regular-letter-spacing: var(--au-letter-spacing-display-xs);
-  --au-display-xs-medium-letter-spacing: var(--au-letter-spacing-display-xs);
-  --au-display-xs-semibold-letter-spacing: var(--au-letter-spacing-display-xs);
-  --au-display-xs-bold-letter-spacing: var(--au-letter-spacing-display-xs);
-  --au-text-xl-regular-letter-spacing: var(--au-letter-spacing-text-xl);
-  --au-text-xl-medium-letter-spacing: var(--au-letter-spacing-text-xl);
-  --au-text-xl-semibold-letter-spacing: var(--au-letter-spacing-text-xl);
-  --au-text-xl-bold-letter-spacing: var(--au-letter-spacing-text-xl);
-  --au-text-lg-regular-letter-spacing: var(--au-letter-spacing-text-lg);
-  --au-text-lg-medium-letter-spacing: var(--au-letter-spacing-text-lg);
-  --au-text-lg-semibold-letter-spacing: var(--au-letter-spacing-text-lg);
-  --au-text-lg-bold-letter-spacing: var(--au-letter-spacing-text-lg);
-  --au-text-md-regular-letter-spacing: var(--au-letter-spacing-text-md);
-  --au-text-md-semibold-letter-spacing: var(--au-letter-spacing-text-md);
-  --au-text-md-medium-letter-spacing: var(--au-letter-spacing-text-md);
-  --au-text-md-bold-letter-spacing: var(--au-letter-spacing-text-md);
-  --au-text-sm-regular-letter-spacing: var(--au-letter-spacing-text-sm);
-  --au-text-sm-medium-letter-spacing: var(--au-letter-spacing-text-sm);
-  --au-text-sm-semibold-letter-spacing: var(--au-letter-spacing-text-sm);
-  --au-text-sm-bold-letter-spacing: var(--au-letter-spacing-text-sm);
-  --au-text-xs-regular-letter-spacing: var(--au-letter-spacing-text-xs);
-  --au-text-xs-medium-letter-spacing: var(--au-letter-spacing-text-xs);
-  --au-text-xs-semibold-letter-spacing: var(--au-letter-spacing-text-xs);
-  --au-text-xs-bold-letter-spacing: var(--au-letter-spacing-text-xs);
+  --au-glow: radial-gradient(circle, var(--au-colors-alpha-white-500) 0%, var(--au-colors-alpha-white-1000) 100%);
 }
 
-/* viewport-2.css */
-@media (max-width: 1250px) {
+/* dark.css */
+.dark {
+  --au-colors-surface-page: var(--au-colors-neutral-dark-900);
+  --au-colors-surface-invert: var(--au-colors-neutral-dark-900);
+  --au-colors-surface-disabled: var(--au-colors-neutral-dark-700);
+  --au-colors-surface-neutral-low: var(--au-colors-neutral-dark-800);
+  --au-colors-surface-neutral-low-hover: var(--au-colors-neutral-dark-700);
+  --au-colors-surface-neutral-medium: var(--au-colors-neutral-dark-700);
+  --au-colors-surface-neutral-medium-hover: var(--au-colors-neutral-dark-600);
+  --au-colors-surface-neutral-high: var(--au-colors-neutral-dark-600);
+  --au-colors-surface-neutral-high-hover: var(--au-colors-neutral-dark-500);
+  --au-colors-surface-brand-solid: var(--au-colors-brand-primary-500);
+  --au-colors-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
+  --au-colors-surface-brand-subtile: var(--au-colors-neutral-dark-800);
+  --au-colors-surface-success-solid: var(--au-colors-feedback-success-400);
+  --au-colors-surface-success-subtile: var(--au-colors-feedback-success-800);
+  --au-colors-surface-warning-solid: var(--au-colors-feedback-warning-400);
+  --au-colors-surface-warning-subtile: var(--au-colors-feedback-warning-800);
+  --au-colors-surface-error-solid: var(--au-colors-feedback-error-400);
+  --au-colors-surface-error-subtile: var(--au-colors-feedback-error-800);
+  --au-colors-content-primary: var(--au-colors-neutral-dark-50);
+  --au-colors-content-secondary: var(--au-colors-neutral-dark-300);
+  --au-colors-content-tertiary: var(--au-colors-neutral-dark-300);
+  --au-colors-content-placeholder: var(--au-colors-neutral-dark-400);
+  --au-colors-content-invert: var(--au-colors-neutral-dark-900);
+  --au-colors-content-disabled: var(--au-colors-neutral-dark-400);
+  --au-colors-content-brand: var(--au-colors-brand-primary-300);
+  --au-colors-content-on-brand: var(--au-colors-neutral-light-white);
+  --au-colors-content-on-brand-hover: var(--au-colors-alpha-white-200);
+  --au-colors-content-error: var(--au-colors-feedback-error-300);
+  --au-colors-content-warning: var(--au-colors-feedback-warning-300);
+  --au-colors-content-success: var(--au-colors-feedback-success-300);
+  --au-colors-border-disabled: var(--au-colors-neutral-dark-600);
+  --au-colors-border-neutral-low: var(--au-colors-neutral-dark-600);
+  --au-colors-border-neutral-medium: var(--au-colors-neutral-dark-500);
+  --au-colors-border-neutral-high: var(--au-colors-neutral-dark-400);
+  --au-colors-border-brand-solid: var(--au-colors-brand-primary-500);
+  --au-colors-border-brand-subtile: var(--au-colors-brand-primary-700);
+  --au-colors-border-error-solid: var(--au-colors-feedback-error-500);
+  --au-colors-border-error-subtile: var(--au-colors-feedback-error-700);
+  --au-glow: radial-gradient(circle, var(--au-colors-alpha-white-500) 0%, var(--au-colors-alpha-white-1000) 100%);
+}
+
+/* desktop.css */
+@media (min-width: 1025px) {
   :root {
-    --au-font-family-display: raleway;
-    --au-font-family-body: inter;
-    --au-font-weight-light: light;
-    --au-font-weight-regular: regular;
-    --au-font-weight-medium: medium;
-    --au-font-weight-semibold: semibold;
-    --au-font-weight-bold: bold;
-    --au-display-md-semibold-letter-spacing: -2%;
-    --au-radius-none: var(--au-dimensions-0);
-    --au-radius-xs: var(--au-dimensions-2);
-    --au-radius-md: var(--au-dimensions-4);
-    --au-radius-lg: var(--au-dimensions-8);
-    --au-radius-xl: var(--au-dimensions-12);
-    --au-radius-2xl: var(--au-dimensions-16);
-    --au-radius-3xl: var(--au-dimensions-20);
-    --au-radius-4xl: var(--au-dimensions-24);
-    --au-radius-rounded: var(--au-dimensions-max);
-    --au-border-width-none: var(--au-dimensions-0);
-    --au-border-width-thin: var(--au-dimensions-1);
-    --au-border-width-medium: var(--au-dimensions-2);
-    --au-border-width-thick: var(--au-dimensions-4);
+    --au-typography-font-weight-light: 300rem;
+    --au-typography-font-weight-regular: 400rem;
+    --au-typography-font-weight-medium: 500rem;
+    --au-typography-font-weight-semibold: 600rem;
+    --au-typography-font-weight-bold: 700rem;
+    --au-screen-breakpoint: 1024px;
+    --au-typography-font-sizes-3xs: var(--au-dimensions-12);
+    --au-typography-font-sizes-2xs: var(--au-dimensions-14);
+    --au-typography-font-sizes-xs: var(--au-dimensions-16);
+    --au-typography-font-sizes-sm: var(--au-dimensions-18);
+    --au-typography-font-sizes-md: var(--au-dimensions-20);
+    --au-typography-font-sizes-lg: var(--au-dimensions-24);
+    --au-typography-font-sizes-xl: var(--au-dimensions-32);
+    --au-typography-font-sizes-2xl: var(--au-dimensions-40);
+    --au-typography-font-sizes-3xl: var(--au-dimensions-48);
+    --au-typography-line-height-2xs: var(--au-dimensions-16);
+    --au-typography-line-height-xs: var(--au-dimensions-20);
+    --au-typography-line-height-sm: var(--au-dimensions-24);
+    --au-typography-line-height-md: var(--au-dimensions-32);
+    --au-typography-line-height-lg: var(--au-dimensions-40);
+    --au-typography-line-height-xl: var(--au-dimensions-48);
+    --au-typography-line-height-2xl: var(--au-dimensions-56);
+    --au-typography-line-height-3xl: var(--au-dimensions-64);
+    --au-typography-letter-spacing-none: var(--au-dimensions-0);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -570,171 +311,419 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-spacing-sm: var(--au-dimensions-8);
     --au-spacing-md: var(--au-dimensions-10);
     --au-spacing-lg: var(--au-dimensions-12);
-    --au-spacing-xl: var(--au-dimensions-16);
-    --au-spacing-2xl: var(--au-dimensions-20);
-    --au-spacing-3xl: var(--au-dimensions-24);
-    --au-spacing-4xl: var(--au-dimensions-32);
-    --au-spacing-5xl: var(--au-dimensions-40);
-    --au-spacing-6xl: var(--au-dimensions-48);
-    --au-spacing-7xl: var(--au-dimensions-64);
-    --au-spacing-8xl: var(--au-dimensions-80);
-    --au-spacing-9xl: var(--au-dimensions-96);
-    --au-spacing-10xl: var(--au-dimensions-128);
-    --au-font-size-metrics-lg: var(--au-dimensions-40);
-    --au-font-size-metrics-md: var(--au-dimensions-32);
-    --au-font-size-metrics-sm: var(--au-dimensions-24);
-    --au-font-size-display-2xl: var(--au-dimensions-48);
-    --au-font-size-display-xl: var(--au-dimensions-40);
-    --au-font-size-display-lg: var(--au-dimensions-32);
-    --au-font-size-display-md: var(--au-dimensions-24);
-    --au-font-size-display-sm: var(--au-dimensions-20);
-    --au-font-size-display-xs: var(--au-dimensions-16);
-    --au-font-size-text-xl: var(--au-dimensions-20);
-    --au-font-size-text-lg: var(--au-dimensions-16);
-    --au-font-size-text-md: var(--au-dimensions-14);
-    --au-font-size-text-sm: var(--au-dimensions-12);
-    --au-font-size-text-xs: var(--au-dimensions-10);
-    --au-line-height-metrics-lg: var(--au-dimensions-48);
-    --au-line-height-metrics-md: var(--au-dimensions-40);
-    --au-line-height-metrics-sm: var(--au-dimensions-32);
-    --au-line-height-display-2xl: var(--au-dimensions-64);
-    --au-line-height-display-xl: var(--au-dimensions-56);
-    --au-line-height-display-lg: var(--au-dimensions-48);
-    --au-line-height-display-md: var(--au-dimensions-32);
-    --au-line-height-display-sm: var(--au-dimensions-24);
-    --au-line-height-display-xs: var(--au-dimensions-20);
-    --au-line-height-text-xl: var(--au-dimensions-32);
-    --au-line-height-text-lg: var(--au-dimensions-24);
-    --au-line-height-text-md: var(--au-dimensions-20);
-    --au-line-height-text-sm: var(--au-dimensions-16);
-    --au-line-height-text-xs: var(--au-dimensions-16);
-    --au-letter-spacing-metrics-lg: var(--au-dimensions-0);
-    --au-letter-spacing-metrics-md: var(--au-dimensions-0);
-    --au-letter-spacing-metrics-sm: var(--au-dimensions-0);
-    --au-letter-spacing-display-2xl: var(--au-dimensions-0);
-    --au-letter-spacing-display-xl: var(--au-dimensions-0);
-    --au-letter-spacing-display-lg: var(--au-dimensions-0);
-    --au-letter-spacing-display-md: var(--au-dimensions-0);
-    --au-letter-spacing-display-sm: var(--au-dimensions-0);
-    --au-letter-spacing-display-xs: var(--au-dimensions-0);
-    --au-letter-spacing-text-xl: var(--au-dimensions-0);
-    --au-letter-spacing-text-lg: var(--au-dimensions-0);
-    --au-letter-spacing-text-md: var(--au-dimensions-0);
-    --au-letter-spacing-text-sm: var(--au-dimensions-0);
-    --au-letter-spacing-text-xs: var(--au-dimensions-0);
-    --au-metrics-lg-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-    --au-metrics-lg-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-    --au-metrics-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-    --au-metrics-lg-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-lg)/var(--au-line-height-metrics-lg) var(--au-font-family-body);
-    --au-metrics-md-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-    --au-metrics-md-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-    --au-metrics-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-    --au-metrics-md-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-md)/var(--au-line-height-metrics-md) var(--au-font-family-body);
-    --au-metrics-sm-regular: var(--au-font-weight-regular) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-    --au-metrics-sm-medium: var(--au-font-weight-medium) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-    --au-metrics-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-    --au-metrics-sm-bold: var(--au-font-weight-bold) var(--au-font-size-metrics-sm)/var(--au-line-height-metrics-sm) var(--au-font-family-body);
-    --au-display-2xl-regular: var(--au-font-weight-regular) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-    --au-display-2xl-medium: var(--au-font-weight-medium) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-    --au-display-2xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-    --au-display-2xl-bold: var(--au-font-weight-bold) var(--au-font-size-display-2xl)/var(--au-line-height-display-2xl) var(--au-font-family-display);
-    --au-display-xl-regular: var(--au-font-weight-regular) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-    --au-display-xl-medium: var(--au-font-weight-medium) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-    --au-display-xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-    --au-display-xl-bold: var(--au-font-weight-bold) var(--au-font-size-display-xl)/var(--au-line-height-display-xl) var(--au-font-family-display);
-    --au-display-lg-regular: var(--au-font-weight-regular) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-    --au-display-lg-medium: var(--au-font-weight-medium) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-    --au-display-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-    --au-display-lg-bold: var(--au-font-weight-bold) var(--au-font-size-display-lg)/var(--au-line-height-display-lg) var(--au-font-family-display);
-    --au-display-md-regular: var(--au-font-weight-regular) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-    --au-display-md-medium: var(--au-font-weight-medium) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-    --au-display-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-    --au-display-md-bold: var(--au-font-weight-bold) var(--au-font-size-display-md)/var(--au-line-height-display-md) var(--au-font-family-display);
-    --au-display-sm-regular: var(--au-font-weight-regular) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-    --au-display-sm-medium: var(--au-font-weight-medium) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-    --au-display-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-    --au-display-sm-bold: var(--au-font-weight-bold) var(--au-font-size-display-sm)/var(--au-line-height-display-sm) var(--au-font-family-display);
-    --au-display-xs-regular: var(--au-font-weight-regular) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-    --au-display-xs-medium: var(--au-font-weight-medium) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-    --au-display-xs-semibold: var(--au-font-weight-semibold) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-    --au-display-xs-bold: var(--au-font-weight-bold) var(--au-font-size-display-xs)/var(--au-line-height-display-xs) var(--au-font-family-display);
-    --au-text-xl-regular: var(--au-font-weight-regular) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-    --au-text-xl-medium: var(--au-font-weight-medium) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-    --au-text-xl-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-    --au-text-xl-bold: var(--au-font-weight-bold) var(--au-font-size-text-xl)/var(--au-line-height-text-xl) var(--au-font-family-body);
-    --au-text-lg-regular: var(--au-font-weight-regular) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-    --au-text-lg-medium: var(--au-font-weight-medium) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-    --au-text-lg-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-    --au-text-lg-bold: var(--au-font-weight-bold) var(--au-font-size-text-lg)/var(--au-line-height-text-lg) var(--au-font-family-body);
-    --au-text-md-regular: var(--au-font-weight-regular) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-    --au-text-md-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-    --au-text-md-medium: var(--au-font-weight-medium) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-    --au-text-md-bold: var(--au-font-weight-bold) var(--au-font-size-text-md)/var(--au-line-height-text-md) var(--au-font-family-body);
-    --au-text-sm-regular: var(--au-font-weight-regular) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-    --au-text-sm-medium: var(--au-font-weight-medium) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-    --au-text-sm-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-    --au-text-sm-bold: var(--au-font-weight-bold) var(--au-font-size-text-sm)/var(--au-line-height-text-sm) var(--au-font-family-body);
-    --au-text-xs-regular: var(--au-font-weight-regular) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-    --au-text-xs-medium: var(--au-font-weight-medium) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-    --au-text-xs-semibold: var(--au-font-weight-semibold) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-    --au-text-xs-bold: var(--au-font-weight-bold) var(--au-font-size-text-xs)/var(--au-line-height-text-xs) var(--au-font-family-body);
-    --au-metrics-lg-regular-letter-spacing: var(--au-letter-spacing-metrics-lg);
-    --au-metrics-lg-medium-letter-spacing: var(--au-letter-spacing-metrics-lg);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-letter-spacing-metrics-lg);
-    --au-metrics-lg-bold-letter-spacing: var(--au-letter-spacing-metrics-lg);
-    --au-metrics-md-regular-letter-spacing: var(--au-letter-spacing-metrics-md);
-    --au-metrics-md-medium-letter-spacing: var(--au-letter-spacing-metrics-md);
-    --au-metrics-md-semibold-letter-spacing: var(--au-letter-spacing-metrics-md);
-    --au-metrics-md-bold-letter-spacing: var(--au-letter-spacing-metrics-md);
-    --au-metrics-sm-regular-letter-spacing: var(--au-letter-spacing-metrics-sm);
-    --au-metrics-sm-medium-letter-spacing: var(--au-letter-spacing-metrics-sm);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-letter-spacing-metrics-sm);
-    --au-metrics-sm-bold-letter-spacing: var(--au-letter-spacing-metrics-sm);
-    --au-display-2xl-regular-letter-spacing: var(--au-letter-spacing-display-2xl);
-    --au-display-2xl-medium-letter-spacing: var(--au-letter-spacing-display-2xl);
-    --au-display-2xl-semibold-letter-spacing: var(--au-letter-spacing-display-2xl);
-    --au-display-2xl-bold-letter-spacing: var(--au-letter-spacing-display-2xl);
-    --au-display-xl-regular-letter-spacing: var(--au-letter-spacing-display-xl);
-    --au-display-xl-medium-letter-spacing: var(--au-letter-spacing-display-xl);
-    --au-display-xl-semibold-letter-spacing: var(--au-letter-spacing-display-xl);
-    --au-display-xl-bold-letter-spacing: var(--au-letter-spacing-display-xl);
-    --au-display-lg-regular-letter-spacing: var(--au-letter-spacing-display-lg);
-    --au-display-lg-medium-letter-spacing: var(--au-letter-spacing-display-lg);
-    --au-display-lg-semibold-letter-spacing: var(--au-letter-spacing-display-lg);
-    --au-display-lg-bold-letter-spacing: var(--au-letter-spacing-display-lg);
-    --au-display-md-regular-letter-spacing: var(--au-letter-spacing-display-md);
-    --au-display-md-medium-letter-spacing: var(--au-letter-spacing-display-md);
-    --au-display-md-bold-letter-spacing: var(--au-letter-spacing-display-md);
-    --au-display-sm-regular-letter-spacing: var(--au-letter-spacing-display-sm);
-    --au-display-sm-medium-letter-spacing: var(--au-letter-spacing-display-sm);
-    --au-display-sm-semibold-letter-spacing: var(--au-letter-spacing-display-sm);
-    --au-display-sm-bold-letter-spacing: var(--au-letter-spacing-display-sm);
-    --au-display-xs-regular-letter-spacing: var(--au-letter-spacing-display-xs);
-    --au-display-xs-medium-letter-spacing: var(--au-letter-spacing-display-xs);
-    --au-display-xs-semibold-letter-spacing: var(--au-letter-spacing-display-xs);
-    --au-display-xs-bold-letter-spacing: var(--au-letter-spacing-display-xs);
-    --au-text-xl-regular-letter-spacing: var(--au-letter-spacing-text-xl);
-    --au-text-xl-medium-letter-spacing: var(--au-letter-spacing-text-xl);
-    --au-text-xl-semibold-letter-spacing: var(--au-letter-spacing-text-xl);
-    --au-text-xl-bold-letter-spacing: var(--au-letter-spacing-text-xl);
-    --au-text-lg-regular-letter-spacing: var(--au-letter-spacing-text-lg);
-    --au-text-lg-medium-letter-spacing: var(--au-letter-spacing-text-lg);
-    --au-text-lg-semibold-letter-spacing: var(--au-letter-spacing-text-lg);
-    --au-text-lg-bold-letter-spacing: var(--au-letter-spacing-text-lg);
-    --au-text-md-regular-letter-spacing: var(--au-letter-spacing-text-md);
-    --au-text-md-semibold-letter-spacing: var(--au-letter-spacing-text-md);
-    --au-text-md-medium-letter-spacing: var(--au-letter-spacing-text-md);
-    --au-text-md-bold-letter-spacing: var(--au-letter-spacing-text-md);
-    --au-text-sm-regular-letter-spacing: var(--au-letter-spacing-text-sm);
-    --au-text-sm-medium-letter-spacing: var(--au-letter-spacing-text-sm);
-    --au-text-sm-semibold-letter-spacing: var(--au-letter-spacing-text-sm);
-    --au-text-sm-bold-letter-spacing: var(--au-letter-spacing-text-sm);
-    --au-text-xs-regular-letter-spacing: var(--au-letter-spacing-text-xs);
-    --au-text-xs-medium-letter-spacing: var(--au-letter-spacing-text-xs);
-    --au-text-xs-semibold-letter-spacing: var(--au-letter-spacing-text-xs);
-    --au-text-xs-bold-letter-spacing: var(--au-letter-spacing-text-xs);
+    --au-spacing-xl: var(--au-dimensions-14);
+    --au-spacing-2xl: var(--au-dimensions-16);
+    --au-spacing-3xl: var(--au-dimensions-20);
+    --au-spacing-4xl: var(--au-dimensions-24);
+    --au-spacing-5xl: var(--au-dimensions-32);
+    --au-spacing-6xl: var(--au-dimensions-40);
+    --au-spacing-7xl: var(--au-dimensions-48);
+    --au-spacing-8xl: var(--au-dimensions-64);
+    --au-spacing-9xl: var(--au-dimensions-80);
+    --au-spacing-10xl: var(--au-dimensions-96);
+    --au-spacing-11xl: var(--au-dimensions-128);
+    --au-border-width-none: var(--au-dimensions-0);
+    --au-border-width-thin: var(--au-dimensions-1);
+    --au-border-width-medium: var(--au-dimensions-2);
+    --au-border-width-thick: var(--au-dimensions-4);
+    --au-sizes-height-header: var(--au-dimensions-72);
+    --au-sizes-height-footer: var(--au-dimensions-52);
   }
 }
 
+/* high-level.css */
+:root {
+  --au-button-primary-shadow: 0 -2px 0 0 #0a0d120d;
+  --au-button-primary-sm-padding-vertical: var(--au-spacing-md);
+  --au-button-primary-sm-padding-horizontal: var(--au-spacing-lg);
+  --au-button-primary-sm-gap: var(--au-spacing-2xs);
+  --au-button-primary-sm-radius: var(--au-radius-sm);
+  --au-button-primary-sm-border-width: var(--au-border-width-thin);
+  --au-button-primary-md-padding-vertical: var(--au-spacing-md);
+  --au-button-primary-md-padding-horizontal: var(--au-spacing-2xl);
+  --au-button-primary-md-gap: var(--au-spacing-xs);
+  --au-button-primary-md-radius: var(--au-radius-sm);
+  --au-button-primary-md-border-width: var(--au-border-width-thin);
+  --au-button-primary-lg-padding-vertical: var(--au-spacing-lg);
+  --au-button-primary-lg-padding-horizontal: var(--au-spacing-3xl);
+  --au-button-primary-lg-gap: var(--au-spacing-xs);
+  --au-button-primary-lg-radius: var(--au-radius-sm);
+  --au-button-primary-lg-border-width: var(--au-border-width-thin);
+  --au-button-primary-default-background: var(--au-colors-surface-brand-solid);
+  --au-button-primary-default-border: var(--au-colors-border-brand-subtile);
+  --au-button-primary-default-content: var(--au-colors-content-on-brand);
+  --au-button-primary-hover-background: var(--au-colors-surface-brand-solid-hover);
+  --au-button-primary-hover-border: var(--au-colors-border-brand-subtile);
+  --au-button-primary-hover-content: var(--au-colors-content-on-brand);
+  --au-button-primary-disabled-background: var(--au-colors-surface-disabled);
+  --au-button-primary-disabled-border: var(--au-colors-border-disabled);
+  --au-button-primary-disabled-content: var(--au-colors-content-disabled);
+  --au-button-secondary-sm-padding-vertical: var(--au-spacing-md);
+  --au-button-secondary-sm-padding-horizontal: var(--au-spacing-lg);
+  --au-button-secondary-sm-gap: var(--au-spacing-2xs);
+  --au-button-secondary-sm-radius: var(--au-radius-sm);
+  --au-button-secondary-sm-border-width: var(--au-border-width-thin);
+  --au-button-secondary-md-padding-vertical: var(--au-spacing-md);
+  --au-button-secondary-md-padding-horizontal: var(--au-spacing-2xl);
+  --au-button-secondary-md-gap: var(--au-spacing-xs);
+  --au-button-secondary-md-radius: var(--au-radius-sm);
+  --au-button-secondary-md-border-width: var(--au-border-width-thin);
+  --au-button-secondary-lg-padding-vertical: var(--au-spacing-lg);
+  --au-button-secondary-lg-padding-horizontal: var(--au-spacing-3xl);
+  --au-button-secondary-lg-gap: var(--au-spacing-xs);
+  --au-button-secondary-lg-radius: var(--au-radius-sm);
+  --au-button-secondary-lg-border-width: var(--au-border-width-thin);
+  --au-button-secondary-default-background: var(--au-colors-surface-neutral-low);
+  --au-button-secondary-default-border: var(--au-colors-surface-neutral-medium);
+  --au-button-secondary-default-content: var(--au-colors-content-primary);
+  --au-button-secondary-hover-background: var(--au-colors-surface-neutral-low-hover);
+  --au-button-secondary-hover-border: var(--au-colors-surface-neutral-medium);
+  --au-button-secondary-hover-content: var(--au-colors-content-primary);
+  --au-button-secondary-disabled-background: var(--au-colors-surface-neutral-low);
+  --au-button-secondary-disabled-border: var(--au-colors-border-neutral-medium);
+  --au-button-secondary-disabled-content: var(--au-colors-content-disabled);
+  --au-button-link-sm-gap: var(--au-spacing-2xs);
+  --au-button-link-sm-radius: var(--au-radius-2xs);
+  --au-button-link-md-gap: var(--au-spacing-xs);
+  --au-button-link-md-radius: var(--au-radius-2xs);
+  --au-button-link-lg-gap: var(--au-spacing-xs);
+  --au-button-link-lg-radius: var(--au-radius-2xs);
+  --au-button-link-default-content: var(--au-colors-content-primary);
+  --au-button-link-hover-content: var(--au-colors-content-primary);
+  --au-button-link-disabled-content: var(--au-colors-content-disabled);
+  --au-inputfield-text-field-sm-radius: var(--au-radius-xs);
+  --au-inputfield-text-field-sm-border-width: var(--au-border-width-thin);
+  --au-inputfield-text-field-sm-padding-horizontal: var(--au-spacing-md);
+  --au-inputfield-text-field-sm-padding-vertical: var(--au-spacing-md);
+  --au-inputfield-text-field-sm-gap: var(--au-spacing-sm);
+  --au-inputfield-text-field-md-radius: var(--au-radius-xs);
+  --au-inputfield-text-field-md-border-width: var(--au-border-width-thin);
+  --au-inputfield-text-field-md-padding-horizontal: var(--au-spacing-lg);
+  --au-inputfield-text-field-md-padding-vertical: var(--au-spacing-xl);
+  --au-inputfield-text-field-md-gap: var(--au-spacing-sm);
+  --au-inputfield-placeholder-background: var(--au-colors-surface-invert);
+  --au-inputfield-placeholder-border: var(--au-colors-border-neutral-low);
+  --au-inputfield-placeholder-icons: var(--au-colors-content-secondary);
+  --au-inputfield-placeholder-text: var(--au-colors-content-placeholder);
+  --au-inputfield-placeholder-label: var(--au-colors-content-secondary);
+  --au-inputfield-placeholder-helper-text: var(--au-colors-content-secondary);
+  --au-inputfield-filled-background: var(--au-colors-surface-invert);
+  --au-inputfield-filled-border: var(--au-colors-border-neutral-low);
+  --au-inputfield-filled-icons: var(--au-colors-content-secondary);
+  --au-inputfield-filled-text: var(--au-colors-content-primary);
+  --au-inputfield-filled-label: var(--au-colors-content-secondary);
+  --au-inputfield-filled-helper-text: var(--au-colors-content-secondary);
+  --au-inputfield-selected-background: var(--au-colors-surface-invert);
+  --au-inputfield-selected-border: var(--au-colors-surface-brand-solid);
+  --au-inputfield-selected-icons: var(--au-colors-content-secondary);
+  --au-inputfield-selected-text: var(--au-colors-content-primary);
+  --au-inputfield-selected-label: var(--au-colors-content-secondary);
+  --au-inputfield-selected-helper-text: var(--au-colors-content-secondary);
+  --au-inputfield-disabled-background: var(--au-colors-surface-disabled);
+  --au-inputfield-disabled-border: var(--au-colors-border-neutral-high);
+  --au-inputfield-disabled-icons: var(--au-colors-content-secondary);
+  --au-inputfield-disabled-text: var(--au-colors-content-secondary);
+  --au-inputfield-disabled-label: var(--au-colors-content-secondary);
+  --au-inputfield-disabled-helper-text: var(--au-colors-content-secondary);
+  --au-inputfield-error-border: var(--au-colors-border-error-solid);
+  --au-inputfield-error-error-message: var(--au-colors-border-error-solid);
+  --au-inputfield-error-error-icon: var(--au-colors-border-error-solid);
+  --au-chip-sm-gap: var(--au-spacing-2xs);
+  --au-chip-sm-padding-vertical-label: var(--au-spacing-3xs);
+  --au-chip-sm-padding-vertical-icon: var(--au-spacing-3xs);
+  --au-chip-sm-padding-horizontal-label: var(--au-spacing-sm);
+  --au-chip-sm-padding-horizontal-icon: var(--au-spacing-2xs);
+  --au-chip-sm-radius: var(--au-radius-xs);
+  --au-chip-lg-gap: var(--au-spacing-2xs);
+  --au-chip-lg-padding-vertical-label: var(--au-spacing-2xs);
+  --au-chip-lg-padding-vertical-icon: var(--au-spacing-3xs);
+  --au-chip-lg-padding-horizontal-label: var(--au-spacing-sm);
+  --au-chip-lg-padding-horizontal-icon: var(--au-spacing-2xs);
+  --au-chip-lg-radius: var(--au-radius-xs);
+  --au-chip-neutral-background: var(--au-colors-surface-neutral-high);
+  --au-chip-neutral-content: var(--au-colors-content-secondary);
+  --au-chip-brand-background: var(--au-colors-surface-brand-subtile);
+  --au-chip-brand-content: var(--au-colors-content-brand);
+  --au-chip-success-background: var(--au-colors-surface-success-subtile);
+  --au-chip-success-content: var(--au-colors-content-success);
+  --au-chip-warning-background: var(--au-colors-surface-warning-subtile);
+  --au-chip-warning-content: var(--au-colors-content-warning);
+  --au-chip-error-background: var(--au-colors-surface-error-subtile);
+  --au-chip-error-content: var(--au-colors-content-error);
+  --au-header-background: var(--au-colors-surface-page);
+  --au-header-content: var(--au-colors-content-primary);
+  --au-header-padding-horizontal: var(--au-spacing-lg);
+  --au-header-height: var(--au-sizes-height-header);
+  --au-focus-ring: 0 0 0 var(--au-border-width-thick) #53bda4, 0 0 0 2px var(--au-colors-surface-invert);
+}
+
+/* light.css */
+:root {
+  --au-colors-surface-page: var(--au-colors-neutral-light-white);
+  --au-colors-surface-invert: var(--au-colors-neutral-light-white);
+  --au-colors-surface-disabled: var(--au-colors-neutral-light-50);
+  --au-colors-surface-neutral-low: var(--au-colors-neutral-light-50);
+  --au-colors-surface-neutral-low-hover: var(--au-colors-neutral-light-100);
+  --au-colors-surface-neutral-medium: var(--au-colors-neutral-light-white);
+  --au-colors-surface-neutral-medium-hover: var(--au-colors-neutral-light-50);
+  --au-colors-surface-neutral-high: var(--au-colors-neutral-light-100);
+  --au-colors-surface-neutral-high-hover: var(--au-colors-neutral-light-200);
+  --au-colors-surface-brand-solid: var(--au-colors-brand-primary-500);
+  --au-colors-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
+  --au-colors-surface-brand-subtile: var(--au-colors-brand-primary-200);
+  --au-colors-surface-success-solid: var(--au-colors-feedback-success-500);
+  --au-colors-surface-success-subtile: var(--au-colors-feedback-success-100);
+  --au-colors-surface-warning-solid: var(--au-colors-feedback-warning-500);
+  --au-colors-surface-warning-subtile: var(--au-colors-feedback-warning-100);
+  --au-colors-surface-error-solid: var(--au-colors-feedback-error-500);
+  --au-colors-surface-error-subtile: var(--au-colors-feedback-error-100);
+  --au-colors-content-primary: var(--au-colors-neutral-dark-900);
+  --au-colors-content-secondary: var(--au-colors-neutral-light-600);
+  --au-colors-content-tertiary: var(--au-colors-neutral-light-300);
+  --au-colors-content-placeholder: var(--au-colors-neutral-light-600);
+  --au-colors-content-invert: var(--au-colors-neutral-light-white);
+  --au-colors-content-disabled: var(--au-colors-neutral-light-400);
+  --au-colors-content-brand: var(--au-colors-brand-primary-500);
+  --au-colors-content-on-brand: var(--au-colors-neutral-light-white);
+  --au-colors-content-on-brand-hover: var(--au-colors-alpha-white-200);
+  --au-colors-content-error: var(--au-colors-feedback-error-700);
+  --au-colors-content-warning: var(--au-colors-feedback-warning-700);
+  --au-colors-content-success: var(--au-colors-feedback-success-700);
+  --au-colors-border-disabled: var(--au-colors-neutral-light-300);
+  --au-colors-border-neutral-low: var(--au-colors-neutral-light-100);
+  --au-colors-border-neutral-medium: var(--au-colors-neutral-light-200);
+  --au-colors-border-neutral-high: var(--au-colors-neutral-light-300);
+  --au-colors-border-brand-solid: var(--au-colors-brand-primary-500);
+  --au-colors-border-brand-subtile: var(--au-colors-brand-primary-300);
+  --au-colors-border-error-solid: var(--au-colors-feedback-error-500);
+  --au-colors-border-error-subtile: var(--au-colors-feedback-error-300);
+  --au-glow: radial-gradient(circle, var(--au-colors-alpha-white-500) 0%, var(--au-colors-alpha-white-1000) 100%);
+}
+
+/* mobile.css */
+@media (max-width: 480px) {
+  :root {
+    --au-typography-font-weight-light: 300rem;
+    --au-typography-font-weight-regular: 400rem;
+    --au-typography-font-weight-medium: 500rem;
+    --au-typography-font-weight-semibold: 600rem;
+    --au-typography-font-weight-bold: 700rem;
+    --au-screen-breakpoint: 320px;
+    --au-typography-font-sizes-3xs: var(--au-dimensions-8);
+    --au-typography-font-sizes-2xs: var(--au-dimensions-10);
+    --au-typography-font-sizes-xs: var(--au-dimensions-12);
+    --au-typography-font-sizes-sm: var(--au-dimensions-14);
+    --au-typography-font-sizes-md: var(--au-dimensions-16);
+    --au-typography-font-sizes-lg: var(--au-dimensions-18);
+    --au-typography-font-sizes-xl: var(--au-dimensions-20);
+    --au-typography-font-sizes-2xl: var(--au-dimensions-24);
+    --au-typography-font-sizes-3xl: var(--au-dimensions-32);
+    --au-typography-line-height-2xs: var(--au-dimensions-12);
+    --au-typography-line-height-xs: var(--au-dimensions-16);
+    --au-typography-line-height-sm: var(--au-dimensions-18);
+    --au-typography-line-height-md: var(--au-dimensions-20);
+    --au-typography-line-height-lg: var(--au-dimensions-24);
+    --au-typography-line-height-xl: var(--au-dimensions-32);
+    --au-typography-line-height-2xl: var(--au-dimensions-40);
+    --au-typography-line-height-3xl: var(--au-dimensions-48);
+    --au-typography-letter-spacing-none: var(--au-dimensions-0);
+    --au-spacing-none: var(--au-dimensions-0);
+    --au-spacing-3xs: var(--au-dimensions-0);
+    --au-spacing-2xs: var(--au-dimensions-1);
+    --au-spacing-xs: var(--au-dimensions-2);
+    --au-spacing-sm: var(--au-dimensions-4);
+    --au-spacing-md: var(--au-dimensions-6);
+    --au-spacing-lg: var(--au-dimensions-8);
+    --au-spacing-xl: var(--au-dimensions-10);
+    --au-spacing-2xl: var(--au-dimensions-12);
+    --au-spacing-3xl: var(--au-dimensions-16);
+    --au-spacing-4xl: var(--au-dimensions-18);
+    --au-spacing-5xl: var(--au-dimensions-20);
+    --au-spacing-6xl: var(--au-dimensions-24);
+    --au-spacing-7xl: var(--au-dimensions-32);
+    --au-spacing-8xl: var(--au-dimensions-48);
+    --au-spacing-9xl: var(--au-dimensions-64);
+    --au-spacing-10xl: var(--au-dimensions-80);
+    --au-spacing-11xl: var(--au-dimensions-112);
+    --au-border-width-none: var(--au-dimensions-0);
+    --au-border-width-thin: var(--au-dimensions-1);
+    --au-border-width-medium: var(--au-dimensions-2);
+    --au-border-width-thick: var(--au-dimensions-4);
+    --au-sizes-height-header: var(--au-dimensions-48);
+    --au-sizes-height-footer: var(--au-dimensions-52);
+  }
+}
+
+/* tablet.css */
+@media (max-width: 1024px) {
+  :root {
+    --au-typography-font-weight-light: 300rem;
+    --au-typography-font-weight-regular: 400rem;
+    --au-typography-font-weight-medium: 500rem;
+    --au-typography-font-weight-semibold: 600rem;
+    --au-typography-font-weight-bold: 700rem;
+    --au-screen-breakpoint: 480px;
+    --au-typography-font-sizes-3xs: var(--au-dimensions-10);
+    --au-typography-font-sizes-2xs: var(--au-dimensions-12);
+    --au-typography-font-sizes-xs: var(--au-dimensions-14);
+    --au-typography-font-sizes-sm: var(--au-dimensions-16);
+    --au-typography-font-sizes-md: var(--au-dimensions-18);
+    --au-typography-font-sizes-lg: var(--au-dimensions-20);
+    --au-typography-font-sizes-xl: var(--au-dimensions-24);
+    --au-typography-font-sizes-2xl: var(--au-dimensions-32);
+    --au-typography-font-sizes-3xl: var(--au-dimensions-40);
+    --au-typography-line-height-2xs: var(--au-dimensions-14);
+    --au-typography-line-height-xs: var(--au-dimensions-18);
+    --au-typography-line-height-sm: var(--au-dimensions-20);
+    --au-typography-line-height-md: var(--au-dimensions-24);
+    --au-typography-line-height-lg: var(--au-dimensions-32);
+    --au-typography-line-height-xl: var(--au-dimensions-40);
+    --au-typography-line-height-2xl: var(--au-dimensions-48);
+    --au-typography-line-height-3xl: var(--au-dimensions-56);
+    --au-typography-letter-spacing-none: var(--au-dimensions-0);
+    --au-spacing-none: var(--au-dimensions-0);
+    --au-spacing-3xs: var(--au-dimensions-1);
+    --au-spacing-2xs: var(--au-dimensions-2);
+    --au-spacing-xs: var(--au-dimensions-4);
+    --au-spacing-sm: var(--au-dimensions-6);
+    --au-spacing-md: var(--au-dimensions-8);
+    --au-spacing-lg: var(--au-dimensions-10);
+    --au-spacing-xl: var(--au-dimensions-12);
+    --au-spacing-2xl: var(--au-dimensions-14);
+    --au-spacing-3xl: var(--au-dimensions-18);
+    --au-spacing-4xl: var(--au-dimensions-20);
+    --au-spacing-5xl: var(--au-dimensions-24);
+    --au-spacing-6xl: var(--au-dimensions-32);
+    --au-spacing-7xl: var(--au-dimensions-40);
+    --au-spacing-8xl: var(--au-dimensions-56);
+    --au-spacing-9xl: var(--au-dimensions-72);
+    --au-spacing-10xl: var(--au-dimensions-88);
+    --au-spacing-11xl: var(--au-dimensions-120);
+    --au-border-width-none: var(--au-dimensions-0);
+    --au-border-width-thin: var(--au-dimensions-1);
+    --au-border-width-medium: var(--au-dimensions-2);
+    --au-border-width-thick: var(--au-dimensions-4);
+    --au-sizes-height-header: var(--au-dimensions-64);
+    --au-sizes-height-footer: var(--au-dimensions-52);
+  }
+}
+
+"
+`;
+
+exports[`build > should output the typographies typescript file 1`] = `
+"export type AuTypography =
+  | 'metricsLgRegular'
+  | 'metricsLgRegularLetterSpacing'
+  | 'metricsLgMedium'
+  | 'metricsLgMediumLetterSpacing'
+  | 'metricsLgSemibold'
+  | 'metricsLgSemiboldLetterSpacing'
+  | 'metricsLgBold'
+  | 'metricsLgBoldLetterSpacing'
+  | 'metricsMdRegular'
+  | 'metricsMdRegularLetterSpacing'
+  | 'metricsMdMedium'
+  | 'metricsMdMediumLetterSpacing'
+  | 'metricsMdSemibold'
+  | 'metricsMdSemiboldLetterSpacing'
+  | 'metricsMdBold'
+  | 'metricsMdBoldLetterSpacing'
+  | 'metricsSmRegular'
+  | 'metricsSmRegularLetterSpacing'
+  | 'metricsSmMedium'
+  | 'metricsSmMediumLetterSpacing'
+  | 'metricsSmSemibold'
+  | 'metricsSmSemiboldLetterSpacing'
+  | 'metricsSmBold'
+  | 'metricsSmBoldLetterSpacing'
+  | 'display2xlRegular'
+  | 'display2xlRegularLetterSpacing'
+  | 'display2xlMedium'
+  | 'display2xlMediumLetterSpacing'
+  | 'display2xlSemibold'
+  | 'display2xlSemiboldLetterSpacing'
+  | 'display2xlBold'
+  | 'display2xlBoldLetterSpacing'
+  | 'displayXlRegular'
+  | 'displayXlRegularLetterSpacing'
+  | 'displayXlMedium'
+  | 'displayXlMediumLetterSpacing'
+  | 'displayXlSemibold'
+  | 'displayXlSemiboldLetterSpacing'
+  | 'displayXlBold'
+  | 'displayXlBoldLetterSpacing'
+  | 'displayLgRegular'
+  | 'displayLgRegularLetterSpacing'
+  | 'displayLgMedium'
+  | 'displayLgMediumLetterSpacing'
+  | 'displayLgSemibold'
+  | 'displayLgSemiboldLetterSpacing'
+  | 'displayLgBold'
+  | 'displayLgBoldLetterSpacing'
+  | 'displayMdRegular'
+  | 'displayMdRegularLetterSpacing'
+  | 'displayMdMedium'
+  | 'displayMdMediumLetterSpacing'
+  | 'displayMdSemibold'
+  | 'displayMdSemiboldLetterSpacing'
+  | 'displayMdBold'
+  | 'displayMdBoldLetterSpacing'
+  | 'displaySmRegular'
+  | 'displaySmRegularLetterSpacing'
+  | 'displaySmMedium'
+  | 'displaySmMediumLetterSpacing'
+  | 'displaySmSemibold'
+  | 'displaySmSemiboldLetterSpacing'
+  | 'displaySmBold'
+  | 'displaySmBoldLetterSpacing'
+  | 'displayXsRegular'
+  | 'displayXsRegularLetterSpacing'
+  | 'displayXsMedium'
+  | 'displayXsMediumLetterSpacing'
+  | 'displayXsSemibold'
+  | 'displayXsSemiboldLetterSpacing'
+  | 'displayXsBold'
+  | 'displayXsBoldLetterSpacing'
+  | 'textXlRegular'
+  | 'textXlRegularLetterSpacing'
+  | 'textXlMedium'
+  | 'textXlMediumLetterSpacing'
+  | 'textXlSemibold'
+  | 'textXlSemiboldLetterSpacing'
+  | 'textXlBold'
+  | 'textXlBoldLetterSpacing'
+  | 'textLgRegular'
+  | 'textLgRegularLetterSpacing'
+  | 'textLgMedium'
+  | 'textLgMediumLetterSpacing'
+  | 'textLgSemibold'
+  | 'textLgSemiboldLetterSpacing'
+  | 'textLgBold'
+  | 'textLgBoldLetterSpacing'
+  | 'textMdRegular'
+  | 'textMdRegularLetterSpacing'
+  | 'textMdMedium'
+  | 'textMdMediumLetterSpacing'
+  | 'textMdSemibold'
+  | 'textMdSemiboldLetterSpacing'
+  | 'textMdBold'
+  | 'textMdBoldLetterSpacing'
+  | 'textSmRegular'
+  | 'textSmRegularLetterSpacing'
+  | 'textSmMedium'
+  | 'textSmMediumLetterSpacing'
+  | 'textSmSemibold'
+  | 'textSmSemiboldLetterSpacing'
+  | 'textSmBold'
+  | 'textSmBoldLetterSpacing'
+  | 'textXsRegular'
+  | 'textXsRegularLetterSpacing'
+  | 'textXsMedium'
+  | 'textXsMediumLetterSpacing'
+  | 'textXsSemibold'
+  | 'textXsSemiboldLetterSpacing'
+  | 'textXsBold'
+  | 'textXsBoldLetterSpacing'
 "
 `;

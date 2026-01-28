@@ -25,26 +25,21 @@ const colorModeFactory: ConfigFactory = (mode) => ({
   ...globalsConfig,
   source: [
     ...globalsConfig.source,
-    'tokens/applied.default.*.json',
-    'tokens/effect.styles.*.json',
     'tokens/dimensions.*.json',
-    'tokens/typography.*.json',
-    `tokens/colors.${mode.name}*.json`,
+    `tokens/theme.${mode.name}*.json`,
   ],
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
       buildPath: config.cssBuildPath,
       prefix: config.cssVariablePrefix,
-      preprocessors: [typography.name],
       files: [
         {
           format: formats.cssVariables,
           destination: `${mode.name}.css`,
           filter: (token: TransformedToken) =>
-            token.filePath.includes('colors.') ||
-            token.filePath.includes('applied.default.') ||
-            token.filePath.includes('effect.styles.'),
+            token.filePath.includes('theme.') ||
+            token.filePath.includes('color.'),
           options: {
             outputReferences: true,
             selector: mode.selector ?? ':root',
@@ -61,9 +56,12 @@ const colorModeFactory: ConfigFactory = (mode) => ({
           destination: 'colors.ts',
           options: {
             typeName: 'AuColor',
+            prefixToRemove: 'Colors',
           },
           filter: (token: TransformedToken) =>
-            token.filePath.includes('colors.'),
+            (token.filePath.includes('brand.') ||
+              token.filePath.includes('theme.')) &&
+            token.$type === 'color',
         },
       ],
     },
@@ -74,25 +72,22 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
   ...globalsConfig,
   source: [
     ...globalsConfig.source,
-    `tokens/dimensions.${mode.name}.*.json`,
-    `tokens/typography.${mode.name}.*.json`,
+    `tokens/viewport.${mode.name}*.json`,
     'tokens/text.styles.*.json',
-    'tokens/colors.*.json',
+    'tokens/color.*.json',
   ],
+  preprocessors: [typography.name],
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
       buildPath: config.cssBuildPath,
       prefix: config.cssVariablePrefix,
-      preprocessors: [typography.name],
       files: [
         {
           format: formats.cssVariables,
           destination: `${mode.name}.css`,
           filter: (token: TransformedToken) =>
-            token.filePath.includes('text.styles') ||
-            token.filePath.includes('dimensions.') ||
-            token.filePath.includes('typography'),
+            token.filePath.includes('viewport.'),
           options: {
             outputReferences: true,
             selector: mode.selector ?? ':root',
@@ -118,31 +113,72 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
   },
 })
 
-export const modes: ReadonlyArray<ModeDefinition> = [
+const highLevelTokensConfig = {
+  ...globalsConfig,
+  source: [
+    ...globalsConfig.source,
+    'tokens/viewport.desktop*.json',
+    'tokens/theme.light*.json',
+    'tokens/applied.default.*.json',
+    'tokens/dimensions.*.json',
+    'tokens/text.styles.*.json',
+    'tokens/effect.*.json',
+  ],
+  preprocessors: [typography.name],
+  platforms: {
+    css: {
+      transformGroup: auroraCssTransformGroup.name,
+      buildPath: config.cssBuildPath,
+      prefix: config.cssVariablePrefix,
+      files: [
+        {
+          format: formats.cssVariables,
+          destination: 'high-level.css',
+          filter: (token: TransformedToken) =>
+            token.filePath.includes('applied.') ||
+            token.filePath.includes('effect.'),
+          options: {
+            outputReferences: true,
+            selector: ':root',
+          },
+        },
+      ],
+    },
+  },
+}
+
+const modes: ReadonlyArray<ModeDefinition> = [
   {
     name: 'color',
     configs: [
       {
-        name: 'lightmode',
+        name: 'light',
       },
       {
-        name: 'darkmode',
+        name: 'dark',
         selector: '.dark',
       },
     ],
     configFactory: colorModeFactory,
   },
   {
-    name: 'viewport',
+    name: 'breakpoint',
     configs: [
       {
-        name: 'viewport-1',
+        name: 'mobile',
+        selector: ['@media (max-width: 480px)', ':root'],
       },
       {
-        name: 'viewport-2',
-        selector: ['@media (max-width: 1250px)', ':root'],
+        name: 'tablet',
+        selector: ['@media (max-width: 1024px)', ':root'],
+      },
+      {
+        name: 'desktop',
+        selector: ['@media (min-width: 1025px)', ':root'],
       },
     ],
     configFactory: viewportModeFactory,
   },
 ]
+
+export { modes, highLevelTokensConfig }

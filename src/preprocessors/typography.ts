@@ -20,9 +20,16 @@ export const typography = {
         (inputTokens, [tokenName, tokenValue]) => {
           if (
             typeof tokenValue === 'object' &&
-            tokenValue.$type === 'typography' &&
-            isTypographyTokenValue(tokenValue.$value)
+            tokenValue.$type === 'typography'
           ) {
+            try {
+              assertIsTypographyValue(tokenValue.$value)
+            } catch (error) {
+              throw new Error(
+                `Invalid typography token with name: '${tokenName}'. ${error instanceof Error ? error.message : String(error)}`,
+              )
+            }
+
             const { letterSpacing, textTransform, textDecoration, ...rest } =
               tokenValue.$value
 
@@ -75,16 +82,22 @@ export const typography = {
   },
 } satisfies Preprocessor
 
-const isTypographyTokenValue = (
+const assertIsTypographyValue: (
   value: unknown,
-): value is TypographyTokenValue =>
-  typeof value === 'object' &&
-  value !== null &&
-  'fontFamily' in value &&
-  typeof value.fontFamily === 'string' &&
-  'fontSize' in value &&
-  typeof value.fontSize === 'string' &&
-  'fontWeight' in value &&
-  typeof value.fontWeight === 'string' &&
-  'lineHeight' in value &&
-  typeof value.lineHeight === 'string'
+) => asserts value is TypographyTokenValue = (value) => {
+  if (typeof value !== 'object' || value === null) {
+    throw new Error('A typography value must be an object')
+  }
+  if (!('fontFamily' in value) || typeof value.fontFamily !== 'string') {
+    throw new Error('A typography value must have a fontFamily of type string')
+  }
+  if (!('fontSize' in value) || typeof value.fontSize !== 'string') {
+    throw new Error('A typography value must have a fontSize of type string')
+  }
+  if (!('fontWeight' in value) || typeof value.fontWeight !== 'number') {
+    throw new Error('A typography value must have a fontWeight of type number')
+  }
+  if (!('lineHeight' in value) || typeof value.lineHeight !== 'string') {
+    throw new Error('A typography value must have a lineHeight of type string')
+  }
+}

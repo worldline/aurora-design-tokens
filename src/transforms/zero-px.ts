@@ -19,7 +19,15 @@ export const zeroPx = {
       return convertZeroPxToZero(token.$value)
     }
 
-    if (token.$type === 'shadow' && isShadowValue(token.$value)) {
+    if (token.$type === 'shadow') {
+      try {
+        assertIsShadowValue(token.$value)
+      } catch (error) {
+        throw new Error(
+          `Invalid shadow token at path: ${token.path.join('.')}: ${error instanceof Error ? error.message : String(error)}`,
+        )
+      }
+
       return token.$value.map((shadow) => ({
         ...shadow,
         offsetX: convertZeroPxToZero(shadow.offsetX),
@@ -36,22 +44,37 @@ export const zeroPx = {
 const isStringValue = (value: unknown): value is string =>
   typeof value === 'string'
 
-const isShadowValue = (value: unknown): value is ShadowItem[] =>
-  Array.isArray(value) && value.every(isShadowItem)
+const assertIsShadowValue: (value: unknown) => asserts value is ShadowItem[] = (
+  value: unknown,
+) => {
+  if (!Array.isArray(value) || value.length === 0) {
+    throw new Error('A shadow value must be a non-empty array')
+  }
+  value.forEach((item: unknown, index: number) => {
+    assertIsShadowItem(item, index)
+  })
+}
 
-const isShadowItem = (value: unknown): value is ShadowItem =>
-  typeof value === 'object' &&
-  value !== null &&
-  'offsetX' in value &&
-  'offsetY' in value &&
-  'blur' in value &&
-  'spread' in value &&
-  'color' in value &&
-  typeof value.offsetX === 'string' &&
-  typeof value.offsetY === 'string' &&
-  typeof value.blur === 'string' &&
-  typeof value.spread === 'string' &&
-  typeof value.color === 'string'
+const assertIsShadowItem: (
+  value: unknown,
+  index: number,
+) => asserts value is ShadowItem = (value: unknown, index: number) => {
+  const indexAsString = index.toString()
+  if (typeof value !== 'object' || value === null) {
+    throw new Error('A shadow item must be an object')
+  }
+  const requiredProps = ['offsetX', 'offsetY', 'blur', 'spread', 'color']
+  requiredProps.forEach((prop) => {
+    if (
+      !(prop in value) ||
+      typeof (value as Record<string, unknown>)[prop] !== 'string'
+    ) {
+      throw new Error(
+        `Shadow item at index ${indexAsString} must have a ${prop} property of type string`,
+      )
+    }
+  })
+}
 
 const convertZeroPxToZero = (pxValue: string): string =>
   pxValue === '0px' ? '0' : pxValue

@@ -49,6 +49,26 @@ describe('zeroPx', () => {
         },
       ])
     })
+
+    it('should throw an error for invalid shadow token value', () => {
+      const token = createToken({
+        $type: 'shadow',
+        $value: [
+          {
+            offsetX: '0px',
+            offsetY: '4px',
+            blur: 0,
+            spread: '2px',
+            color: '#000',
+          },
+        ],
+        path: ['path', 'to', 'token'],
+      })
+      expect(zeroPx.filter(token)).toBe(true)
+      expect(() => zeroPx.transform(token)).toThrow(
+        'Invalid shadow token at path: path.to.token: Shadow item at index 0 must have a blur property of type string',
+      )
+    })
   })
 
   it('should only affect dimension and shadow tokens', () => {

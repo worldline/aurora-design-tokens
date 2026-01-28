@@ -2,7 +2,7 @@ import StyleDictionary from 'style-dictionary'
 
 import { config } from './config.ts'
 import { globalsConfig } from './configs/globals.ts'
-import { modes } from './configs/modes.ts'
+import { highLevelTokensConfig, modes } from './configs/modes.ts'
 import { typescriptTypes } from './formats/typescript-types.ts'
 import { typography } from './preprocessors/typography.ts'
 import { mergeCssFiles } from './scripts/merge-css-files.ts'
@@ -23,6 +23,7 @@ const dictionaries = [
       (config) => new StyleDictionary(modeDefinition.configFactory(config)),
     ),
   ),
+  new StyleDictionary(highLevelTokensConfig),
 ]
 
 await Promise.all(dictionaries.map((sd) => sd.buildAllPlatforms()))

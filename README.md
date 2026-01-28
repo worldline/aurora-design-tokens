@@ -89,3 +89,7 @@ Bump the version in `package.json` and publish the package:
 ```sh
 npm run publish
 ```
+
+## CI/CD Workflow
+
+For the release pipeline and branch flow, see [CI_CD_WORKFLOW.md](CI_CD_WORKFLOW.md).

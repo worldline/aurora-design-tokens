@@ -12,7 +12,11 @@ import { typography } from '../preprocessors/typography.ts'
 import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
 
 export const globalsConfig = {
-  source: ['tokens/global.*.json', 'tokens/color.styles.*.json'],
+  source: [
+    'tokens/brand.worldline.*.json',
+    'tokens/color.styles.*.json',
+    'tokens/dimensions.*.json',
+  ],
   log: {
     warnings: logWarningLevels.warn,
     verbosity: logVerbosityLevels.verbose,
@@ -31,7 +35,8 @@ export const globalsConfig = {
           format: formats.cssVariables,
           destination: config.globalCssVariablesFile,
           filter: (token: TransformedToken) =>
-            token.filePath.includes('global.') ||
+            token.filePath.includes('brand.') ||
+            token.filePath.includes('dimensions.') ||
             token.filePath.includes('color.styles.'),
           options: {
             outputReferences: true,

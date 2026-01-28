@@ -11,7 +11,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '2rem',
-          fontWeight: '700',
+          fontWeight: 700,
           letterSpacing: '{variable}',
           lineHeight: '1.5',
           textTransform: 'uppercase',
@@ -23,7 +23,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '1rem',
-          fontWeight: '400',
+          fontWeight: 400,
           letterSpacing: '{variable}',
           lineHeight: '1.5',
           textTransform: 'lowercase',
@@ -40,7 +40,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '2rem',
-          fontWeight: '700',
+          fontWeight: 700,
           lineHeight: '1.5',
         },
       },
@@ -58,7 +58,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '1rem',
-          fontWeight: '400',
+          fontWeight: 400,
           lineHeight: '1.5',
         },
       },
@@ -82,7 +82,7 @@ describe('typography', () => {
           $value: {
             fontFamily: 'Arial',
             fontSize: '2rem',
-            fontWeight: '700',
+            fontWeight: 700,
             letterSpacing: '{variable}',
             lineHeight: '1.5',
             textTransform: 'uppercase',
@@ -101,7 +101,7 @@ describe('typography', () => {
           $value: {
             fontFamily: 'Arial',
             fontSize: '2rem',
-            fontWeight: '700',
+            fontWeight: 700,
             lineHeight: '1.5',
           },
         },
@@ -122,7 +122,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '0.875rem',
-          fontWeight: '400',
+          fontWeight: 400,
           letterSpacing: '{variable}',
           lineHeight: '1.25',
           textTransform: 'none',
@@ -139,7 +139,7 @@ describe('typography', () => {
         $value: {
           fontFamily: 'Arial',
           fontSize: '0.875rem',
-          fontWeight: '400',
+          fontWeight: 400,
           lineHeight: '1.25',
         },
       },
@@ -148,6 +148,25 @@ describe('typography', () => {
         $value: '{variable}',
       },
     })
+  })
+
+  it('should throw an error for invalid typography token value', () => {
+    const input: PreprocessedTokens = {
+      invalidTypography: {
+        $type: 'typography',
+        $value: {
+          fontFamily: 'Arial',
+          fontSize: '2rem',
+          fontWeight: '700',
+          letterSpacing: '{variable}',
+          lineHeight: '1.5',
+        },
+      },
+    }
+
+    expect(() => typography.preprocessor(input)).toThrow(
+      "Invalid typography token with name: 'invalidTypography'. A typography value must have a fontWeight of type number",
+    )
   })
 
   it('should leave non-typography tokens untouched', () => {

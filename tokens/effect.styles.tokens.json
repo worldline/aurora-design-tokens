@@ -14,7 +14,7 @@
         "offsetY": "0px",
         "blur": "0px",
         "spread": "2px",
-        "color": "{surface.invert}"
+        "color": "{colors.surface.invert}"
       }
     ]
   },
