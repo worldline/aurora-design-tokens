@@ -554,10 +554,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xs}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }

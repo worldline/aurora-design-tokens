@@ -87,7 +87,8 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
           format: formats.cssVariables,
           destination: `${mode.name}.css`,
           filter: (token: TransformedToken) =>
-            token.filePath.includes('viewport.'),
+            token.filePath.includes('viewport.') ||
+            token.filePath.includes('text.styles.'),
           options: {
             outputReferences: true,
             selector: mode.selector ?? ':root',

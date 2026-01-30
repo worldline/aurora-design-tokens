@@ -7,14 +7,14 @@
         "offsetY": "0px",
         "blur": "0px",
         "spread": "{border-width.thick}",
-        "color": "#53bda4"
+        "color": "{surface.brand.solid}"
       },
       {
         "offsetX": "0px",
         "offsetY": "0px",
         "blur": "0px",
         "spread": "2px",
-        "color": "{colors.surface.invert}"
+        "color": "{surface.page}"
       }
     ]
   },
