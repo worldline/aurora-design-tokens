@@ -14,12 +14,12 @@ describe('build', () => {
   })
 
   it('should output the colors typescript file', () => {
-    const ts = readFileSync('build/css/colors.ts', 'utf8')
+    const ts = readFileSync('build/types/colors.ts', 'utf8')
     expect(ts).toMatchSnapshot()
   })
 
   it('should output the typographies typescript file', () => {
-    const ts = readFileSync('build/css/typographies.ts', 'utf8')
+    const ts = readFileSync('build/types/typographies.ts', 'utf8')
     expect(ts).toMatchSnapshot()
   })
 })

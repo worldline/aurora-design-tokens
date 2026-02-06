@@ -570,7 +570,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
 }
 
 /* light.css */
-:root {
+.light {
   --au-glow: radial-gradient(circle, var(--au-colors-alpha-white-500) 0%, var(--au-colors-alpha-white-1000) 100%);
   --au-surface-neutral-low: var(--au-colors-neutral-light-50);
   --au-surface-neutral-low-hover: var(--au-colors-neutral-light-100);

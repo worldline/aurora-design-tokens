@@ -44,9 +44,9 @@ export const zeroPx = {
 const isStringValue = (value: unknown): value is string =>
   typeof value === 'string'
 
-const assertIsShadowValue: (value: unknown) => asserts value is ShadowItem[] = (
+const assertIsShadowValue: (
   value: unknown,
-) => {
+) => asserts value is Array<ShadowItem> = (value: unknown) => {
   if (!Array.isArray(value) || value.length === 0) {
     throw new Error('A shadow value must be a non-empty array')
   }

@@ -1,6 +1,6 @@
 {
   "name": "@worldline/aurora-design-tokens",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "description": "create style sheets from design tokens files",
   "license": "ISC",
   "author": "",
@@ -11,19 +11,28 @@
   },
   "exports": {
     "./style.css": "./build/css/style.css",
-    "./colors.ts": "./build/css/colors.ts",
-    "./typographies.ts": "./build/css/typographies.ts",
-    "./variables.js": "./build/variables.js"
+    "./variables.js": "./build/variables.js",
+    "./colors": {
+      "import": "./build/types/colors.js",
+      "types": "./build/types/colors.d.ts"
+    },
+    "./typographies": {
+      "import": "./build/types/typographies.js",
+      "types": "./build/types/typographies.d.ts"
+    }
   },
   "files": [
     "build/css/style.css",
-    "build/css/colors.ts",
-    "build/css/typographies.ts",
+    "build/types/colors.d.ts",
+    "build/types/colors.js",
+    "build/types/typographies.d.ts",
+    "build/types/typographies.js",
     "build/variables.js"
   ],
   "scripts": {
     "build": "node src/build.ts",
     "build:watch": "node --watch --watch-path src --watch-path tokens src/build.ts",
+    "postbuild": "tsc build/types/colors build/types/typographies --declaration --outDir build/types --declarationDir build/types",
     "lint": "eslint src",
     "test": "vitest",
     "test:watch": "vitest --watch",
@@ -38,7 +47,7 @@
     "@eslint/js": "9.39.2",
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "12.0.2",
+    "@semantic-release/github": "12.0.3",
     "@semantic-release/npm": "13.1.3",
     "@semantic-release/release-notes-generator": "14.1.0",
     "@types/node": "25.0.3",
@@ -48,12 +57,13 @@
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-prettier": "5.5.4",
     "prettier": "3.7.4",
-    "semantic-release": "25.0.2",
+    "semantic-release": "25.0.3",
     "style-dictionary": "5.1.1",
     "typescript-eslint": "8.52.0",
     "vitest": "4.0.16",
     "husky": "9.1.7",
-    "lint-staged": "16.2.7"
+    "lint-staged": "16.2.7",
+    "@stylistic/eslint-plugin": "5.7.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

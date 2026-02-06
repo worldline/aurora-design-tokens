@@ -10,7 +10,7 @@ import { globalsConfig } from './globals.ts'
 
 interface ModeConfig {
   name: string
-  selector?: string | ReadonlyArray<string>
+  selector: string | ReadonlyArray<string>
 }
 
 type ConfigFactory = (mode: ModeConfig) => Config
@@ -42,14 +42,14 @@ const colorModeFactory: ConfigFactory = (mode) => ({
             token.filePath.includes('color.'),
           options: {
             outputReferences: true,
-            selector: mode.selector ?? ':root',
+            selector: mode.selector,
           },
         },
       ],
     },
     ts: {
       transformGroup: transformGroups.js,
-      buildPath: config.cssBuildPath,
+      buildPath: config.typesBuildPath,
       files: [
         {
           format: typescriptTypes.name,
@@ -91,14 +91,14 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
             token.filePath.includes('text.styles.'),
           options: {
             outputReferences: true,
-            selector: mode.selector ?? ':root',
+            selector: mode.selector,
           },
         },
       ],
     },
     ts: {
       transformGroup: transformGroups.js,
-      buildPath: config.cssBuildPath,
+      buildPath: config.typesBuildPath,
       files: [
         {
           format: typescriptTypes.name,
@@ -154,6 +154,7 @@ const modes: ReadonlyArray<ModeDefinition> = [
     configs: [
       {
         name: 'light',
+        selector: '.light',
       },
       {
         name: 'dark',

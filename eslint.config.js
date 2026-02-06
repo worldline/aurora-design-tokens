@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 import importPlugin from 'eslint-plugin-import'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
   globalIgnores(['dist', '*.config.*js']),
@@ -16,16 +17,17 @@ export default defineConfig([
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
     ],
+    plugins: {
+      '@stylistic': stylistic,
+    },
     rules: {
-      '@typescript-eslint/array-type': 'off',
+      '@typescript-eslint/array-type': ['error', { default: 'generic' }],
+      '@stylistic/jsx-quotes': ['error', 'prefer-double'],
       'arrow-body-style': ['error', 'as-needed'],
       eqeqeq: 'error',
+      'no-console': 'error',
       'no-duplicate-imports': 'error',
-      'no-restricted-syntax': [
-        'error',
-        'FunctionExpression',
-        'FunctionDeclaration',
-      ],
+      'no-restricted-syntax': ['error', 'FunctionDeclaration'],
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'error',
       'prefer-const': 'error',
