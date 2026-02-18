@@ -21,7 +21,13 @@ export default defineConfig([
       '@stylistic': stylistic,
     },
     rules: {
-      '@typescript-eslint/array-type': ['error', { default: 'generic' }],
+      '@typescript-eslint/array-type': [
+        'error',
+        {
+          default: 'generic',
+          readonly: 'generic',
+        },
+      ],
       '@stylistic/jsx-quotes': ['error', 'prefer-double'],
       'arrow-body-style': ['error', 'as-needed'],
       eqeqeq: 'error',
@@ -37,6 +43,10 @@ export default defineConfig([
         {
           endOfLine: 'auto',
         },
+      ],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_' },
       ],
       quotes: ['error', 'single', { avoidEscape: true }],
       'import/order': [
