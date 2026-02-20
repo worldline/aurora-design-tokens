@@ -4,10 +4,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -16,10 +16,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -28,10 +28,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -40,10 +40,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -54,10 +54,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.lg}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -66,10 +66,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.lg}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -78,10 +78,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.lg}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -90,10 +90,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.lg}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -104,10 +104,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -116,10 +116,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -128,10 +128,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -140,10 +140,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -154,10 +154,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.3xl}",
+        "fontSize": "{typography.font-sizes.8xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.3xl}",
+        "lineHeight": "{typography.line-height.5xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -166,10 +166,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.3xl}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.8xl}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.3xl}",
+        "lineHeight": "{typography.line-height.5xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -178,10 +178,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.3xl}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.8xl}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.3xl}",
+        "lineHeight": "{typography.line-height.5xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -190,10 +190,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.3xl}",
+        "fontSize": "{typography.font-sizes.8xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.3xl}",
+        "lineHeight": "{typography.line-height.5xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -204,10 +204,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -216,10 +216,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.2xl}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.7xl}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -228,10 +228,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.2xl}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.7xl}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -240,10 +240,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.2xl}",
+        "fontSize": "{typography.font-sizes.7xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xl}",
+        "lineHeight": "{typography.line-height.4xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -254,10 +254,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -266,10 +266,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xl}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.5xl}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -278,10 +278,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xl}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.5xl}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -290,10 +290,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xl}",
+        "fontSize": "{typography.font-sizes.5xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xl}",
+        "lineHeight": "{typography.line-height.3xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -304,10 +304,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.2xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -316,10 +316,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.lg}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.3xl}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.2xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -328,10 +328,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.lg}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.3xl}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.2xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -340,10 +340,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.lg}",
+        "fontSize": "{typography.font-sizes.3xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.2xl}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -354,10 +354,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -366,10 +366,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.md}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.xl}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -378,10 +378,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.md}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.xl}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -390,10 +390,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -404,10 +404,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -416,10 +416,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xs}",
-        "fontWeight": 400,
+        "fontSize": "{typography.font-sizes.3xs}",
+        "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -428,10 +428,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xs}",
-        "fontWeight": 700,
+        "fontSize": "{typography.font-sizes.3xs}",
+        "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -440,10 +440,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.primary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -454,10 +454,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -466,10 +466,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -478,10 +478,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -490,10 +490,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.md}",
+        "fontSize": "{typography.font-sizes.xl}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.md}",
+        "lineHeight": "{typography.line-height.lg}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -504,10 +504,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.sm}",
+        "fontSize": "{typography.font-sizes.md}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.2xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -516,10 +516,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.sm}",
+        "fontSize": "{typography.font-sizes.md}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.2xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -528,10 +528,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.sm}",
+        "fontSize": "{typography.font-sizes.md}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.2xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -540,10 +540,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.sm}",
+        "fontSize": "{typography.font-sizes.md}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.sm}",
+        "lineHeight": "{typography.line-height.2xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -554,10 +554,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -566,10 +566,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -578,10 +578,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -590,10 +590,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.xs}",
+        "fontSize": "{typography.font-sizes.3xs}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.xs}",
+        "lineHeight": "{typography.line-height.3xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -604,10 +604,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xs}",
+        "fontSize": "{typography.font-sizes.4xs}",
         "fontWeight": 400,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.4xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -616,10 +616,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xs}",
+        "fontSize": "{typography.font-sizes.4xs}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.4xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -628,10 +628,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xs}",
+        "fontSize": "{typography.font-sizes.4xs}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.4xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -640,36 +640,36 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.2xs}",
+        "fontSize": "{typography.font-sizes.4xs}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.4xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
     }
   },
   "text-xs": {
-    "regular": {
-      "$type": "typography",
-      "$value": {
-        "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.3xs}",
-        "fontWeight": 400,
-        "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
-        "textTransform": "none",
-        "textDecoration": "none"
-      }
-    },
     "medium": {
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.3xs}",
+        "fontSize": "{typography.font-sizes.5xs}",
         "fontWeight": 500,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.5xs}",
+        "textTransform": "none",
+        "textDecoration": "none"
+      }
+    },
+    "regular": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{typography.font-family.secondary}",
+        "fontSize": "{typography.font-sizes.5xs}",
+        "fontWeight": 400,
+        "letterSpacing": "{typography.letter-spacing.none}",
+        "lineHeight": "{typography.line-height.5xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -678,10 +678,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.3xs}",
+        "fontSize": "{typography.font-sizes.5xs}",
         "fontWeight": 600,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.5xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }
@@ -690,10 +690,10 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "{typography.font-family.secondary}",
-        "fontSize": "{typography.font-sizes.3xs}",
+        "fontSize": "{typography.font-sizes.5xs}",
         "fontWeight": 700,
         "letterSpacing": "{typography.letter-spacing.none}",
-        "lineHeight": "{typography.line-height.2xs}",
+        "lineHeight": "{typography.line-height.5xs}",
         "textTransform": "none",
         "textDecoration": "none"
       }

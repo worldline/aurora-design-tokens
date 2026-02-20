@@ -9,12 +9,14 @@ import { mergeCssFiles } from './scripts/merge-css-files.ts'
 import { auroraCssTransformGroup } from './transforms/aurora-css-transform-group.ts'
 import { gradient } from './transforms/gradient.ts'
 import { reverseShadowOrder } from './transforms/reverse-shadow-order.ts'
+import { typographyPxToRem } from './transforms/typography-px-to-rem.ts'
 import { zeroPx } from './transforms/zero-px.ts'
 
 StyleDictionary.registerPreprocessor(typography)
 StyleDictionary.registerTransform(gradient)
 StyleDictionary.registerTransform(reverseShadowOrder)
 StyleDictionary.registerTransform(zeroPx)
+StyleDictionary.registerTransform(typographyPxToRem)
 StyleDictionary.registerTransformGroup(auroraCssTransformGroup)
 StyleDictionary.registerFormat(typescriptTypes)
 

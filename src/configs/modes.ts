@@ -80,6 +80,7 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
+      transforms: ['typographyPxToRem'],
       buildPath: config.cssBuildPath,
       prefix: config.cssVariablePrefix,
       files: [
@@ -118,7 +119,7 @@ const highLevelTokensConfig = {
   ...globalsConfig,
   source: [
     ...globalsConfig.source,
-    'tokens/viewport.desktop*.json',
+    'tokens/viewport.desktop-md*.json',
     'tokens/theme.light*.json',
     'tokens/applied.default.*.json',
     'tokens/dimensions.*.json',
@@ -167,16 +168,40 @@ const modes: ReadonlyArray<ModeDefinition> = [
     name: 'breakpoint',
     configs: [
       {
-        name: 'mobile',
-        selector: ['@media (max-width: 480px)', ':root'],
+        name: 'mobile-xs',
+        selector: ['@media screen and (max-width: 360px)', ':root'],
+      },
+      {
+        name: 'mobile-sm',
+        selector: [
+          '@media screen and (min-width: 361px) and (max-width: 480px)',
+          ':root',
+        ],
       },
       {
         name: 'tablet',
-        selector: ['@media (max-width: 1024px)', ':root'],
+        selector: [
+          '@media screen and (min-width: 481px) and (max-width: 768px)',
+          ':root',
+        ],
       },
       {
-        name: 'desktop',
-        selector: ['@media (min-width: 1025px)', ':root'],
+        name: 'desktop-xs',
+        selector: [
+          '@media screen and (min-width: 769px) and (max-width: 1024px)',
+          ':root',
+        ],
+      },
+      {
+        name: 'desktop-sm',
+        selector: [
+          '@media screen and (min-width: 1025px) and (max-width: 1280px)',
+          ':root',
+        ],
+      },
+      {
+        name: 'desktop-md',
+        selector: ['@media screen and (min-width: 1281px)', ':root'],
       },
     ],
     configFactory: viewportModeFactory,
