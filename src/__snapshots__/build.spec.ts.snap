@@ -566,7 +566,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-header-content: var(--au-content-primary);
   --au-header-padding-horizontal: var(--au-spacing-lg);
   --au-header-height: var(--au-sizes-height-header);
-  --au-focus-ring: 0 0 0 var(--au-border-width-thick) var(--au-surface-brand-solid), 0 0 0 2px var(--au-surface-page);
+  --au-focus-ring: 0 0 0 2px var(--au-surface-page), 0 0 0 var(--au-border-width-thick) var(--au-surface-brand-solid);
 }
 
 /* light.css */
