@@ -1,0 +1,32 @@
+min_version: '2.0.13'
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: format-and-lint
+      group:
+        piped: true
+        jobs:
+          - name: eslint
+            glob: '*.{ts,tsx}'
+            run: npm run lint:staged -- {staged_files}
+            stage_fixed: true
+          - name: prettier
+            glob: '*.{ts,tsx}'
+            run: npm run format:staged -- {staged_files}
+            stage_fixed: true
+    - name: misc-format
+      glob: '*.{json,md,yml,yaml}'
+      run: npm run format:staged -- {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: typecheck
+      run: npm run typecheck
+    - name: lint-all
+      run: npm run lint
+
+output:
+  - failure
