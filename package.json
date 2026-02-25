@@ -52,7 +52,6 @@
     "@semantic-release/github": "12.0.5",
     "@semantic-release/npm": "13.1.4",
     "@semantic-release/release-notes-generator": "14.1.0",
-    "@stylistic/eslint-plugin": "5.7.0",
     "@types/node": "25.2.3",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
