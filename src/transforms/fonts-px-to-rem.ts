@@ -5,8 +5,8 @@ import type {
   Transform,
 } from 'style-dictionary/types'
 
-export const typographyPxToRem = {
-  name: 'typographyPxToRem',
+export const fontsPxToRem = {
+  name: 'fontsPxToRem',
   transitive: true,
   type: 'value',
   filter: (token: TransformedToken) => {
@@ -15,8 +15,7 @@ export const typographyPxToRem = {
     }
     const tokenPath = token.path.join('.')
     return (
-      tokenPath.includes('typography.font-sizes') ||
-      tokenPath.includes('typography.line-height')
+      tokenPath.startsWith('font-size') || tokenPath.startsWith('line-height')
     )
   },
   transform: (token: DesignToken, platform: PlatformConfig) => {

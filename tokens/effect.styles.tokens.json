@@ -13,7 +13,7 @@
         "offsetX": "0px",
         "offsetY": "0px",
         "blur": "0px",
-        "spread": "2px",
+        "spread": "{border-width.medium}",
         "color": "{surface.page}"
       }
     ]

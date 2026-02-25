@@ -57,6 +57,7 @@ const colorModeFactory: ConfigFactory = (mode) => ({
           options: {
             typeName: 'AuColor',
             prefixToRemove: 'Colors',
+            type: 'color',
           },
           filter: (token: TransformedToken) =>
             (token.filePath.includes('brand.') ||
@@ -80,7 +81,6 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
-      transforms: ['typographyPxToRem'],
       buildPath: config.cssBuildPath,
       prefix: config.cssVariablePrefix,
       files: [
@@ -106,6 +106,7 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
           destination: 'typographies.ts',
           options: {
             typeName: 'AuTypography',
+            type: 'typography',
           },
           filter: (token: TransformedToken) =>
             token.filePath.includes('text.styles'),

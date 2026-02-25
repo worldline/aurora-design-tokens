@@ -35,15 +35,23 @@ export const typography = {
 
             const letterSpacingToken =
               letterSpacing !== undefined
-                ? { ...tokenValue, $value: letterSpacing }
+                ? { ...tokenValue, $value: letterSpacing, $type: 'dimension' }
                 : undefined
             const textTransformToken =
               textTransform !== undefined && textTransform !== 'none'
-                ? { ...tokenValue, $value: textTransform }
+                ? {
+                    ...tokenValue,
+                    $value: textTransform,
+                    $type: 'textTransform',
+                  }
                 : undefined
             const textDecorationToken =
               textDecoration !== undefined && textDecoration !== 'none'
-                ? { ...tokenValue, $value: textDecoration }
+                ? {
+                    ...tokenValue,
+                    $value: textDecoration,
+                    $type: 'textDecoration',
+                  }
                 : undefined
 
             return {

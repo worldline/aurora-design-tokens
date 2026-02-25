@@ -1,53 +1,44 @@
 import type { TransformedToken, PlatformConfig } from 'style-dictionary/types'
 import { describe, it, expect } from 'vitest'
 
-import { typographyPxToRem } from './typography-px-to-rem.ts'
+import { fontsPxToRem } from './fonts-px-to-rem.ts'
 
-describe('typographyPxToRem', () => {
+describe('fontsPxToRem', () => {
   describe('filter', () => {
-    it('should filter dimension tokens with typography.font-sizes path', () => {
+    it('should filter dimension tokens with font-size path', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'body'],
+        path: ['font-size', '2xl'],
         $value: '16px',
       } as TransformedToken
-      expect(typographyPxToRem.filter(token)).toBeTruthy()
+      expect(fontsPxToRem.filter(token)).toBeTruthy()
     })
 
-    it('should filter dimension tokens with typography.line-height path', () => {
+    it('should filter dimension tokens with line-height path', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'line-height', 'normal'],
+        path: ['line-height', 'sm'],
         $value: '24px',
       } as TransformedToken
-      expect(typographyPxToRem.filter(token)).toBeTruthy()
+      expect(fontsPxToRem.filter(token)).toBeTruthy()
     })
 
     it('should not filter non-dimension tokens', () => {
       const token = {
         $type: 'color',
-        path: ['typography', 'font-sizes', 'body'],
+        path: ['font-size', 'color'],
         $value: '#000',
       } as TransformedToken
-      expect(typographyPxToRem.filter(token)).toBeFalsy()
+      expect(fontsPxToRem.filter(token)).toBeFalsy()
     })
 
-    it('should not filter dimension tokens without typography path', () => {
+    it('should not filter dimension tokens without font-size or line-height path', () => {
       const token = {
         $type: 'dimension',
         path: ['spacing', 'small'],
         $value: '8px',
       } as TransformedToken
-      expect(typographyPxToRem.filter(token)).toBeFalsy()
-    })
-
-    it('should not filter dimension tokens with typography path but not font-sizes or line-height', () => {
-      const token = {
-        $type: 'dimension',
-        path: ['typography', 'spacing'],
-        $value: '8px',
-      } as TransformedToken
-      expect(typographyPxToRem.filter(token)).toBe(false)
+      expect(fontsPxToRem.filter(token)).toBeFalsy()
     })
   })
 
@@ -56,66 +47,66 @@ describe('typographyPxToRem', () => {
     it('should convert px to rem with default base font size (16)', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'body'],
+        path: ['font-size', '2xl'],
         $value: '16',
       } as TransformedToken
 
-      expect(typographyPxToRem.transform(token, platform)).toBe('1rem')
+      expect(fontsPxToRem.transform(token, platform)).toBe('1rem')
     })
 
     it('should convert px to rem with custom base font size', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'heading'],
+        path: ['font-size', 'xl'],
         $value: '24',
       } as TransformedToken
       const platformWithBasePxFontSize = {
         basePxFontSize: 12,
       } as PlatformConfig
-      expect(
-        typographyPxToRem.transform(token, platformWithBasePxFontSize),
-      ).toBe('2rem')
+      expect(fontsPxToRem.transform(token, platformWithBasePxFontSize)).toBe(
+        '2rem',
+      )
     })
 
     it('should return "0" for zero values', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'line-height', 'none'],
+        path: ['line-height', 'none'],
         $value: '0px',
       } as TransformedToken
 
-      expect(typographyPxToRem.transform(token, platform)).toBe('0')
+      expect(fontsPxToRem.transform(token, platform)).toBe('0')
     })
 
     it('should handle decimal values correctly', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'small'],
+        path: ['font-size', 'sm'],
         $value: '14',
       } as TransformedToken
 
-      expect(typographyPxToRem.transform(token, platform)).toBe('0.875rem')
+      expect(fontsPxToRem.transform(token, platform)).toBe('0.875rem')
     })
 
     it('should handle string values with px suffix', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'body'],
+        path: ['font-size', '2xl'],
         $value: '16px',
       } as TransformedToken
 
-      expect(typographyPxToRem.transform(token, platform)).toBe('1rem')
+      expect(fontsPxToRem.transform(token, platform)).toBe('1rem')
     })
 
     it('should throw error for invalid (NaN) values', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'invalid'],
+        path: ['font-size', 'invalid'],
         $value: 'invalid',
         name: 'invalidToken',
       } as TransformedToken
 
-      expect(() => typographyPxToRem.transform(token, platform)).toThrow(
+      expect(() => fontsPxToRem.transform(token, platform)).toThrow(
         'Invalid value for token invalidToken: invalid',
       )
     })
@@ -123,12 +114,12 @@ describe('typographyPxToRem', () => {
     it('should throw error for empty string values', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'empty'],
+        path: ['font-size', 'empty'],
         $value: '',
         name: 'emptyToken',
       } as TransformedToken
 
-      expect(() => typographyPxToRem.transform(token, platform)).toThrow(
+      expect(() => fontsPxToRem.transform(token, platform)).toThrow(
         'Invalid value for token emptyToken: ',
       )
     })
@@ -136,11 +127,11 @@ describe('typographyPxToRem', () => {
     it('should throw error for undefined token name', () => {
       const token = {
         $type: 'dimension',
-        path: ['typography', 'font-sizes', 'noname'],
+        path: ['font-size', 'noname'],
         $value: 'abc',
       } as TransformedToken
 
-      expect(() => typographyPxToRem.transform(token, platform)).toThrow(
+      expect(() => fontsPxToRem.transform(token, platform)).toThrow(
         'Invalid value for token "": abc',
       )
     })

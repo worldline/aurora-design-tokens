@@ -45,12 +45,12 @@ describe('typography', () => {
         },
       },
       'heading.letterSpacing': {
-        $type: 'typography',
+        $type: 'dimension',
         $value: '{variable}',
       },
-      'heading.textTransform': { $type: 'typography', $value: 'uppercase' },
+      'heading.textTransform': { $type: 'textTransform', $value: 'uppercase' },
       'heading.textDecoration': {
-        $type: 'typography',
+        $type: 'textDecoration',
         $value: 'underline',
       },
       body: {
@@ -63,12 +63,12 @@ describe('typography', () => {
         },
       },
       'body.letterSpacing': {
-        $type: 'typography',
+        $type: 'dimension',
         $value: '{variable}',
       },
-      'body.textTransform': { $type: 'typography', $value: 'lowercase' },
+      'body.textTransform': { $type: 'textTransform', $value: 'lowercase' },
       'body.textDecoration': {
-        $type: 'typography',
+        $type: 'textDecoration',
         $value: 'strikethrough',
       },
     })
@@ -106,11 +106,17 @@ describe('typography', () => {
           },
         },
         'heading.letterSpacing': {
-          $type: 'typography',
+          $type: 'dimension',
           $value: '{variable}',
         },
-        'heading.textTransform': { $type: 'typography', $value: 'uppercase' },
-        'heading.textDecoration': { $type: 'typography', $value: 'underline' },
+        'heading.textTransform': {
+          $type: 'textTransform',
+          $value: 'uppercase',
+        },
+        'heading.textDecoration': {
+          $type: 'textDecoration',
+          $value: 'underline',
+        },
       },
     })
   })
@@ -144,7 +150,7 @@ describe('typography', () => {
         },
       },
       'caption.letterSpacing': {
-        $type: 'typography',
+        $type: 'dimension',
         $value: '{variable}',
       },
     })

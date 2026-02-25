@@ -270,6 +270,44 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-dimensions-120: 120px;
   --au-dimensions-128: 128px;
   --au-dimensions-max: 9999px;
+  --au-font-size-6xs: 0.75rem;
+  --au-font-size-5xs: 0.8125rem;
+  --au-font-size-4xs: 0.875rem;
+  --au-font-size-3xs: 1rem;
+  --au-font-size-2xs: 1.0625rem;
+  --au-font-size-xs: 1.125rem;
+  --au-font-size-sm: 1.1875rem;
+  --au-font-size-md: 1.25rem;
+  --au-font-size-lg: 1.375rem;
+  --au-font-size-xl: 1.5rem;
+  --au-font-size-2xl: 1.75rem;
+  --au-font-size-3xl: 2rem;
+  --au-font-size-4xl: 2.125rem;
+  --au-font-size-5xl: 2.5rem;
+  --au-font-size-6xl: 2.75rem;
+  --au-font-size-7xl: 3rem;
+  --au-font-size-8xl: 3.25rem;
+  --au-font-size-9xl: 3.5rem;
+  --au-line-height-6xs: 0.875rem;
+  --au-line-height-5xs: 1rem;
+  --au-line-height-4xs: 1.125rem;
+  --au-line-height-3xs: 1.375rem;
+  --au-line-height-2xs: 1.5rem;
+  --au-line-height-xs: 1.625rem;
+  --au-line-height-sm: 1.75rem;
+  --au-line-height-md: 1.875rem;
+  --au-line-height-lg: 2rem;
+  --au-line-height-xl: 2.25rem;
+  --au-line-height-2xl: 2.5rem;
+  --au-line-height-3xl: 3rem;
+  --au-line-height-4xl: 3.5rem;
+  --au-line-height-5xl: 4rem;
+  --au-letter-spacing-none: 0;
+  --au-font-weight-light: 300rem;
+  --au-font-weight-regular: 400rem;
+  --au-font-weight-medium: 500rem;
+  --au-font-weight-semibold: 600rem;
+  --au-font-weight-bold: 700rem;
   --au-radius-none: var(--au-dimensions-0);
   --au-radius-2xs: var(--au-dimensions-2);
   --au-radius-xs: var(--au-dimensions-4);
@@ -338,44 +376,6 @@ exports[`build > should output the consolidated CSS file 1`] = `
 /* desktop-md.css */
 @media screen and (min-width: 1281px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.8125rem;
-    --au-typography-font-sizes-4xs: 0.875rem;
-    --au-typography-font-sizes-3xs: 1rem;
-    --au-typography-font-sizes-2xs: 1.0625rem;
-    --au-typography-font-sizes-xs: 1.125rem;
-    --au-typography-font-sizes-sm: 1.1875rem;
-    --au-typography-font-sizes-md: 1.25rem;
-    --au-typography-font-sizes-lg: 1.375rem;
-    --au-typography-font-sizes-xl: 1.5rem;
-    --au-typography-font-sizes-2xl: 1.75rem;
-    --au-typography-font-sizes-3xl: 2rem;
-    --au-typography-font-sizes-4xl: 2.125rem;
-    --au-typography-font-sizes-5xl: 2.5rem;
-    --au-typography-font-sizes-6xl: 2.75rem;
-    --au-typography-font-sizes-7xl: 3rem;
-    --au-typography-font-sizes-8xl: 3.25rem;
-    --au-typography-font-sizes-9xl: 3.5rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.375rem;
-    --au-typography-line-height-2xs: 1.5rem;
-    --au-typography-line-height-xs: 1.625rem;
-    --au-typography-line-height-sm: 1.75rem;
-    --au-typography-line-height-md: 1.875rem;
-    --au-typography-line-height-lg: 2rem;
-    --au-typography-line-height-xl: 2.25rem;
-    --au-typography-line-height-2xl: 2.5rem;
-    --au-typography-line-height-3xl: 3rem;
-    --au-typography-line-height-4xl: 3.5rem;
-    --au-typography-line-height-5xl: 4rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: desktop-md;
     --au-screen-breakpoint: 1440px;
     --au-screen-content-max-width-xs: 360px;
@@ -383,6 +383,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-7xl);
+    --au-typescale-hero-line-height: var(--au-line-height-4xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-7xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-4xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-5xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-3xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-xl);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-5xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-3xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-xl);
+    --au-typescale-display-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-xl);
+    --au-typescale-title-lg-line-height: var(--au-line-height-lg);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-md);
+    --au-typescale-title-md-line-height: var(--au-line-height-2xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-3xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-md);
+    --au-typescale-body-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-md);
+    --au-typescale-label-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-3xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -415,163 +491,51 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-5xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
 /* desktop-sm.css */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.8125rem;
-    --au-typography-font-sizes-4xs: 0.875rem;
-    --au-typography-font-sizes-3xs: 1rem;
-    --au-typography-font-sizes-2xs: 1.0625rem;
-    --au-typography-font-sizes-xs: 1.125rem;
-    --au-typography-font-sizes-sm: 1.1875rem;
-    --au-typography-font-sizes-md: 1.25rem;
-    --au-typography-font-sizes-lg: 1.375rem;
-    --au-typography-font-sizes-xl: 1.5rem;
-    --au-typography-font-sizes-2xl: 1.75rem;
-    --au-typography-font-sizes-3xl: 2rem;
-    --au-typography-font-sizes-4xl: 2.125rem;
-    --au-typography-font-sizes-5xl: 2.5rem;
-    --au-typography-font-sizes-6xl: 2.75rem;
-    --au-typography-font-sizes-7xl: 3rem;
-    --au-typography-font-sizes-8xl: 3.25rem;
-    --au-typography-font-sizes-9xl: 3.5rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.375rem;
-    --au-typography-line-height-2xs: 1.5rem;
-    --au-typography-line-height-xs: 1.625rem;
-    --au-typography-line-height-sm: 1.75rem;
-    --au-typography-line-height-md: 1.875rem;
-    --au-typography-line-height-lg: 2rem;
-    --au-typography-line-height-xl: 2.25rem;
-    --au-typography-line-height-2xl: 2.5rem;
-    --au-typography-line-height-3xl: 3rem;
-    --au-typography-line-height-4xl: 3.5rem;
-    --au-typography-line-height-5xl: 4rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: desktop-sm;
     --au-screen-breakpoint: 1280px;
     --au-screen-content-max-width-xs: 360px;
@@ -579,6 +543,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-7xl);
+    --au-typescale-hero-line-height: var(--au-line-height-4xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-7xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-4xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-5xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-3xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-xl);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-5xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-3xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-xl);
+    --au-typescale-display-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-xl);
+    --au-typescale-title-lg-line-height: var(--au-line-height-lg);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-md);
+    --au-typescale-title-md-line-height: var(--au-line-height-2xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-3xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-md);
+    --au-typescale-body-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-md);
+    --au-typescale-label-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-3xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -611,163 +651,51 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-5xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
 /* desktop-xs.css */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.8125rem;
-    --au-typography-font-sizes-4xs: 0.875rem;
-    --au-typography-font-sizes-3xs: 1rem;
-    --au-typography-font-sizes-2xs: 1.0625rem;
-    --au-typography-font-sizes-xs: 1.125rem;
-    --au-typography-font-sizes-sm: 1.1875rem;
-    --au-typography-font-sizes-md: 1.25rem;
-    --au-typography-font-sizes-lg: 1.375rem;
-    --au-typography-font-sizes-xl: 1.5rem;
-    --au-typography-font-sizes-2xl: 1.75rem;
-    --au-typography-font-sizes-3xl: 2rem;
-    --au-typography-font-sizes-4xl: 2.125rem;
-    --au-typography-font-sizes-5xl: 2.5rem;
-    --au-typography-font-sizes-6xl: 2.75rem;
-    --au-typography-font-sizes-7xl: 3rem;
-    --au-typography-font-sizes-8xl: 3.25rem;
-    --au-typography-font-sizes-9xl: 3.5rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.375rem;
-    --au-typography-line-height-2xs: 1.5rem;
-    --au-typography-line-height-xs: 1.625rem;
-    --au-typography-line-height-sm: 1.75rem;
-    --au-typography-line-height-md: 1.875rem;
-    --au-typography-line-height-lg: 2rem;
-    --au-typography-line-height-xl: 2.25rem;
-    --au-typography-line-height-2xl: 2.5rem;
-    --au-typography-line-height-3xl: 3rem;
-    --au-typography-line-height-4xl: 3.5rem;
-    --au-typography-line-height-5xl: 4rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: desktop-xs;
     --au-screen-breakpoint: 1024px;
     --au-screen-content-max-width-xs: 360px;
@@ -775,6 +703,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-7xl);
+    --au-typescale-hero-line-height: var(--au-line-height-4xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-7xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-4xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-5xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-3xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-xl);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-5xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-3xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-xl);
+    --au-typescale-display-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-xl);
+    --au-typescale-title-lg-line-height: var(--au-line-height-lg);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-md);
+    --au-typescale-title-md-line-height: var(--au-line-height-2xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-3xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-md);
+    --au-typescale-body-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-md);
+    --au-typescale-label-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-3xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -807,119 +811,45 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-5xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
@@ -1050,7 +980,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-chip-warning-content: var(--au-content-warning);
   --au-chip-error-background: var(--au-surface-error-subtile);
   --au-chip-error-content: var(--au-content-error);
-  --au-focus-ring: 0 0 0 2px var(--au-surface-page), 0 0 0 var(--au-border-width-thick) var(--au-surface-brand-solid);
+  --au-focus-ring: 0 0 0 var(--au-border-width-medium) var(--au-surface-page), 0 0 0 var(--au-border-width-thick) var(--au-surface-brand-solid);
 }
 
 /* light.css */
@@ -1109,44 +1039,6 @@ exports[`build > should output the consolidated CSS file 1`] = `
 /* mobile-sm.css */
 @media screen and (min-width: 361px) and (max-width: 480px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.75rem;
-    --au-typography-font-sizes-4xs: 0.8125rem;
-    --au-typography-font-sizes-3xs: 0.875rem;
-    --au-typography-font-sizes-2xs: 1rem;
-    --au-typography-font-sizes-xs: 1.0625rem;
-    --au-typography-font-sizes-sm: 1.125rem;
-    --au-typography-font-sizes-md: 1.1875rem;
-    --au-typography-font-sizes-lg: 1.3125rem;
-    --au-typography-font-sizes-xl: 1.375rem;
-    --au-typography-font-sizes-2xl: 1.5rem;
-    --au-typography-font-sizes-3xl: 1.75rem;
-    --au-typography-font-sizes-4xl: 1.875rem;
-    --au-typography-font-sizes-5xl: 2.25rem;
-    --au-typography-font-sizes-6xl: 2.5rem;
-    --au-typography-font-sizes-7xl: 2.75rem;
-    --au-typography-font-sizes-8xl: 3rem;
-    --au-typography-font-sizes-9xl: 3.25rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.25rem;
-    --au-typography-line-height-2xs: 1.375rem;
-    --au-typography-line-height-xs: 1.5rem;
-    --au-typography-line-height-sm: 1.625rem;
-    --au-typography-line-height-md: 1.75rem;
-    --au-typography-line-height-lg: 1.875rem;
-    --au-typography-line-height-xl: 2.125rem;
-    --au-typography-line-height-2xl: 2.375rem;
-    --au-typography-line-height-3xl: 2.5rem;
-    --au-typography-line-height-4xl: 3rem;
-    --au-typography-line-height-5xl: 3.5rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: mobile-sm;
     --au-screen-breakpoint: 393px;
     --au-screen-content-max-width-xs: 360px;
@@ -1154,6 +1046,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-6xl);
+    --au-typescale-hero-line-height: var(--au-line-height-3xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-6xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-4xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-2xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-4xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-2xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-lg);
+    --au-typescale-display-sm-line-height: var(--au-line-height-md);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-lg);
+    --au-typescale-title-lg-line-height: var(--au-line-height-md);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-sm);
+    --au-typescale-title-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-sm);
+    --au-typescale-body-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-sm);
+    --au-typescale-label-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-6xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-6xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -1173,7 +1141,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-border-width-thin: var(--au-dimensions-1);
     --au-border-width-medium: var(--au-dimensions-2);
     --au-border-width-thick: var(--au-dimensions-4);
-    --au-sizes-height-header: var(--au-dimensions-72);
+    --au-sizes-height-header: var(--au-dimensions-48);
     --au-sizes-height-footer: var(--au-dimensions-52);
     --au-sizes-height-button-sm: var(--au-dimensions-40);
     --au-sizes-height-button-md: var(--au-dimensions-48);
@@ -1186,163 +1154,51 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-2xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
 /* mobile-xs.css */
 @media screen and (max-width: 360px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.75rem;
-    --au-typography-font-sizes-4xs: 0.8125rem;
-    --au-typography-font-sizes-3xs: 0.875rem;
-    --au-typography-font-sizes-2xs: 1rem;
-    --au-typography-font-sizes-xs: 1.0625rem;
-    --au-typography-font-sizes-sm: 1.125rem;
-    --au-typography-font-sizes-md: 1.1875rem;
-    --au-typography-font-sizes-lg: 1.3125rem;
-    --au-typography-font-sizes-xl: 1.375rem;
-    --au-typography-font-sizes-2xl: 1.5rem;
-    --au-typography-font-sizes-3xl: 1.75rem;
-    --au-typography-font-sizes-4xl: 1.875rem;
-    --au-typography-font-sizes-5xl: 2.25rem;
-    --au-typography-font-sizes-6xl: 2.5rem;
-    --au-typography-font-sizes-7xl: 2.75rem;
-    --au-typography-font-sizes-8xl: 3rem;
-    --au-typography-font-sizes-9xl: 3.25rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.25rem;
-    --au-typography-line-height-2xs: 1.375rem;
-    --au-typography-line-height-xs: 1.5rem;
-    --au-typography-line-height-sm: 1.625rem;
-    --au-typography-line-height-md: 1.75rem;
-    --au-typography-line-height-lg: 1.875rem;
-    --au-typography-line-height-xl: 2.125rem;
-    --au-typography-line-height-2xl: 2.375rem;
-    --au-typography-line-height-3xl: 2.5rem;
-    --au-typography-line-height-4xl: 3rem;
-    --au-typography-line-height-5xl: 3.5rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: mobile-xs;
     --au-screen-breakpoint: 360px;
     --au-screen-content-max-width-xs: 360px;
@@ -1350,6 +1206,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-6xl);
+    --au-typescale-hero-line-height: var(--au-line-height-3xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-6xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-4xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-2xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-4xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-2xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-lg);
+    --au-typescale-display-sm-line-height: var(--au-line-height-md);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-lg);
+    --au-typescale-title-lg-line-height: var(--au-line-height-md);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-sm);
+    --au-typescale-title-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-sm);
+    --au-typescale-body-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-sm);
+    --au-typescale-label-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-6xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-6xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -1369,7 +1301,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-border-width-thin: var(--au-dimensions-1);
     --au-border-width-medium: var(--au-dimensions-2);
     --au-border-width-thick: var(--au-dimensions-4);
-    --au-sizes-height-header: var(--au-dimensions-72);
+    --au-sizes-height-header: var(--au-dimensions-48);
     --au-sizes-height-footer: var(--au-dimensions-52);
     --au-sizes-height-button-sm: var(--au-dimensions-40);
     --au-sizes-height-button-md: var(--au-dimensions-48);
@@ -1382,163 +1314,51 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-2xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
 /* tablet.css */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   :root {
-    --au-typography-font-sizes-6xs: 0.75rem;
-    --au-typography-font-sizes-5xs: 0.8125rem;
-    --au-typography-font-sizes-4xs: 0.875rem;
-    --au-typography-font-sizes-3xs: 1rem;
-    --au-typography-font-sizes-2xs: 1.0625rem;
-    --au-typography-font-sizes-xs: 1.125rem;
-    --au-typography-font-sizes-sm: 1.1875rem;
-    --au-typography-font-sizes-md: 1.25rem;
-    --au-typography-font-sizes-lg: 1.375rem;
-    --au-typography-font-sizes-xl: 1.5rem;
-    --au-typography-font-sizes-2xl: 1.75rem;
-    --au-typography-font-sizes-3xl: 2rem;
-    --au-typography-font-sizes-4xl: 2.125rem;
-    --au-typography-font-sizes-5xl: 2.5rem;
-    --au-typography-font-sizes-6xl: 2.75rem;
-    --au-typography-font-sizes-7xl: 3rem;
-    --au-typography-font-sizes-8xl: 3.25rem;
-    --au-typography-font-sizes-9xl: 3.5rem;
-    --au-typography-line-height-6xs: 0.875rem;
-    --au-typography-line-height-5xs: 1rem;
-    --au-typography-line-height-4xs: 1.125rem;
-    --au-typography-line-height-3xs: 1.375rem;
-    --au-typography-line-height-2xs: 1.5rem;
-    --au-typography-line-height-xs: 1.625rem;
-    --au-typography-line-height-sm: 1.75rem;
-    --au-typography-line-height-md: 1.875rem;
-    --au-typography-line-height-lg: 2rem;
-    --au-typography-line-height-xl: 2.25rem;
-    --au-typography-line-height-2xl: 2.5rem;
-    --au-typography-line-height-3xl: 3rem;
-    --au-typography-line-height-4xl: 3.5rem;
-    --au-typography-line-height-5xl: 4rem;
-    --au-typography-letter-spacing-none: 0;
-    --au-typography-font-weight-light: 300rem;
-    --au-typography-font-weight-regular: 400rem;
-    --au-typography-font-weight-medium: 500rem;
-    --au-typography-font-weight-semibold: 600rem;
-    --au-typography-font-weight-bold: 700rem;
     --au-screen-device: tablet;
     --au-screen-breakpoint: 480px;
     --au-screen-content-max-width-xs: 360px;
@@ -1546,6 +1366,82 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-screen-content-max-width-md: 640px;
     --au-screen-content-max-width-lg: 800px;
     --au-screen-content-max-width-xl: 1024px;
+    --au-typescale-hero-font-size: var(--au-font-size-7xl);
+    --au-typescale-hero-line-height: var(--au-line-height-4xl);
+    --au-typescale-hero-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-hero-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-lg-font-size: var(--au-font-size-7xl);
+    --au-typescale-metric-lg-line-height: var(--au-line-height-4xl);
+    --au-typescale-metric-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-md-font-size: var(--au-font-size-5xl);
+    --au-typescale-metric-md-line-height: var(--au-line-height-3xl);
+    --au-typescale-metric-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-metric-sm-font-size: var(--au-font-size-3xl);
+    --au-typescale-metric-sm-line-height: var(--au-line-height-xl);
+    --au-typescale-metric-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-metric-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-lg-font-size: var(--au-font-size-5xl);
+    --au-typescale-display-lg-line-height: var(--au-line-height-3xl);
+    --au-typescale-display-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-md-font-size: var(--au-font-size-3xl);
+    --au-typescale-display-md-line-height: var(--au-line-height-2xl);
+    --au-typescale-display-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-display-sm-font-size: var(--au-font-size-xl);
+    --au-typescale-display-sm-line-height: var(--au-line-height-lg);
+    --au-typescale-display-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-display-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-lg-font-size: var(--au-font-size-xl);
+    --au-typescale-title-lg-line-height: var(--au-line-height-lg);
+    --au-typescale-title-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-md-font-size: var(--au-font-size-md);
+    --au-typescale-title-md-line-height: var(--au-line-height-2xs);
+    --au-typescale-title-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-title-sm-font-size: var(--au-font-size-3xs);
+    --au-typescale-title-sm-line-height: var(--au-line-height-3xs);
+    --au-typescale-title-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-title-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-body-lg-font-size: var(--au-font-size-md);
+    --au-typescale-body-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-body-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-body-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-body-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-body-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-body-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-body-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-body-sm-font-weight: var(--au-font-weight-regular);
+    --au-typescale-label-lg-font-size: var(--au-font-size-md);
+    --au-typescale-label-lg-line-height: var(--au-line-height-2xs);
+    --au-typescale-label-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-lg-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-md-font-size: var(--au-font-size-3xs);
+    --au-typescale-label-md-line-height: var(--au-line-height-3xs);
+    --au-typescale-label-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-md-font-weight: var(--au-font-weight-medium);
+    --au-typescale-label-sm-font-size: var(--au-font-size-4xs);
+    --au-typescale-label-sm-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
+    --au-typescale-caption-lg-font-size: var(--au-font-size-3xs);
+    --au-typescale-caption-lg-line-height: var(--au-line-height-3xs);
+    --au-typescale-caption-lg-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-lg-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-md-font-size: var(--au-font-size-4xs);
+    --au-typescale-caption-md-line-height: var(--au-line-height-4xs);
+    --au-typescale-caption-md-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-md-font-weight: var(--au-font-weight-regular);
+    --au-typescale-caption-sm-font-size: var(--au-font-size-5xs);
+    --au-typescale-caption-sm-line-height: var(--au-line-height-5xs);
+    --au-typescale-caption-sm-letter-spacing: var(--au-letter-spacing-none);
+    --au-typescale-caption-sm-font-weight: var(--au-font-weight-regular);
     --au-spacing-none: var(--au-dimensions-0);
     --au-spacing-3xs: var(--au-dimensions-2);
     --au-spacing-2xs: var(--au-dimensions-4);
@@ -1578,119 +1474,45 @@ exports[`build > should output the consolidated CSS file 1`] = `
     --au-sizes-icon-2xl: var(--au-dimensions-48);
     --au-sizes-icon-3xl: var(--au-dimensions-56);
     --au-sizes-icon-4xl: var(--au-dimensions-64);
-    --au-metrics-lg-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-lg-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-secondary);
-    --au-metrics-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-md-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-secondary);
-    --au-metrics-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-metrics-sm-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-xl) var(--au-typography-font-family-secondary);
-    --au-metrics-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-regular: 400 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-medium: 500 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-semibold: 600 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-2xl-bold: 700 var(--au-typography-font-sizes-8xl)/var(--au-typography-line-height-5xl) var(--au-typography-font-family-primary);
-    --au-display-2xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-regular: 400 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-medium: 500 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-semibold: 600 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xl-bold: 700 var(--au-typography-font-sizes-7xl)/var(--au-typography-line-height-4xl) var(--au-typography-font-family-primary);
-    --au-display-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-regular: 400 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-medium: 500 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-semibold: 600 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-lg-bold: 700 var(--au-typography-font-sizes-5xl)/var(--au-typography-line-height-3xl) var(--au-typography-font-family-primary);
-    --au-display-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-regular: 400 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-medium: 500 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-semibold: 600 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-md-bold: 700 var(--au-typography-font-sizes-3xl)/var(--au-typography-line-height-2xl) var(--au-typography-font-family-primary);
-    --au-display-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-sm-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-primary);
-    --au-display-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-display-xs-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-primary);
-    --au-display-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-regular: 400 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-medium: 500 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-semibold: 600 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xl-bold: 700 var(--au-typography-font-sizes-xl)/var(--au-typography-line-height-lg) var(--au-typography-font-family-secondary);
-    --au-text-xl-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-regular: 400 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-medium: 500 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-semibold: 600 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-lg-bold: 700 var(--au-typography-font-sizes-md)/var(--au-typography-line-height-2xs) var(--au-typography-font-family-secondary);
-    --au-text-lg-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-regular: 400 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-medium: 500 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-semibold: 600 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-md-bold: 700 var(--au-typography-font-sizes-3xs)/var(--au-typography-line-height-3xs) var(--au-typography-font-family-secondary);
-    --au-text-md-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-regular: 400 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-medium: 500 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-semibold: 600 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-sm-bold: 700 var(--au-typography-font-sizes-4xs)/var(--au-typography-line-height-4xs) var(--au-typography-font-family-secondary);
-    --au-text-sm-bold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-medium: 500 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-medium-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-regular: 400 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-regular-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-semibold: 600 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-semibold-letter-spacing: var(--au-typography-letter-spacing-none);
-    --au-text-xs-bold: 700 var(--au-typography-font-sizes-5xs)/var(--au-typography-line-height-5xs) var(--au-typography-font-family-secondary);
-    --au-text-xs-bold-letter-spacing: var(--au-typography-letter-spacing-none);
+    --au-hero: 500 var(--au-typescale-hero-font-size)/var(--au-typescale-hero-line-height) var(--au-typography-font-family-primary);
+    --au-metric-lg: 500 var(--au-typescale-metric-lg-font-size)/var(--au-typescale-metric-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-md: 500 var(--au-typescale-metric-md-font-size)/var(--au-typescale-metric-md-line-height) var(--au-typography-font-family-secondary);
+    --au-metric-sm: 500 var(--au-typescale-metric-sm-font-size)/var(--au-typescale-metric-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-display-lg: 500 var(--au-typescale-display-lg-font-size)/var(--au-typescale-display-lg-line-height) var(--au-typography-font-family-primary);
+    --au-display-md: 500 var(--au-typescale-display-md-font-size)/var(--au-typescale-display-md-line-height) var(--au-typography-font-family-primary);
+    --au-display-sm: 500 var(--au-typescale-display-sm-font-size)/var(--au-typescale-display-sm-line-height) var(--au-typography-font-family-primary);
+    --au-title-lg: 500 var(--au-typescale-title-lg-font-size)/var(--au-typescale-title-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-title-md: 500 var(--au-typescale-title-md-font-size)/var(--au-typescale-title-md-line-height) var(--au-typography-font-family-secondary);
+    --au-title-sm: 500 var(--au-typescale-title-sm-font-size)/var(--au-typescale-title-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-body-lg: 400 var(--au-typescale-body-lg-font-size)/var(--au-typescale-body-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-body-md: 400 var(--au-typescale-body-md-font-size)/var(--au-typescale-body-md-line-height) var(--au-typography-font-family-secondary);
+    --au-body-sm: 400 var(--au-typescale-body-sm-font-size)/var(--au-typescale-body-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-label-lg: 500 var(--au-typescale-label-lg-font-size)/var(--au-typescale-label-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-label-md: 500 var(--au-typescale-label-md-font-size)/var(--au-typescale-label-md-line-height) var(--au-typography-font-family-secondary);
+    --au-label-sm: 500 var(--au-typescale-label-sm-font-size)/var(--au-typescale-label-sm-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-lg: 400 var(--au-typescale-caption-lg-font-size)/var(--au-typescale-caption-lg-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-md: 400 var(--au-typescale-caption-md-font-size)/var(--au-typescale-caption-md-line-height) var(--au-typography-font-family-secondary);
+    --au-caption-sm: 400 var(--au-typescale-caption-sm-font-size)/var(--au-typescale-caption-sm-line-height) var(--au-typography-font-family-secondary);
     --au-screen-wrapper-padding-vert: var(--au-spacing-5xl);
+    --au-hero-letter-spacing: var(--au-typescale-hero-letter-spacing);
+    --au-metric-lg-letter-spacing: var(--au-typescale-metric-lg-letter-spacing);
+    --au-metric-md-letter-spacing: var(--au-typescale-metric-md-letter-spacing);
+    --au-metric-sm-letter-spacing: var(--au-typescale-metric-sm-letter-spacing);
+    --au-display-lg-letter-spacing: var(--au-typescale-display-lg-letter-spacing);
+    --au-display-md-letter-spacing: var(--au-typescale-display-md-letter-spacing);
+    --au-display-sm-letter-spacing: var(--au-typescale-display-sm-letter-spacing);
+    --au-title-lg-letter-spacing: var(--au-typescale-title-lg-letter-spacing);
+    --au-title-md-letter-spacing: var(--au-typescale-title-md-letter-spacing);
+    --au-title-sm-letter-spacing: var(--au-typescale-title-sm-letter-spacing);
+    --au-body-lg-letter-spacing: var(--au-typescale-body-lg-letter-spacing);
+    --au-body-md-letter-spacing: var(--au-typescale-body-md-letter-spacing);
+    --au-body-sm-letter-spacing: var(--au-typescale-body-sm-letter-spacing);
+    --au-label-lg-letter-spacing: var(--au-typescale-label-lg-letter-spacing);
+    --au-label-md-letter-spacing: var(--au-typescale-label-md-letter-spacing);
+    --au-label-sm-letter-spacing: var(--au-typescale-label-sm-letter-spacing);
+    --au-caption-lg-letter-spacing: var(--au-typescale-caption-lg-letter-spacing);
+    --au-caption-md-letter-spacing: var(--au-typescale-caption-md-letter-spacing);
+    --au-caption-sm-letter-spacing: var(--au-typescale-caption-sm-letter-spacing);
   }
 }
 
@@ -1699,117 +1521,24 @@ exports[`build > should output the consolidated CSS file 1`] = `
 
 exports[`build > should output the typographies typescript file 1`] = `
 "export type AuTypography =
-  | 'metricsLgRegular'
-  | 'metricsLgRegularLetterSpacing'
-  | 'metricsLgMedium'
-  | 'metricsLgMediumLetterSpacing'
-  | 'metricsLgSemibold'
-  | 'metricsLgSemiboldLetterSpacing'
-  | 'metricsLgBold'
-  | 'metricsLgBoldLetterSpacing'
-  | 'metricsMdRegular'
-  | 'metricsMdRegularLetterSpacing'
-  | 'metricsMdMedium'
-  | 'metricsMdMediumLetterSpacing'
-  | 'metricsMdSemibold'
-  | 'metricsMdSemiboldLetterSpacing'
-  | 'metricsMdBold'
-  | 'metricsMdBoldLetterSpacing'
-  | 'metricsSmRegular'
-  | 'metricsSmRegularLetterSpacing'
-  | 'metricsSmMedium'
-  | 'metricsSmMediumLetterSpacing'
-  | 'metricsSmSemibold'
-  | 'metricsSmSemiboldLetterSpacing'
-  | 'metricsSmBold'
-  | 'metricsSmBoldLetterSpacing'
-  | 'display2xlRegular'
-  | 'display2xlRegularLetterSpacing'
-  | 'display2xlMedium'
-  | 'display2xlMediumLetterSpacing'
-  | 'display2xlSemibold'
-  | 'display2xlSemiboldLetterSpacing'
-  | 'display2xlBold'
-  | 'display2xlBoldLetterSpacing'
-  | 'displayXlRegular'
-  | 'displayXlRegularLetterSpacing'
-  | 'displayXlMedium'
-  | 'displayXlMediumLetterSpacing'
-  | 'displayXlSemibold'
-  | 'displayXlSemiboldLetterSpacing'
-  | 'displayXlBold'
-  | 'displayXlBoldLetterSpacing'
-  | 'displayLgRegular'
-  | 'displayLgRegularLetterSpacing'
-  | 'displayLgMedium'
-  | 'displayLgMediumLetterSpacing'
-  | 'displayLgSemibold'
-  | 'displayLgSemiboldLetterSpacing'
-  | 'displayLgBold'
-  | 'displayLgBoldLetterSpacing'
-  | 'displayMdRegular'
-  | 'displayMdRegularLetterSpacing'
-  | 'displayMdMedium'
-  | 'displayMdMediumLetterSpacing'
-  | 'displayMdSemibold'
-  | 'displayMdSemiboldLetterSpacing'
-  | 'displayMdBold'
-  | 'displayMdBoldLetterSpacing'
-  | 'displaySmRegular'
-  | 'displaySmRegularLetterSpacing'
-  | 'displaySmMedium'
-  | 'displaySmMediumLetterSpacing'
-  | 'displaySmSemibold'
-  | 'displaySmSemiboldLetterSpacing'
-  | 'displaySmBold'
-  | 'displaySmBoldLetterSpacing'
-  | 'displayXsRegular'
-  | 'displayXsRegularLetterSpacing'
-  | 'displayXsMedium'
-  | 'displayXsMediumLetterSpacing'
-  | 'displayXsSemibold'
-  | 'displayXsSemiboldLetterSpacing'
-  | 'displayXsBold'
-  | 'displayXsBoldLetterSpacing'
-  | 'textXlRegular'
-  | 'textXlRegularLetterSpacing'
-  | 'textXlMedium'
-  | 'textXlMediumLetterSpacing'
-  | 'textXlSemibold'
-  | 'textXlSemiboldLetterSpacing'
-  | 'textXlBold'
-  | 'textXlBoldLetterSpacing'
-  | 'textLgRegular'
-  | 'textLgRegularLetterSpacing'
-  | 'textLgMedium'
-  | 'textLgMediumLetterSpacing'
-  | 'textLgSemibold'
-  | 'textLgSemiboldLetterSpacing'
-  | 'textLgBold'
-  | 'textLgBoldLetterSpacing'
-  | 'textMdRegular'
-  | 'textMdRegularLetterSpacing'
-  | 'textMdMedium'
-  | 'textMdMediumLetterSpacing'
-  | 'textMdSemibold'
-  | 'textMdSemiboldLetterSpacing'
-  | 'textMdBold'
-  | 'textMdBoldLetterSpacing'
-  | 'textSmRegular'
-  | 'textSmRegularLetterSpacing'
-  | 'textSmMedium'
-  | 'textSmMediumLetterSpacing'
-  | 'textSmSemibold'
-  | 'textSmSemiboldLetterSpacing'
-  | 'textSmBold'
-  | 'textSmBoldLetterSpacing'
-  | 'textXsMedium'
-  | 'textXsMediumLetterSpacing'
-  | 'textXsRegular'
-  | 'textXsRegularLetterSpacing'
-  | 'textXsSemibold'
-  | 'textXsSemiboldLetterSpacing'
-  | 'textXsBold'
-  | 'textXsBoldLetterSpacing'
+  | 'hero'
+  | 'metricLg'
+  | 'metricMd'
+  | 'metricSm'
+  | 'displayLg'
+  | 'displayMd'
+  | 'displaySm'
+  | 'titleLg'
+  | 'titleMd'
+  | 'titleSm'
+  | 'bodyLg'
+  | 'bodyMd'
+  | 'bodySm'
+  | 'labelLg'
+  | 'labelMd'
+  | 'labelSm'
+  | 'captionLg'
+  | 'captionMd'
+  | 'captionSm'
 "
 `;
