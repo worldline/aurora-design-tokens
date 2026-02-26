@@ -42,8 +42,7 @@
     "pack": "npm run build && npm pack",
     "ci:publish": "npm run build && npm publish --ignore-scripts",
     "semantic-release": "semantic-release",
-    "ncui": "npx npm-check-updates -i",
-    "prepare": "lefthook install"
+    "ncui": "npx npm-check-updates -i"
   },
   "devDependencies": {
     "@eslint/js": "9.39.2",
