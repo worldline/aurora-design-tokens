@@ -855,7 +855,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
 
 /* high-level.css */
 :root {
-  --au-button-primary-shadow: 0 -2px 0 0 #0a0d120d;
+  --au-button-primary-shadow: inset 0 -2px 0 0 #0a0d120d;
   --au-button-primary-sm-padding-vertical: var(--au-spacing-xs);
   --au-button-primary-sm-padding-horizontal: var(--au-spacing-xs);
   --au-button-primary-sm-gap: var(--au-spacing-2xs);
