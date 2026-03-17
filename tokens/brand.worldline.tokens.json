@@ -445,9 +445,17 @@
         "$type": "string",
         "$value": "Raleway"
       },
+      "primary-fallbacks": {
+        "$type": "string",
+        "$value": "Tahoma, sans-serif"
+      },
       "secondary": {
         "$type": "string",
         "$value": "Inter"
+      },
+      "secondary-fallbacks": {
+        "$type": "string",
+        "$value": "Arial, sans-serif"
       }
     }
   },

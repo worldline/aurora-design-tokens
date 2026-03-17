@@ -232,7 +232,7 @@
       "disabled": {
         "background": {
           "$type": "color",
-          "$value": "{surface.neutral.low}"
+          "$value": "{surface.disabled}"
         },
         "border": {
           "$type": "color",
@@ -345,7 +345,7 @@
     "placeholder": {
       "background": {
         "$type": "color",
-        "$value": "{surface.invert}"
+        "$value": "{surface.page}"
       },
       "border": {
         "$type": "color",
@@ -371,7 +371,7 @@
     "filled": {
       "background": {
         "$type": "color",
-        "$value": "{surface.invert}"
+        "$value": "{surface.page}"
       },
       "border": {
         "$type": "color",
@@ -397,7 +397,7 @@
     "selected": {
       "background": {
         "$type": "color",
-        "$value": "{surface.invert}"
+        "$value": "{surface.page}"
       },
       "border": {
         "$type": "color",
@@ -406,6 +406,32 @@
       "icon": {
         "$type": "color",
         "$value": "{content.secondary}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{content.primary}"
+      },
+      "label": {
+        "$type": "color",
+        "$value": "{content.secondary}"
+      },
+      "helper-text": {
+        "$type": "color",
+        "$value": "{content.secondary}"
+      }
+    },
+    "read-only": {
+      "background": {
+        "$type": "color",
+        "$value": "{surface.disabled}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{border.disabled}"
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "{content.disabled}"
       },
       "text": {
         "$type": "color",
@@ -431,19 +457,19 @@
       },
       "icon": {
         "$type": "color",
-        "$value": "{content.secondary}"
+        "$value": "{content.disabled}"
       },
       "text": {
         "$type": "color",
-        "$value": "{content.secondary}"
+        "$value": "{content.disabled}"
       },
       "label": {
         "$type": "color",
-        "$value": "{content.secondary}"
+        "$value": "{content.disabled}"
       },
       "helper-text": {
         "$type": "color",
-        "$value": "{content.secondary}"
+        "$value": "{content.disabled}"
       }
     },
     "error": {

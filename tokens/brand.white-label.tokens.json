@@ -445,9 +445,17 @@
         "$type": "string",
         "$value": "Afacad"
       },
+      "primary-fallbacks": {
+        "$type": "string",
+        "$value": "Verdana, sans-serif"
+      },
       "secondary": {
         "$type": "string",
         "$value": "Roboto"
+      },
+      "secondary-fallbacks": {
+        "$type": "string",
+        "$value": "Tahoma, sans-serif"
       }
     }
   },

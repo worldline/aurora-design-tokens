@@ -102,6 +102,7 @@ exports[`build > should output the colors typescript file 1`] = `
   | 'surfaceNeutralMediumHover'
   | 'surfaceNeutralHigh'
   | 'surfaceNeutralHighHover'
+  | 'surfaceBrandBackground'
   | 'surfaceBrandSolid'
   | 'surfaceBrandSolidHover'
   | 'surfaceBrandSubtile'
@@ -112,9 +113,9 @@ exports[`build > should output the colors typescript file 1`] = `
   | 'surfaceWarningSolid'
   | 'surfaceWarningSubtile'
   | 'surfacePage'
+  | 'surfaceInvert'
   | 'surfaceErrorSolid'
   | 'surfaceErrorSubtile'
-  | 'surfaceInvert'
   | 'surfaceDisabled'
   | 'contentPrimaryStatic'
   | 'contentPrimary'
@@ -245,7 +246,9 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-colors-feedback-error-800: #912018; 
   --au-colors-feedback-error-900: #55160c; 
   --au-typography-font-family-primary: Raleway;
+  --au-typography-font-family-primary-fallbacks: Tahoma, sans-serif;
   --au-typography-font-family-secondary: Inter;
+  --au-typography-font-family-secondary-fallbacks: Arial, sans-serif;
   --au-dimensions-0: 0;
   --au-dimensions-1: 1px;
   --au-dimensions-2: 2px;
@@ -329,6 +332,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-surface-neutral-medium-hover: var(--au-colors-neutral-dark-600);
   --au-surface-neutral-high: var(--au-colors-neutral-dark-600);
   --au-surface-neutral-high-hover: var(--au-colors-neutral-dark-500);
+  --au-surface-brand-background: var(--au-colors-neutral-dark-900);
   --au-surface-brand-solid: var(--au-colors-brand-primary-500);
   --au-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
   --au-surface-brand-subtile: var(--au-colors-neutral-dark-900);
@@ -339,15 +343,15 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-surface-warning-solid: var(--au-colors-feedback-warning-400);
   --au-surface-warning-subtile: var(--au-colors-feedback-warning-900);
   --au-surface-page: var(--au-colors-neutral-dark-900);
+  --au-surface-invert: var(--au-colors-neutral-light-white);
   --au-surface-error-solid: var(--au-colors-feedback-error-400);
   --au-surface-error-subtile: var(--au-colors-feedback-error-900);
-  --au-surface-invert: var(--au-colors-neutral-dark-900);
   --au-surface-disabled: var(--au-colors-neutral-dark-700);
   --au-content-primary-static: var(--au-colors-neutral-dark-900);
   --au-content-primary: var(--au-colors-neutral-dark-50);
   --au-content-secondary: var(--au-colors-neutral-dark-300);
   --au-content-tertiary: var(--au-colors-neutral-light-400);
-  --au-content-placeholder: var(--au-colors-neutral-dark-400);
+  --au-content-placeholder: var(--au-colors-neutral-dark-300);
   --au-content-invert: var(--au-colors-neutral-dark-900);
   --au-content-disabled: var(--au-colors-neutral-dark-400);
   --au-content-brand: var(--au-colors-brand-primary-300);
@@ -907,7 +911,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-button-secondary-hover-background: var(--au-surface-neutral-low-hover);
   --au-button-secondary-hover-border: var(--au-border-neutral-high);
   --au-button-secondary-hover-content: var(--au-content-primary);
-  --au-button-secondary-disabled-background: var(--au-surface-neutral-low);
+  --au-button-secondary-disabled-background: var(--au-surface-disabled);
   --au-button-secondary-disabled-border: var(--au-border-disabled);
   --au-button-secondary-disabled-content: var(--au-content-disabled);
   --au-button-link-sm-gap: var(--au-spacing-2xs);
@@ -929,30 +933,36 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-inputfield-text-field-md-padding-horizontal: var(--au-spacing-sm);
   --au-inputfield-text-field-md-padding-vertical: var(--au-spacing-md);
   --au-inputfield-text-field-md-gap: var(--au-spacing-xs);
-  --au-inputfield-placeholder-background: var(--au-surface-invert);
+  --au-inputfield-placeholder-background: var(--au-surface-page);
   --au-inputfield-placeholder-border: var(--au-border-neutral-medium);
   --au-inputfield-placeholder-icon: var(--au-content-secondary);
   --au-inputfield-placeholder-text: var(--au-content-placeholder);
   --au-inputfield-placeholder-label: var(--au-content-secondary);
   --au-inputfield-placeholder-helper-text: var(--au-content-secondary);
-  --au-inputfield-filled-background: var(--au-surface-invert);
+  --au-inputfield-filled-background: var(--au-surface-page);
   --au-inputfield-filled-border: var(--au-border-neutral-medium);
   --au-inputfield-filled-icon: var(--au-content-secondary);
   --au-inputfield-filled-text: var(--au-content-primary);
   --au-inputfield-filled-label: var(--au-content-secondary);
   --au-inputfield-filled-helper-text: var(--au-content-secondary);
-  --au-inputfield-selected-background: var(--au-surface-invert);
+  --au-inputfield-selected-background: var(--au-surface-page);
   --au-inputfield-selected-border: var(--au-border-brand-solid);
   --au-inputfield-selected-icon: var(--au-content-secondary);
   --au-inputfield-selected-text: var(--au-content-primary);
   --au-inputfield-selected-label: var(--au-content-secondary);
   --au-inputfield-selected-helper-text: var(--au-content-secondary);
+  --au-inputfield-read-only-background: var(--au-surface-disabled);
+  --au-inputfield-read-only-border: var(--au-border-disabled);
+  --au-inputfield-read-only-icon: var(--au-content-disabled);
+  --au-inputfield-read-only-text: var(--au-content-primary);
+  --au-inputfield-read-only-label: var(--au-content-secondary);
+  --au-inputfield-read-only-helper-text: var(--au-content-secondary);
   --au-inputfield-disabled-background: var(--au-surface-disabled);
   --au-inputfield-disabled-border: var(--au-border-disabled);
-  --au-inputfield-disabled-icon: var(--au-content-secondary);
-  --au-inputfield-disabled-text: var(--au-content-secondary);
-  --au-inputfield-disabled-label: var(--au-content-secondary);
-  --au-inputfield-disabled-helper-text: var(--au-content-secondary);
+  --au-inputfield-disabled-icon: var(--au-content-disabled);
+  --au-inputfield-disabled-text: var(--au-content-disabled);
+  --au-inputfield-disabled-label: var(--au-content-disabled);
+  --au-inputfield-disabled-helper-text: var(--au-content-disabled);
   --au-inputfield-error-border: var(--au-border-error-solid);
   --au-inputfield-error-error-message: var(--au-content-error);
   --au-inputfield-error-icon: var(--au-content-error);
@@ -992,6 +1002,7 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-surface-neutral-medium-hover: var(--au-colors-neutral-light-50);
   --au-surface-neutral-high: var(--au-colors-neutral-light-100);
   --au-surface-neutral-high-hover: var(--au-colors-neutral-light-200);
+  --au-surface-brand-background: var(--au-colors-brand-primary-500);
   --au-surface-brand-solid: var(--au-colors-brand-primary-500);
   --au-surface-brand-solid-hover: var(--au-colors-brand-primary-700);
   --au-surface-brand-subtile: var(--au-colors-brand-primary-100);
@@ -1002,9 +1013,9 @@ exports[`build > should output the consolidated CSS file 1`] = `
   --au-surface-warning-solid: var(--au-colors-feedback-warning-500);
   --au-surface-warning-subtile: var(--au-colors-feedback-warning-100);
   --au-surface-page: var(--au-colors-neutral-light-white);
+  --au-surface-invert: var(--au-colors-neutral-dark-900);
   --au-surface-error-solid: var(--au-colors-feedback-error-500);
   --au-surface-error-subtile: var(--au-colors-feedback-error-100);
-  --au-surface-invert: var(--au-colors-neutral-light-white);
   --au-surface-disabled: var(--au-colors-neutral-light-50);
   --au-content-primary-static: var(--au-colors-neutral-dark-900);
   --au-content-primary: var(--au-colors-neutral-dark-900);

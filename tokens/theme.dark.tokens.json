@@ -27,6 +27,10 @@
       }
     },
     "brand": {
+      "background": {
+        "$type": "color",
+        "$value": "{colors.neutral.dark.900}"
+      },
       "solid": {
         "$type": "color",
         "$value": "{colors.brand.primary.500}"
@@ -74,6 +78,10 @@
       "$type": "color",
       "$value": "{colors.neutral.dark.900}"
     },
+    "invert": {
+      "$type": "color",
+      "$value": "{colors.neutral.light.white}"
+    },
     "error": {
       "solid": {
         "$type": "color",
@@ -83,10 +91,6 @@
         "$type": "color",
         "$value": "{colors.feedback.error.900}"
       }
-    },
-    "invert": {
-      "$type": "color",
-      "$value": "{colors.neutral.dark.900}"
     },
     "disabled": {
       "$type": "color",
@@ -112,7 +116,7 @@
     },
     "placeholder": {
       "$type": "color",
-      "$value": "{colors.neutral.dark.400}"
+      "$value": "{colors.neutral.dark.300}"
     },
     "invert": {
       "$type": "color",

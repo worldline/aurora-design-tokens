@@ -445,9 +445,17 @@
         "$type": "string",
         "$value": "Playfair Display"
       },
+      "primary-fallbacks": {
+        "$type": "string",
+        "$value": "Times New Roman, serif"
+      },
       "secondary": {
         "$type": "string",
         "$value": "Adamina"
+      },
+      "secondary-fallbacks": {
+        "$type": "string",
+        "$value": "Times New Roman, serif"
       }
     }
   },
