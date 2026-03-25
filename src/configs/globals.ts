@@ -18,6 +18,7 @@ export const globalsConfig = {
     'tokens/color.styles.*.json',
     'tokens/dimensions.*.json',
     'tokens/typography.all.*.json',
+    'tokens/motion.all.*.json',
   ],
   log: {
     warnings: logWarningLevels.warn,
@@ -41,7 +42,8 @@ export const globalsConfig = {
             token.filePath.includes('brand.') ||
             token.filePath.includes('dimensions.') ||
             token.filePath.includes('typography.all.') ||
-            token.filePath.includes('color.styles.'),
+            token.filePath.includes('color.styles.') ||
+            token.filePath.includes('motion.all.'),
           options: {
             outputReferences: true,
           },

@@ -1,0 +1,332 @@
+{
+  "motion": {
+    "primitive": {
+      "duration": {
+        "0": {
+          "$type": "string",
+          "$value": "0ms"
+        },
+        "100": {
+          "$type": "string",
+          "$value": "100ms"
+        },
+        "150": {
+          "$type": "string",
+          "$value": "150ms"
+        },
+        "200": {
+          "$type": "string",
+          "$value": "200ms"
+        },
+        "300": {
+          "$type": "string",
+          "$value": "300ms"
+        },
+        "400": {
+          "$type": "string",
+          "$value": "400ms"
+        },
+        "500": {
+          "$type": "string",
+          "$value": "500ms"
+        },
+        "800": {
+          "$type": "string",
+          "$value": "800ms"
+        },
+        "1000": {
+          "$type": "string",
+          "$value": "1000ms"
+        },
+        "1200": {
+          "$type": "string",
+          "$value": "1200ms"
+        }
+      },
+      "easing": {
+        "linear": {
+          "$type": "string",
+          "$value": "cubic-bezier(0, 0, 1, 1)"
+        },
+        "ease": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "ease-in": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.4, 0, 1, 1)"
+        },
+        "ease-out": {
+          "$type": "string",
+          "$value": "cubic-bezier(0, 0, 0.2, 1)"
+        },
+        "ease-in-out": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "emphasized": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.2, 0, 0, 1)"
+        }
+      },
+      "iteration": {
+        "once": {
+          "$type": "string",
+          "$value": "1"
+        },
+        "infinite": {
+          "$type": "string",
+          "$value": "infinite"
+        }
+      },
+      "delay": {
+        "0": {
+          "$type": "string",
+          "$value": "0ms"
+        },
+        "50": {
+          "$type": "string",
+          "$value": "50ms"
+        },
+        "100": {
+          "$type": "string",
+          "$value": "100ms"
+        },
+        "150": {
+          "$type": "string",
+          "$value": "150ms"
+        },
+        "200": {
+          "$type": "string",
+          "$value": "200ms"
+        },
+        "300": {
+          "$type": "string",
+          "$value": "300ms"
+        }
+      }
+    },
+    "behavior": {
+      "interaction": {
+        "duration": {
+          "$type": "string",
+          "$value": "{motion.primitive.duration.150}"
+        },
+        "easing": {
+          "$type": "string",
+          "$value": "{motion.primitive.easing.ease-out}"
+        }
+      },
+      "feedback": {
+        "duration": {
+          "$type": "string",
+          "$value": "{motion.primitive.duration.200}"
+        },
+        "easing": {
+          "$type": "string",
+          "$value": "{motion.primitive.easing.ease-out}"
+        }
+      },
+      "transition": {
+        "duration": {
+          "$type": "string",
+          "$value": "{motion.primitive.duration.300}"
+        },
+        "easing": {
+          "$type": "string",
+          "$value": "{motion.primitive.easing.ease-in-out}"
+        }
+      },
+      "navigation": {
+        "duration": {
+          "$type": "string",
+          "$value": "{motion.primitive.duration.400}"
+        },
+        "easing": {
+          "$type": "string",
+          "$value": "{motion.primitive.easing.emphasized}"
+        }
+      }
+    },
+    "spinner": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.1000}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.linear}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.infinite}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "pulse": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.500}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-in-out}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.infinite}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "shimmer": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.1200}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.linear}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.infinite}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "fade-in": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.duration}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.easing}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "fade-out": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.duration}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.easing}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "slide-in": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.duration}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.easing}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "slide-out": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.duration}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.behavior.transition.easing}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "scale-in": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.300}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-out}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "scale-out": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.300}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-in}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    },
+    "ripple": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.behavior.feedback.duration}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.behavior.feedback.easing}"
+      },
+      "iteration": {
+        "$type": "string",
+        "$value": "{motion.primitive.iteration.once}"
+      },
+      "delay": {
+        "$type": "string",
+        "$value": "{motion.primitive.delay.0}"
+      }
+    }
+  }
+}
