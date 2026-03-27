@@ -41,6 +41,10 @@
         "1200": {
           "$type": "string",
           "$value": "1200ms"
+        },
+        "2500": {
+          "$type": "string",
+          "$value": "2500ms"
         }
       },
       "easing": {
@@ -115,6 +119,14 @@
         "easing": {
           "$type": "string",
           "$value": "{motion.primitive.easing.ease-out}"
+        },
+        "iteration": {
+          "$type": "string",
+          "$value": "{motion.primitive.iteration.once}"
+        },
+        "delay": {
+          "$type": "string",
+          "$value": "{motion.primitive.delay.0}"
         }
       },
       "feedback": {
@@ -125,6 +137,14 @@
         "easing": {
           "$type": "string",
           "$value": "{motion.primitive.easing.ease-out}"
+        },
+        "iteration": {
+          "$type": "string",
+          "$value": "{motion.primitive.iteration.once}"
+        },
+        "delay": {
+          "$type": "string",
+          "$value": "{motion.primitive.delay.0}"
         }
       },
       "transition": {
@@ -135,6 +155,14 @@
         "easing": {
           "$type": "string",
           "$value": "{motion.primitive.easing.ease-in-out}"
+        },
+        "iteration": {
+          "$type": "string",
+          "$value": "{motion.primitive.iteration.once}"
+        },
+        "delay": {
+          "$type": "string",
+          "$value": "{motion.primitive.delay.0}"
         }
       },
       "navigation": {
@@ -145,6 +173,32 @@
         "easing": {
           "$type": "string",
           "$value": "{motion.primitive.easing.emphasized}"
+        },
+        "iteration": {
+          "$type": "string",
+          "$value": "{motion.primitive.iteration.once}"
+        },
+        "delay": {
+          "$type": "string",
+          "$value": "{motion.primitive.delay.0}"
+        }
+      },
+      "preloading": {
+        "duration": {
+          "$type": "string",
+          "$value": "{motion.primitive.duration.2500}"
+        },
+        "easing": {
+          "$type": "string",
+          "$value": "{motion.primitive.easing.ease-in-out}"
+        },
+        "iteration": {
+          "$type": "string",
+          "$value": "{motion.primitive.iteration.infinite}"
+        },
+        "delay": {
+          "$type": "string",
+          "$value": "{motion.primitive.delay.0}"
         }
       }
     },
