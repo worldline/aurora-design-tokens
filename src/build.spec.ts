@@ -22,4 +22,9 @@ describe('build', () => {
     const ts = readFileSync('build/types/typographies.ts', 'utf8')
     expect(ts).toMatchSnapshot()
   })
+
+  it('should output the variables definition of types file', () => {
+    const ts = readFileSync('build/variables.d.ts', 'utf8')
+    expect(ts).toMatchSnapshot()
+  })
 })

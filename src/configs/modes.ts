@@ -23,11 +23,7 @@ interface ModeDefinition {
 
 const colorModeFactory: ConfigFactory = (mode) => ({
   ...globalsConfig,
-  source: [
-    ...globalsConfig.source,
-    'tokens/dimensions.*.json',
-    `tokens/theme.${mode.name}*.json`,
-  ],
+  source: [...globalsConfig.source, `tokens/theme.${mode.name}*.json`],
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
@@ -56,7 +52,7 @@ const colorModeFactory: ConfigFactory = (mode) => ({
           destination: 'colors.ts',
           options: {
             typeName: 'AuColor',
-            prefixToRemove: 'Colors',
+            prefixToRemove: 'Color',
             type: 'color',
           },
           filter: (token: TransformedToken) =>
@@ -123,7 +119,7 @@ const highLevelTokensConfig = {
     'tokens/viewport.desktop-md*.json',
     'tokens/theme.light*.json',
     'tokens/applied.default.*.json',
-    'tokens/dimensions.*.json',
+    'tokens/dimension.*.json',
     'tokens/text.styles.*.json',
     'tokens/effect.*.json',
   ],

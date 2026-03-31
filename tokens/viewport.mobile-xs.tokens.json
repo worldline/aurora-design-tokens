@@ -358,140 +358,126 @@
   "spacing": {
     "none": {
       "$type": "dimension",
-      "$value": "{dimensions.0}"
+      "$value": "{dimension.0}"
     },
     "3xs": {
       "$type": "dimension",
-      "$value": "{dimensions.2}"
+      "$value": "{dimension.2}"
     },
     "2xs": {
       "$type": "dimension",
-      "$value": "{dimensions.4}"
+      "$value": "{dimension.4}"
     },
     "xs": {
       "$type": "dimension",
-      "$value": "{dimensions.8}"
+      "$value": "{dimension.8}"
     },
     "sm": {
       "$type": "dimension",
-      "$value": "{dimensions.12}"
+      "$value": "{dimension.12}"
     },
     "md": {
       "$type": "dimension",
-      "$value": "{dimensions.16}"
+      "$value": "{dimension.16}"
     },
     "lg": {
       "$type": "dimension",
-      "$value": "{dimensions.20}"
+      "$value": "{dimension.20}"
     },
     "xl": {
       "$type": "dimension",
-      "$value": "{dimensions.24}"
+      "$value": "{dimension.24}"
     },
     "2xl": {
       "$type": "dimension",
-      "$value": "{dimensions.32}"
+      "$value": "{dimension.32}"
     },
     "3xl": {
       "$type": "dimension",
-      "$value": "{dimensions.40}"
+      "$value": "{dimension.40}"
     },
     "4xl": {
       "$type": "dimension",
-      "$value": "{dimensions.48}"
+      "$value": "{dimension.48}"
     },
     "5xl": {
       "$type": "dimension",
-      "$value": "{dimensions.64}"
+      "$value": "{dimension.64}"
     },
     "6xl": {
       "$type": "dimension",
-      "$value": "{dimensions.80}"
+      "$value": "{dimension.80}"
     },
     "7xl": {
       "$type": "dimension",
-      "$value": "{dimensions.96}"
+      "$value": "{dimension.96}"
     },
     "8xl": {
       "$type": "dimension",
-      "$value": "{dimensions.128}"
+      "$value": "{dimension.128}"
     }
   },
   "border-width": {
     "none": {
       "$type": "dimension",
-      "$value": "{dimensions.0}"
+      "$value": "{dimension.0}"
     },
     "thin": {
       "$type": "dimension",
-      "$value": "{dimensions.1}"
+      "$value": "{dimension.1}"
     },
     "medium": {
       "$type": "dimension",
-      "$value": "{dimensions.2}"
+      "$value": "{dimension.2}"
     },
     "thick": {
       "$type": "dimension",
-      "$value": "{dimensions.4}"
+      "$value": "{dimension.4}"
     }
   },
-  "sizes": {
+  "size": {
     "height": {
       "header": {
         "$type": "dimension",
-        "$value": "{dimensions.48}"
+        "$value": "{dimension.48}"
       },
       "footer": {
         "$type": "dimension",
-        "$value": "{dimensions.52}"
-      },
-      "button": {
-        "sm": {
-          "$type": "dimension",
-          "$value": "{dimensions.40}"
-        },
-        "md": {
-          "$type": "dimension",
-          "$value": "{dimensions.48}"
-        },
-        "lg": {
-          "$type": "dimension",
-          "$value": "{dimensions.56}"
-        }
+        "$value": "{dimension.52}"
       }
     },
     "icon": {
       "xs": {
         "$type": "dimension",
-        "$value": "{dimensions.12}"
+        "$value": "{dimension.12}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{dimensions.16}"
+        "$value": "{dimension.16}"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{dimensions.24}"
+        "$value": "{dimension.24}"
       },
       "lg": {
         "$type": "dimension",
-        "$value": "{dimensions.32}"
+        "$value": "{dimension.32}"
       },
       "xl": {
         "$type": "dimension",
-        "$value": "{dimensions.40}"
+        "$value": "{dimension.40}"
       },
       "2xl": {
         "$type": "dimension",
-        "$value": "{dimensions.48}"
+        "$value": "{dimension.48}"
       },
       "3xl": {
         "$type": "dimension",
-        "$value": "{dimensions.56}"
+        "$value": "{dimension.56}"
       },
       "4xl": {
         "$type": "dimension",
-        "$value": "{dimensions.64}"
+        "$value": "{dimension.64}"
       }
     }
   },
@@ -503,6 +489,12 @@
     "breakpoint": {
       "$type": "dimension",
       "$value": "360px"
+    },
+    "wrapper": {
+      "padding-vert": {
+        "$type": "dimension",
+        "$value": "{spacing.2xl}"
+      }
     },
     "content": {
       "max-width": {
@@ -526,12 +518,6 @@
           "$type": "dimension",
           "$value": "1024px"
         }
-      }
-    },
-    "wrapper": {
-      "padding-vert": {
-        "$type": "dimension",
-        "$value": "{spacing.2xl}"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "colors": {
+  "color": {
     "neutral": {
       "light": {
         "50": {
@@ -462,39 +462,39 @@
   "radius": {
     "none": {
       "$type": "dimension",
-      "$value": "{dimensions.0}"
+      "$value": "{dimension.0}"
     },
     "2xs": {
       "$type": "dimension",
-      "$value": "{dimensions.2}"
+      "$value": "{dimension.2}"
     },
     "xs": {
       "$type": "dimension",
-      "$value": "{dimensions.4}"
+      "$value": "{dimension.4}"
     },
     "sm": {
       "$type": "dimension",
-      "$value": "{dimensions.8}"
+      "$value": "{dimension.8}"
     },
     "md": {
       "$type": "dimension",
-      "$value": "{dimensions.12}"
+      "$value": "{dimension.12}"
     },
     "lg": {
       "$type": "dimension",
-      "$value": "{dimensions.16}"
+      "$value": "{dimension.16}"
     },
     "xl": {
       "$type": "dimension",
-      "$value": "{dimensions.20}"
+      "$value": "{dimension.20}"
     },
     "2xl": {
       "$type": "dimension",
-      "$value": "{dimensions.24}"
+      "$value": "{dimension.24}"
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{dimensions.max}"
+      "$value": "{dimension.max}"
     }
   }
 }

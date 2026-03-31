@@ -16,7 +16,7 @@ export const globalsConfig = {
   source: [
     'tokens/brand.worldline.*.json',
     'tokens/color.styles.*.json',
-    'tokens/dimensions.*.json',
+    'tokens/dimension.*.json',
     'tokens/typography.all.*.json',
     'tokens/motion.all.*.json',
   ],
@@ -40,7 +40,7 @@ export const globalsConfig = {
           destination: config.globalCssVariablesFile,
           filter: (token: TransformedToken) =>
             token.filePath.includes('brand.') ||
-            token.filePath.includes('dimensions.') ||
+            token.filePath.includes('dimension.') ||
             token.filePath.includes('typography.all.') ||
             token.filePath.includes('color.styles.') ||
             token.filePath.includes('motion.all.'),
@@ -50,7 +50,7 @@ export const globalsConfig = {
         },
       ],
     },
-    ts: {
+    js: {
       transformGroup: transformGroups.js,
       buildPath: config.buildPath,
       transforms: ['color/hex'],
@@ -58,6 +58,17 @@ export const globalsConfig = {
         {
           format: formats.javascriptEs6,
           destination: config.globalJsVariablesFile,
+        },
+      ],
+    },
+    ts: {
+      transformGroup: transformGroups.js,
+      buildPath: config.buildPath,
+      transforms: ['color/hex'],
+      files: [
+        {
+          format: formats.typescriptEs6Declarations,
+          destination: config.globalTsVariablesFile,
         },
       ],
     },

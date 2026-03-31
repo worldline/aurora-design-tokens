@@ -18,6 +18,66 @@
       }
     ]
   },
+  "interactive-default": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "3px",
+        "spread": "0px",
+        "color": "{color.alpha.black.700}"
+      }
+    ]
+  },
+  "interactive-hover": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "3px",
+        "blur": "6px",
+        "spread": "0px",
+        "color": "{color.alpha.black.700}"
+      }
+    ]
+  },
+  "interactive-overlay": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "20px",
+        "spread": "0px",
+        "color": "{color.alpha.black.700}"
+      }
+    ]
+  },
+  "content-overlay": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "14px",
+        "blur": "28px",
+        "spread": "0px",
+        "color": "{color.alpha.black.700}"
+      }
+    ]
+  },
+  "content-style": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "38px",
+        "spread": "0px",
+        "color": "{color.alpha.black.700}"
+      }
+    ]
+  },
   "button-primary-shadow": {
     "$type": "shadow",
     "$value": [

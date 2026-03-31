@@ -7,4 +7,5 @@ export const config = {
   cssVariablePrefix: 'au',
   globalCssVariablesFile: 'variables.css',
   globalJsVariablesFile: 'variables.js',
+  globalTsVariablesFile: 'variables.d.ts',
 }
