@@ -1,6 +1,6 @@
 {
   "name": "@worldline/aurora-design-tokens",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "create style sheets from design tokens files",
   "license": "ISC",
   "author": "",
