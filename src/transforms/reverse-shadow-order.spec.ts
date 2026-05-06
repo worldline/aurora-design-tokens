@@ -1,5 +1,5 @@
 import type { TransformedToken } from 'style-dictionary/types'
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 import { reverseShadowOrder } from './reverse-shadow-order.ts'
 

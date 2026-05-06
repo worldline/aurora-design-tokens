@@ -22,6 +22,7 @@ export const gradient = {
     } catch (error) {
       throw new Error(
         `Invalid gradient token at path: ${token.path.join('.')}: ${error instanceof Error ? error.message : String(error)}`,
+        { cause: error },
       )
     }
 

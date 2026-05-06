@@ -1,5 +1,12 @@
 build/
 node_modules/
+coverage/
+
+# reporting
+junit.xml
+test-report.xml
+
+
 
 # macOS
 .DS_Store
