@@ -1,7 +1,7 @@
 import { execSync } from 'child_process'
 import { readFileSync } from 'fs'
 
-import { describe, it, beforeAll, expect } from 'vitest'
+import { beforeAll, describe, expect, it } from 'vitest'
 
 describe('build', () => {
   beforeAll(() => {

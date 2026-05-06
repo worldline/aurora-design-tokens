@@ -27,6 +27,7 @@ export const typography = {
             } catch (error) {
               throw new Error(
                 `Invalid typography token with name: '${tokenName}'. ${error instanceof Error ? error.message : String(error)}`,
+                { cause: error },
               )
             }
 
@@ -74,9 +75,7 @@ export const typography = {
           if (typeof tokenValue === 'object' && !tokenValue.$type) {
             return {
               ...inputTokens,
-              [tokenName]: splitIfTypographyObject(
-                tokenValue as PreprocessedTokens,
-              ),
+              [tokenName]: splitIfTypographyObject(tokenValue),
             }
           }
           return {

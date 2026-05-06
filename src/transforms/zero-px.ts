@@ -25,6 +25,7 @@ export const zeroPx = {
       } catch (error) {
         throw new Error(
           `Invalid shadow token at path: ${token.path.join('.')}: ${error instanceof Error ? error.message : String(error)}`,
+          { cause: error },
         )
       }
 

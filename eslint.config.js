@@ -1,9 +1,8 @@
 import js from '@eslint/js'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import { defineConfig, globalIgnores } from 'eslint/config'
-import importPlugin from 'eslint-plugin-import'
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default defineConfig([
   globalIgnores(['dist', '*.config.*js']),
@@ -13,8 +12,6 @@ export default defineConfig([
       eslintPluginPrettierRecommended,
       tseslint.configs.strictTypeChecked,
       tseslint.configs.stylisticTypeChecked,
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
     ],
     rules: {
       '@typescript-eslint/array-type': [
@@ -44,31 +41,6 @@ export default defineConfig([
         { argsIgnorePattern: '^_' },
       ],
       quotes: ['error', 'single', { avoidEscape: true }],
-      'import/order': [
-        'error',
-        {
-          alphabetize: {
-            order: 'asc',
-            caseInsensitive: true,
-          },
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
-          'newlines-between': 'always',
-          pathGroups: [
-            {
-              pattern: '@/**',
-              group: 'internal',
-              position: 'after',
-            },
-          ],
-        },
-      ],
     },
     languageOptions: {
       ecmaVersion: 'latest',

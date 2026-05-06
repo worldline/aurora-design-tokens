@@ -5,7 +5,6 @@ import { config } from '../config.ts'
 import { typescriptTypes } from '../formats/typescript-types.ts'
 import { typography } from '../preprocessors/typography.ts'
 import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
-
 import { globalsConfig } from './globals.ts'
 
 interface ModeConfig {

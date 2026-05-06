@@ -1,5 +1,5 @@
-import type { TransformedToken, PlatformConfig } from 'style-dictionary/types'
-import { describe, it, expect } from 'vitest'
+import type { PlatformConfig, TransformedToken } from 'style-dictionary/types'
+import { describe, expect, it } from 'vitest'
 
 import { fontsPxToRem } from './fonts-px-to-rem.ts'
 
