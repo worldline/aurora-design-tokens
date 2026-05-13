@@ -1,0 +1,4 @@
+# False positive: CSS design token path in test assertions
+# gradients.gradient-1 is a test fixture string, not a real secret
+5a50ed34bc251b75ac74f42b3175f23b86b9d4f9:src/transforms/gradient.spec.ts:generic-api-key:52
+5a50ed34bc251b75ac74f42b3175f23b86b9d4f9:src/transforms/gradient.spec.ts:generic-api-key:67
