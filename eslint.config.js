@@ -5,7 +5,7 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
-  globalIgnores(['dist', '*.config.*js']),
+  globalIgnores(['build', '*.config.*js', '.releaserc.cjs']),
   {
     extends: [
       js.configs.recommended,
@@ -22,6 +22,7 @@ export default defineConfig([
         },
       ],
       'arrow-body-style': ['error', 'as-needed'],
+      curly: ['error', 'all'],
       eqeqeq: 'error',
       'no-console': 'error',
       'no-duplicate-imports': 'error',
