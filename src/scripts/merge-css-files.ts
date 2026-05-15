@@ -16,8 +16,12 @@ export const mergeCssFiles = async ({
       (file) => file.endsWith('.css') && file !== path.basename(outputFile),
     )
     .sort((a, b) => {
-      if (a === config.globalCssVariablesFile) return -1
-      if (b === config.globalCssVariablesFile) return 1
+      if (a === config.globalCssVariablesFile) {
+        return -1
+      }
+      if (b === config.globalCssVariablesFile) {
+        return 1
+      }
       return a.localeCompare(b)
     })
 
