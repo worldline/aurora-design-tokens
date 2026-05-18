@@ -5,6 +5,8 @@ import type {
   Transform,
 } from 'style-dictionary/types'
 
+import { stringToNumber } from '../util/string.ts'
+
 export const fontsPxToRem = {
   name: 'fontsPxToRem',
   transitive: true,
@@ -19,15 +21,17 @@ export const fontsPxToRem = {
     )
   },
   transform: (token: DesignToken, platform: PlatformConfig) => {
-    const parsedVal = parseFloat(token.$value as string)
-    const baseFont: number =
-      (platform.basePxFontSize as undefined | number) ?? 16
-
-    if (isNaN(parsedVal)) {
+    let parsedVal: number
+    try {
+      parsedVal = stringToNumber(token.$value as string)
+    } catch (error) {
       throw new Error(
         `Invalid value for token ${token.name ?? '""'}: ${String(token.$value)}`,
+        { cause: error },
       )
     }
+    const baseFont: number =
+      (platform.basePxFontSize as undefined | number) ?? 16
 
     return parsedVal === 0 ? '0' : `${String(parsedVal / baseFont)}rem`
   },

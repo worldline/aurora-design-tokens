@@ -5,6 +5,7 @@ import { config } from '../config.ts'
 import { typescriptTypes } from '../formats/typescript-types.ts'
 import { typography } from '../preprocessors/typography.ts'
 import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
+import { auroraReactNativeTransformGroup } from '../transforms/aurora-react-native-transform-group.ts'
 import { globalsConfig } from './globals.ts'
 
 interface ModeConfig {
@@ -19,6 +20,15 @@ interface ModeDefinition {
   configs: ReadonlyArray<ModeConfig>
   configFactory: ConfigFactory
 }
+
+const breakpoints = {
+  'mobile-xs': 360,
+  'mobile-sm': 480,
+  tablet: 768,
+  'desktop-xs': 1024,
+  'desktop-sm': 1280,
+  'desktop-md': null,
+} as const
 
 const colorModeFactory: ConfigFactory = (mode) => ({
   ...globalsConfig,
@@ -58,6 +68,22 @@ const colorModeFactory: ConfigFactory = (mode) => ({
             (token.filePath.includes('brand.') ||
               token.filePath.includes('theme.')) &&
             token.$type === 'color',
+        },
+      ],
+    },
+    reactNative: {
+      transformGroup: auroraReactNativeTransformGroup.name,
+      buildPath: config.reactNativeBuildPath,
+      files: [
+        {
+          format: formats.javascriptEsm,
+          destination: `${mode.name}.ts`,
+          filter: (token: TransformedToken) =>
+            token.filePath.includes('theme.') ||
+            token.filePath.includes('color.'),
+          options: {
+            minify: true,
+          },
         },
       ],
     },
@@ -108,15 +134,31 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
         },
       ],
     },
+    reactNative: {
+      transformGroup: auroraReactNativeTransformGroup.name,
+      buildPath: config.reactNativeBuildPath,
+      files: [
+        {
+          format: formats.javascriptEsm,
+          destination: `viewport.${mode.name}.ts`,
+          filter: (token: TransformedToken) =>
+            token.filePath.includes('viewport.') ||
+            token.filePath.includes('text.styles.'),
+          options: {
+            minify: true,
+          },
+        },
+      ],
+    },
   },
 })
 
-const highLevelTokensConfig = {
+const highLevelFactory = (theme: string, viewport: string): Config => ({
   ...globalsConfig,
   source: [
     ...globalsConfig.source,
-    'tokens/viewport.desktop-md*.json',
-    'tokens/theme.light*.json',
+    `tokens/viewport.${viewport}*.json`,
+    `tokens/theme.${theme}*.json`,
     'tokens/applied.default.*.json',
     'tokens/dimension.*.json',
     'tokens/text.styles.*.json',
@@ -142,8 +184,24 @@ const highLevelTokensConfig = {
         },
       ],
     },
+    reactNative: {
+      transformGroup: auroraReactNativeTransformGroup.name,
+      buildPath: config.reactNativeBuildPath,
+      files: [
+        {
+          format: formats.javascriptEsm,
+          destination: `high-level.${theme}.${viewport}.ts`,
+          filter: (token: TransformedToken) =>
+            token.filePath.includes('applied.') ||
+            token.filePath.includes('effect.'),
+          options: {
+            minify: true,
+          },
+        },
+      ],
+    },
   },
-}
+})
 
 const modes: ReadonlyArray<ModeDefinition> = [
   {
@@ -162,46 +220,29 @@ const modes: ReadonlyArray<ModeDefinition> = [
   },
   {
     name: 'breakpoint',
-    configs: [
-      {
-        name: 'mobile-xs',
-        selector: ['@media screen and (max-width: 360px)', ':root'],
-      },
-      {
-        name: 'mobile-sm',
-        selector: [
-          '@media screen and (min-width: 361px) and (max-width: 480px)',
-          ':root',
-        ],
-      },
-      {
-        name: 'tablet',
-        selector: [
-          '@media screen and (min-width: 481px) and (max-width: 768px)',
-          ':root',
-        ],
-      },
-      {
-        name: 'desktop-xs',
-        selector: [
-          '@media screen and (min-width: 769px) and (max-width: 1024px)',
-          ':root',
-        ],
-      },
-      {
-        name: 'desktop-sm',
-        selector: [
-          '@media screen and (min-width: 1025px) and (max-width: 1280px)',
-          ':root',
-        ],
-      },
-      {
-        name: 'desktop-md',
-        selector: ['@media screen and (min-width: 1281px)', ':root'],
-      },
-    ],
+    configs: Object.entries(breakpoints).map(([name, max], index, entries) => {
+      const previousEntry = index > 0 ? entries[index - 1] : null
+
+      const mediaQuery = [
+        '@media screen',
+        previousEntry?.[1]
+          ? `(min-width: ${(previousEntry[1] + 1).toString()}px)`
+          : undefined,
+        max !== null ? `(max-width: ${max.toString()}px)` : undefined,
+      ]
+      return {
+        name,
+        selector: [mediaQuery.filter(Boolean).join(' and '), ':root'],
+      }
+    }),
     configFactory: viewportModeFactory,
   },
 ]
 
-export { modes, highLevelTokensConfig }
+const getModeConfigNames = (mode: string) =>
+  modes.find((m) => m.name === mode)?.configs.map((c) => c.name) ?? []
+
+const themes = getModeConfigNames('color')
+const viewports = getModeConfigNames('breakpoint')
+
+export { modes, highLevelFactory, breakpoints, themes, viewports }

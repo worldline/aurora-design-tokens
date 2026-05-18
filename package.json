@@ -22,7 +22,8 @@
     "./typographies": {
       "import": "./build/types/typographies.js",
       "types": "./build/types/typographies.d.ts"
-    }
+    },
+    "./react-native/tokens": "./build/react-native/tokens.ts"
   },
   "files": [
     "build/css/style.css",

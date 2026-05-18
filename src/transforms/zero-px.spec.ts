@@ -57,7 +57,7 @@ describe('zeroPx', () => {
           {
             offsetX: '0px',
             offsetY: '4px',
-            blur: 0,
+            blur: [],
             spread: '2px',
             color: '#000',
           },

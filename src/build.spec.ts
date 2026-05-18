@@ -27,4 +27,9 @@ describe('build', () => {
     const ts = readFileSync('build/variables.d.ts', 'utf8')
     expect(ts).toMatchSnapshot()
   })
+
+  it('should output the react native tokens file', () => {
+    const ts = readFileSync('build/react-native/tokens.ts', 'utf8')
+    expect(ts).toMatchSnapshot()
+  })
 })

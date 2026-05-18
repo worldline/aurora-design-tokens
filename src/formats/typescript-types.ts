@@ -1,6 +1,6 @@
 import type { Format } from 'style-dictionary/types'
 
-const decapitalize = (s: string): string => `${s[0].toLowerCase()}${s.slice(1)}`
+import { decapitalize } from '../util/string.ts'
 
 export const typescriptTypes = {
   name: 'typescript/types',
