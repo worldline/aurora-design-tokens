@@ -10,6 +10,7 @@ import type { Config, TransformedToken } from 'style-dictionary/types'
 import { config } from '../config.ts'
 import { typography } from '../preprocessors/typography.ts'
 import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
+import { auroraReactNativeTransformGroup } from '../transforms/aurora-react-native-transform-group.ts'
 import { fontsPxToRem } from '../transforms/fonts-px-to-rem.ts'
 
 export const globalsConfig = {
@@ -69,6 +70,19 @@ export const globalsConfig = {
         {
           format: formats.typescriptEs6Declarations,
           destination: config.globalTsVariablesFile,
+        },
+      ],
+    },
+    reactNative: {
+      transformGroup: auroraReactNativeTransformGroup.name,
+      buildPath: config.reactNativeBuildPath,
+      files: [
+        {
+          format: formats.javascriptEsm,
+          destination: config.globalReactNativeFile,
+          options: {
+            minify: true,
+          },
         },
       ],
     },

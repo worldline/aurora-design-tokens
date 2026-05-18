@@ -1,13 +1,6 @@
 import type { Transform, TransformedToken } from 'style-dictionary/types'
 
-interface ShadowItem {
-  offsetX: string
-  offsetY: string
-  blur: string
-  spread: string
-  color: string
-  inset?: boolean
-}
+import { assertIsShadowValue } from '../util/assertions/shadow.ts'
 
 export const zeroPx = {
   type: 'value',
@@ -44,38 +37,6 @@ export const zeroPx = {
 
 const isStringValue = (value: unknown): value is string =>
   typeof value === 'string'
-
-const assertIsShadowValue: (
-  value: unknown,
-) => asserts value is Array<ShadowItem> = (value: unknown) => {
-  if (!Array.isArray(value) || value.length === 0) {
-    throw new Error('A shadow value must be a non-empty array')
-  }
-  value.forEach((item: unknown, index: number) => {
-    assertIsShadowItem(item, index)
-  })
-}
-
-const assertIsShadowItem: (
-  value: unknown,
-  index: number,
-) => asserts value is ShadowItem = (value: unknown, index: number) => {
-  const indexAsString = index.toString()
-  if (typeof value !== 'object' || value === null) {
-    throw new Error('A shadow item must be an object')
-  }
-  const requiredProps = ['offsetX', 'offsetY', 'blur', 'spread', 'color']
-  requiredProps.forEach((prop) => {
-    if (
-      !(prop in value) ||
-      typeof (value as Record<string, unknown>)[prop] !== 'string'
-    ) {
-      throw new Error(
-        `Shadow item at index ${indexAsString} must have a ${prop} property of type string`,
-      )
-    }
-  })
-}
 
 const convertZeroPxToZero = (pxValue: string): string =>
   pxValue === '0px' ? '0' : pxValue

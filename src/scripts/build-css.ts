@@ -3,7 +3,7 @@ import * as path from 'path'
 
 import { config } from '../config.ts'
 
-export const mergeCssFiles = async ({
+export const buildCss = async ({
   inputFolder,
   outputFile,
 }: {
