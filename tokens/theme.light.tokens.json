@@ -78,6 +78,10 @@
       "$type": "color",
       "$value": "{color.neutral.light.50}"
     },
+    "invert": {
+      "$type": "color",
+      "$value": "{color.neutral.dark.900}"
+    },
     "error": {
       "solid": {
         "$type": "color",
@@ -88,13 +92,25 @@
         "$value": "{color.feedback.error.100}"
       }
     },
-    "invert": {
-      "$type": "color",
-      "$value": "{color.neutral.dark.900}"
-    },
     "disabled": {
       "$type": "color",
       "$value": "{color.neutral.light.50}"
+    },
+    "overlay": {
+      "$type": "color",
+      "$value": "{color.alpha.black.600}"
+    },
+    "shadow": {
+      "$type": "color",
+      "$value": "{color.alpha.black.700}"
+    },
+    "gradient-start": {
+      "$type": "color",
+      "$value": "{color.alpha.white.50}"
+    },
+    "gradient-end": {
+      "$type": "color",
+      "$value": "{color.alpha.white.1000}"
     }
   },
   "content": {

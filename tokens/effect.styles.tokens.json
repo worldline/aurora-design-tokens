@@ -26,7 +26,7 @@
         "offsetY": "1px",
         "blur": "3px",
         "spread": "0px",
-        "color": "{color.alpha.black.700}"
+        "color": "{surface.shadow}"
       }
     ]
   },
@@ -38,7 +38,7 @@
         "offsetY": "3px",
         "blur": "6px",
         "spread": "0px",
-        "color": "{color.alpha.black.700}"
+        "color": "{surface.shadow}"
       }
     ]
   },
@@ -50,7 +50,7 @@
         "offsetY": "10px",
         "blur": "20px",
         "spread": "0px",
-        "color": "{color.alpha.black.700}"
+        "color": "{surface.shadow}"
       }
     ]
   },
@@ -62,7 +62,7 @@
         "offsetY": "14px",
         "blur": "28px",
         "spread": "0px",
-        "color": "{color.alpha.black.700}"
+        "color": "{surface.shadow}"
       }
     ]
   },
@@ -74,7 +74,7 @@
         "offsetY": "0px",
         "blur": "38px",
         "spread": "0px",
-        "color": "{color.alpha.black.700}"
+        "color": "{surface.shadow}"
       }
     ]
   },
@@ -86,7 +86,7 @@
         "offsetY": "-2px",
         "blur": "0px",
         "spread": "0px",
-        "color": "#0a0d120d",
+        "color": "{surface.shadow}",
         "inset": true
       }
     ]

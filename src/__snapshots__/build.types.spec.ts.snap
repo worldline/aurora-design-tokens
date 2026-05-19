@@ -1,0 +1,485 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`build types > should output the colors typescript file 1`] = `
+"export type AuColor =
+  | 'neutralLight50'
+  | 'neutralLight100'
+  | 'neutralLight200'
+  | 'neutralLight300'
+  | 'neutralLight400'
+  | 'neutralLight500'
+  | 'neutralLight600'
+  | 'neutralLight700'
+  | 'neutralLight800'
+  | 'neutralLight900'
+  | 'neutralLightWhite'
+  | 'neutralDark50'
+  | 'neutralDark100'
+  | 'neutralDark200'
+  | 'neutralDark300'
+  | 'neutralDark400'
+  | 'neutralDark500'
+  | 'neutralDark600'
+  | 'neutralDark700'
+  | 'neutralDark800'
+  | 'neutralDark900'
+  | 'neutralDarkBlack'
+  | 'alphaWhite50'
+  | 'alphaWhite100'
+  | 'alphaWhite200'
+  | 'alphaWhite300'
+  | 'alphaWhite400'
+  | 'alphaWhite500'
+  | 'alphaWhite600'
+  | 'alphaWhite700'
+  | 'alphaWhite800'
+  | 'alphaWhite900'
+  | 'alphaWhite1000'
+  | 'alphaBlack50'
+  | 'alphaBlack100'
+  | 'alphaBlack200'
+  | 'alphaBlack300'
+  | 'alphaBlack400'
+  | 'alphaBlack500'
+  | 'alphaBlack600'
+  | 'alphaBlack700'
+  | 'alphaBlack800'
+  | 'alphaBlack900'
+  | 'alphaBlack1000'
+  | 'brandPrimary50'
+  | 'brandPrimary100'
+  | 'brandPrimary200'
+  | 'brandPrimary300'
+  | 'brandPrimary400'
+  | 'brandPrimary500'
+  | 'brandPrimary600'
+  | 'brandPrimary700'
+  | 'brandPrimary800'
+  | 'brandPrimary900'
+  | 'feedbackInfo50'
+  | 'feedbackInfo100'
+  | 'feedbackInfo200'
+  | 'feedbackInfo300'
+  | 'feedbackInfo400'
+  | 'feedbackInfo500'
+  | 'feedbackInfo600'
+  | 'feedbackInfo700'
+  | 'feedbackInfo800'
+  | 'feedbackInfo900'
+  | 'feedbackSuccess50'
+  | 'feedbackSuccess100'
+  | 'feedbackSuccess200'
+  | 'feedbackSuccess300'
+  | 'feedbackSuccess400'
+  | 'feedbackSuccess500'
+  | 'feedbackSuccess600'
+  | 'feedbackSuccess700'
+  | 'feedbackSuccess800'
+  | 'feedbackSuccess900'
+  | 'feedbackWarning50'
+  | 'feedbackWarning100'
+  | 'feedbackWarning200'
+  | 'feedbackWarning300'
+  | 'feedbackWarning400'
+  | 'feedbackWarning500'
+  | 'feedbackWarning600'
+  | 'feedbackWarning700'
+  | 'feedbackWarning800'
+  | 'feedbackWarning900'
+  | 'feedbackError50'
+  | 'feedbackError100'
+  | 'feedbackError200'
+  | 'feedbackError300'
+  | 'feedbackError400'
+  | 'feedbackError500'
+  | 'feedbackError600'
+  | 'feedbackError700'
+  | 'feedbackError800'
+  | 'feedbackError900'
+  | 'surfaceNeutralLow'
+  | 'surfaceNeutralLowHover'
+  | 'surfaceNeutralMedium'
+  | 'surfaceNeutralMediumHover'
+  | 'surfaceNeutralHigh'
+  | 'surfaceNeutralHighHover'
+  | 'surfaceBrandBackground'
+  | 'surfaceBrandSolid'
+  | 'surfaceBrandSolidHover'
+  | 'surfaceBrandSubtile'
+  | 'surfaceInfoSolid'
+  | 'surfaceInfoSubtile'
+  | 'surfaceSuccessSolid'
+  | 'surfaceSuccessSubtile'
+  | 'surfaceWarningSolid'
+  | 'surfaceWarningSubtile'
+  | 'surfacePage'
+  | 'surfaceInvert'
+  | 'surfaceErrorSolid'
+  | 'surfaceErrorSubtile'
+  | 'surfaceDisabled'
+  | 'surfaceOverlay'
+  | 'surfaceShadow'
+  | 'surfaceGradientStart'
+  | 'surfaceGradientEnd'
+  | 'contentPrimaryStatic'
+  | 'contentPrimary'
+  | 'contentSecondary'
+  | 'contentTertiary'
+  | 'contentPlaceholder'
+  | 'contentInvert'
+  | 'contentDisabled'
+  | 'contentBrand'
+  | 'contentOnBrand'
+  | 'contentOnBrandHover'
+  | 'contentInfo'
+  | 'contentSuccess'
+  | 'contentWarning'
+  | 'contentError'
+  | 'borderDisabled'
+  | 'borderNeutralLow'
+  | 'borderNeutralMedium'
+  | 'borderNeutralHigh'
+  | 'borderBrandSolid'
+  | 'borderBrandSubtile'
+  | 'borderInfoSolid'
+  | 'borderInfoSubtile'
+  | 'borderSuccessSolid'
+  | 'borderSuccessSubtile'
+  | 'borderWarningSolid'
+  | 'borderWarningSubtile'
+  | 'borderErrorSolid'
+  | 'borderErrorSubtile'
+"
+`;
+
+exports[`build types > should output the typographies typescript file 1`] = `
+"export type AuTypography =
+  | 'hero'
+  | 'metricLg'
+  | 'metricMd'
+  | 'metricSm'
+  | 'displayLg'
+  | 'displayMd'
+  | 'displaySm'
+  | 'titleLg'
+  | 'titleMd'
+  | 'titleSm'
+  | 'bodyLg'
+  | 'bodyMd'
+  | 'bodySm'
+  | 'labelLg'
+  | 'labelMd'
+  | 'labelSm'
+  | 'labelXs'
+  | 'captionLg'
+  | 'captionMd'
+  | 'captionSm'
+"
+`;
+
+exports[`build types > should output the variables definition of types file 1`] = `
+"/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+export const ColorNeutralLight50: string;
+export const ColorNeutralLight100: string;
+export const ColorNeutralLight200: string;
+export const ColorNeutralLight300: string;
+export const ColorNeutralLight400: string;
+export const ColorNeutralLight500: string;
+export const ColorNeutralLight600: string;
+export const ColorNeutralLight700: string;
+export const ColorNeutralLight800: string;
+export const ColorNeutralLight900: string;
+export const ColorNeutralLightWhite: string;
+export const ColorNeutralDark50: string;
+export const ColorNeutralDark100: string;
+export const ColorNeutralDark200: string;
+export const ColorNeutralDark300: string;
+export const ColorNeutralDark400: string;
+export const ColorNeutralDark500: string;
+export const ColorNeutralDark600: string;
+export const ColorNeutralDark700: string;
+export const ColorNeutralDark800: string;
+export const ColorNeutralDark900: string;
+export const ColorNeutralDarkBlack: string;
+export const ColorAlphaWhite50: string;
+export const ColorAlphaWhite100: string;
+export const ColorAlphaWhite200: string;
+export const ColorAlphaWhite300: string;
+export const ColorAlphaWhite400: string;
+export const ColorAlphaWhite500: string;
+export const ColorAlphaWhite600: string;
+export const ColorAlphaWhite700: string;
+export const ColorAlphaWhite800: string;
+export const ColorAlphaWhite900: string;
+export const ColorAlphaWhite1000: string;
+export const ColorAlphaBlack50: string;
+export const ColorAlphaBlack100: string;
+export const ColorAlphaBlack200: string;
+export const ColorAlphaBlack300: string;
+export const ColorAlphaBlack400: string;
+export const ColorAlphaBlack500: string;
+export const ColorAlphaBlack600: string;
+export const ColorAlphaBlack700: string;
+export const ColorAlphaBlack800: string;
+export const ColorAlphaBlack900: string;
+export const ColorAlphaBlack1000: string;
+export const ColorBrandPrimary50: string;
+export const ColorBrandPrimary100: string;
+export const ColorBrandPrimary200: string;
+export const ColorBrandPrimary300: string;
+export const ColorBrandPrimary400: string;
+export const ColorBrandPrimary500: string;
+export const ColorBrandPrimary600: string;
+export const ColorBrandPrimary700: string;
+export const ColorBrandPrimary800: string;
+export const ColorBrandPrimary900: string;
+export const ColorFeedbackInfo50: string;
+/** E4F6E2 */
+export const ColorFeedbackInfo100: string;
+/** 99E5A0 */
+export const ColorFeedbackInfo200: string;
+/** 9AD9A8 */
+export const ColorFeedbackInfo300: string;
+/** 02CF32 */
+export const ColorFeedbackInfo400: string;
+/** 31AA4F */
+export const ColorFeedbackInfo500: string;
+/** 5D9058 */
+export const ColorFeedbackInfo600: string;
+/** 028321 */
+export const ColorFeedbackInfo700: string;
+/** 207334 */
+export const ColorFeedbackInfo800: string;
+/** 315B33 */
+export const ColorFeedbackInfo900: string;
+export const ColorFeedbackSuccess50: string;
+/** E4F6E2 */
+export const ColorFeedbackSuccess100: string;
+/** 99E5A0 */
+export const ColorFeedbackSuccess200: string;
+/** 9AD9A8 */
+export const ColorFeedbackSuccess300: string;
+/** 02CF32 */
+export const ColorFeedbackSuccess400: string;
+/** 31AA4F */
+export const ColorFeedbackSuccess500: string;
+/** 5D9058 */
+export const ColorFeedbackSuccess600: string;
+/** 028321 */
+export const ColorFeedbackSuccess700: string;
+/** 207334 */
+export const ColorFeedbackSuccess800: string;
+/** 315B33 */
+export const ColorFeedbackSuccess900: string;
+export const ColorFeedbackWarning50: string;
+/** FFEBDD */
+export const ColorFeedbackWarning100: string;
+/** F5CDA4 */
+export const ColorFeedbackWarning200: string;
+/** FFCF8C */
+export const ColorFeedbackWarning300: string;
+/** FF990A */
+export const ColorFeedbackWarning400: string;
+/** E57309 */
+export const ColorFeedbackWarning500: string;
+/** B1792F */
+export const ColorFeedbackWarning600: string;
+/** DB6A00 */
+export const ColorFeedbackWarning700: string;
+/** B45904 */
+export const ColorFeedbackWarning800: string;
+/** 835C36 */
+export const ColorFeedbackWarning900: string;
+export const ColorFeedbackError50: string;
+/** FADFDF */
+export const ColorFeedbackError100: string;
+/** F1A4A0 */
+export const ColorFeedbackError200: string;
+/** D96962 */
+export const ColorFeedbackError300: string;
+/** EB5B55 */
+export const ColorFeedbackError400: string;
+/** FF3D3D */
+export const ColorFeedbackError500: string;
+/** D3384A */
+export const ColorFeedbackError600: string;
+/** D50000 */
+export const ColorFeedbackError700: string;
+/** CB0101 */
+export const ColorFeedbackError800: string;
+/** 921927 */
+export const ColorFeedbackError900: string;
+export const TypographyFontFamilyPrimary: string;
+export const TypographyFontFamilyPrimaryFallbacks: string;
+export const TypographyFontFamilySecondary: string;
+export const TypographyFontFamilySecondaryFallbacks: string;
+export const RadiusNone: number;
+export const Radius2xs: string;
+export const RadiusXs: string;
+export const RadiusSm: string;
+export const RadiusMd: string;
+export const RadiusLg: string;
+export const RadiusXl: string;
+export const Radius2xl: string;
+export const RadiusRounded: string;
+export const Glow: {
+  type: string;
+  angle: number;
+  stops: [
+    { color: string; position: number },
+    { color: string; position: number },
+  ];
+};
+export const Dimension0: number;
+export const Dimension1: string;
+export const Dimension2: string;
+export const Dimension4: string;
+export const Dimension8: string;
+export const Dimension12: string;
+export const Dimension16: string;
+export const Dimension20: string;
+export const Dimension24: string;
+export const Dimension32: string;
+export const Dimension40: string;
+export const Dimension48: string;
+export const Dimension52: string;
+export const Dimension56: string;
+export const Dimension64: string;
+export const Dimension72: string;
+export const Dimension80: string;
+export const Dimension88: string;
+export const Dimension96: string;
+export const Dimension104: string;
+export const Dimension112: string;
+export const Dimension120: string;
+export const Dimension128: string;
+export const DimensionMax: string;
+export const FontSize7xs: string;
+export const FontSize6xs: string;
+export const FontSize5xs: string;
+export const FontSize4xs: string;
+export const FontSize3xs: string;
+export const FontSize2xs: string;
+export const FontSizeXs: string;
+export const FontSizeSm: string;
+export const FontSizeMd: string;
+export const FontSizeLg: string;
+export const FontSizeXl: string;
+export const FontSize2xl: string;
+export const FontSize3xl: string;
+export const FontSize4xl: string;
+export const FontSize5xl: string;
+export const FontSize6xl: string;
+export const FontSize7xl: string;
+export const FontSize8xl: string;
+export const FontSize9xl: string;
+export const LineHeight6xs: string;
+export const LineHeight5xs: string;
+export const LineHeight4xs: string;
+export const LineHeight3xs: string;
+export const LineHeight2xs: string;
+export const LineHeightXs: string;
+export const LineHeightSm: string;
+export const LineHeightMd: string;
+export const LineHeightLg: string;
+export const LineHeightXl: string;
+export const LineHeight2xl: string;
+export const LineHeight3xl: string;
+export const LineHeight4xl: string;
+export const LineHeight5xl: string;
+export const LetterSpacingNone: number;
+export const FontWeightLight: string;
+export const FontWeightRegular: string;
+export const FontWeightMedium: string;
+export const FontWeightSemibold: string;
+export const FontWeightBold: string;
+export const MotionPrimitiveDuration0: string;
+export const MotionPrimitiveDuration100: string;
+export const MotionPrimitiveDuration150: string;
+export const MotionPrimitiveDuration200: string;
+export const MotionPrimitiveDuration300: string;
+export const MotionPrimitiveDuration400: string;
+export const MotionPrimitiveDuration500: string;
+export const MotionPrimitiveDuration800: string;
+export const MotionPrimitiveDuration1000: string;
+export const MotionPrimitiveDuration1200: string;
+export const MotionPrimitiveDuration2500: string;
+export const MotionPrimitiveEasingLinear: string;
+export const MotionPrimitiveEasingEase: string;
+export const MotionPrimitiveEasingEaseIn: string;
+export const MotionPrimitiveEasingEaseOut: string;
+export const MotionPrimitiveEasingEaseInOut: string;
+export const MotionPrimitiveEasingEmphasized: string;
+export const MotionPrimitiveIterationOnce: string;
+export const MotionPrimitiveIterationInfinite: string;
+export const MotionPrimitiveDelay0: string;
+export const MotionPrimitiveDelay50: string;
+export const MotionPrimitiveDelay100: string;
+export const MotionPrimitiveDelay150: string;
+export const MotionPrimitiveDelay200: string;
+export const MotionPrimitiveDelay300: string;
+export const MotionBehaviorInteractionDuration: string;
+export const MotionBehaviorInteractionEasing: string;
+export const MotionBehaviorInteractionIteration: string;
+export const MotionBehaviorInteractionDelay: string;
+export const MotionBehaviorFeedbackDuration: string;
+export const MotionBehaviorFeedbackEasing: string;
+export const MotionBehaviorFeedbackIteration: string;
+export const MotionBehaviorFeedbackDelay: string;
+export const MotionBehaviorTransitionDuration: string;
+export const MotionBehaviorTransitionEasing: string;
+export const MotionBehaviorTransitionIteration: string;
+export const MotionBehaviorTransitionDelay: string;
+export const MotionBehaviorNavigationDuration: string;
+export const MotionBehaviorNavigationEasing: string;
+export const MotionBehaviorNavigationIteration: string;
+export const MotionBehaviorNavigationDelay: string;
+export const MotionBehaviorPreloadingDuration: string;
+export const MotionBehaviorPreloadingEasing: string;
+export const MotionBehaviorPreloadingIteration: string;
+export const MotionBehaviorPreloadingDelay: string;
+export const MotionSpinnerDuration: string;
+export const MotionSpinnerEasing: string;
+export const MotionSpinnerIteration: string;
+export const MotionSpinnerDelay: string;
+export const MotionPulseDuration: string;
+export const MotionPulseEasing: string;
+export const MotionPulseIteration: string;
+export const MotionPulseDelay: string;
+export const MotionShimmerDuration: string;
+export const MotionShimmerEasing: string;
+export const MotionShimmerIteration: string;
+export const MotionShimmerDelay: string;
+export const MotionFadeInDuration: string;
+export const MotionFadeInEasing: string;
+export const MotionFadeInIteration: string;
+export const MotionFadeInDelay: string;
+export const MotionFadeOutDuration: string;
+export const MotionFadeOutEasing: string;
+export const MotionFadeOutIteration: string;
+export const MotionFadeOutDelay: string;
+export const MotionSlideInDuration: string;
+export const MotionSlideInEasing: string;
+export const MotionSlideInIteration: string;
+export const MotionSlideInDelay: string;
+export const MotionSlideOutDuration: string;
+export const MotionSlideOutEasing: string;
+export const MotionSlideOutIteration: string;
+export const MotionSlideOutDelay: string;
+export const MotionScaleInDuration: string;
+export const MotionScaleInEasing: string;
+export const MotionScaleInIteration: string;
+export const MotionScaleInDelay: string;
+export const MotionScaleOutDuration: string;
+export const MotionScaleOutEasing: string;
+export const MotionScaleOutIteration: string;
+export const MotionScaleOutDelay: string;
+export const MotionRippleDuration: string;
+export const MotionRippleEasing: string;
+export const MotionRippleIteration: string;
+export const MotionRippleDelay: string;
+"
+`;
