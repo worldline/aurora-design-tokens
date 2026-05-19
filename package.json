@@ -32,7 +32,8 @@
     "build/types/typographies.d.ts",
     "build/types/typographies.js",
     "build/variables.js",
-    "build/variables.d.ts"
+    "build/variables.d.ts",
+    "build/react-native/tokens.ts"
   ],
   "scripts": {
     "build": "node src/build.ts",
