@@ -2,6 +2,7 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
+    globalSetup: './__tests__/globalSetup.ts',
     reporters: [
       'default',
       'junit',

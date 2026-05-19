@@ -1,5 +1,9 @@
 {
   "font-size": {
+    "7xs": {
+      "$type": "dimension",
+      "$value": "10px"
+    },
     "6xs": {
       "$type": "dimension",
       "$value": "12px"
