@@ -410,8 +410,8 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
     --au-typescale-label-xs-font-family: var(--au-typography-font-family-secondary);
-    --au-typescale-label-xs-font-size: var(--au-font-size-5xs);
-    --au-typescale-label-xs-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-xs-font-size: var(--au-font-size-7xs);
+    --au-typescale-label-xs-line-height: var(--au-line-height-6xs);
     --au-typescale-label-xs-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-xs-font-weight: var(--au-font-weight-medium);
     --au-typescale-caption-lg-font-family: var(--au-typography-font-family-secondary);
@@ -591,8 +591,8 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
     --au-typescale-label-xs-font-family: var(--au-typography-font-family-secondary);
-    --au-typescale-label-xs-font-size: var(--au-font-size-5xs);
-    --au-typescale-label-xs-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-xs-font-size: var(--au-font-size-7xs);
+    --au-typescale-label-xs-line-height: var(--au-line-height-6xs);
     --au-typescale-label-xs-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-xs-font-weight: var(--au-font-weight-medium);
     --au-typescale-caption-lg-font-family: var(--au-typography-font-family-secondary);
@@ -772,8 +772,8 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
     --au-typescale-label-xs-font-family: var(--au-typography-font-family-secondary);
-    --au-typescale-label-xs-font-size: var(--au-font-size-5xs);
-    --au-typescale-label-xs-line-height: var(--au-line-height-4xs);
+    --au-typescale-label-xs-font-size: var(--au-font-size-7xs);
+    --au-typescale-label-xs-line-height: var(--au-line-height-6xs);
     --au-typescale-label-xs-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-xs-font-weight: var(--au-font-weight-medium);
     --au-typescale-caption-lg-font-family: var(--au-typography-font-family-secondary);
@@ -1585,8 +1585,8 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-typescale-label-sm-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-sm-font-weight: var(--au-font-weight-medium);
     --au-typescale-label-xs-font-family: var(--au-typography-font-family-secondary);
-    --au-typescale-label-xs-font-size: var(--au-font-size-6xs);
-    --au-typescale-label-xs-line-height: var(--au-line-height-5xs);
+    --au-typescale-label-xs-font-size: var(--au-font-size-7xs);
+    --au-typescale-label-xs-line-height: var(--au-line-height-6xs);
     --au-typescale-label-xs-letter-spacing: var(--au-letter-spacing-none);
     --au-typescale-label-xs-font-weight: var(--au-font-weight-medium);
     --au-typescale-caption-lg-font-family: var(--au-typography-font-family-secondary);
