@@ -368,11 +368,11 @@
         },
         "font-size": {
           "$type": "dimension",
-          "$value": "{font-size.5xs}"
+          "$value": "{font-size.7xs}"
         },
         "line-height": {
           "$type": "dimension",
-          "$value": "{line-height.4xs}"
+          "$value": "{line-height.6xs}"
         },
         "letter-spacing": {
           "$type": "dimension",

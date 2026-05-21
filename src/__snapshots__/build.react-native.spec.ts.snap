@@ -808,22 +808,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
           },
           "xs": {
             "fontFamily": "Inter",
-            "fontSize": {
-              "mobileXs": 10,
-              "mobileSm": 10,
-              "tablet": 12,
-              "desktopXs": 13,
-              "desktopSm": 13,
-              "desktopMd": 13
-            },
-            "lineHeight": {
-              "mobileXs": 14,
-              "mobileSm": 14,
-              "tablet": 16,
-              "desktopXs": 18,
-              "desktopSm": 18,
-              "desktopMd": 18
-            },
+            "fontSize": 10,
+            "lineHeight": 14,
             "letterSpacing": 0,
             "fontWeight": 500
           }
@@ -1297,23 +1283,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "xs": {
           "fontFamily": "Inter",
-          "fontSize": {
-            "mobileXs": 10,
-            "mobileSm": 10,
-            "tablet": 12,
-            "desktopXs": 13,
-            "desktopSm": 13,
-            "desktopMd": 13
-          },
+          "fontSize": 10,
           "fontWeight": 500,
-          "lineHeight": {
-            "mobileXs": 14,
-            "mobileSm": 14,
-            "tablet": 16,
-            "desktopXs": 18,
-            "desktopSm": 18,
-            "desktopMd": 18
-          }
+          "lineHeight": 14
         }
       },
       "caption": {
@@ -2219,22 +2191,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
           },
           "xs": {
             "fontFamily": "Inter",
-            "fontSize": {
-              "mobileXs": 10,
-              "mobileSm": 10,
-              "tablet": 12,
-              "desktopXs": 13,
-              "desktopSm": 13,
-              "desktopMd": 13
-            },
-            "lineHeight": {
-              "mobileXs": 14,
-              "mobileSm": 14,
-              "tablet": 16,
-              "desktopXs": 18,
-              "desktopSm": 18,
-              "desktopMd": 18
-            },
+            "fontSize": 10,
+            "lineHeight": 14,
             "letterSpacing": 0,
             "fontWeight": 500
           }
@@ -2708,23 +2666,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "xs": {
           "fontFamily": "Inter",
-          "fontSize": {
-            "mobileXs": 10,
-            "mobileSm": 10,
-            "tablet": 12,
-            "desktopXs": 13,
-            "desktopSm": 13,
-            "desktopMd": 13
-          },
+          "fontSize": 10,
           "fontWeight": 500,
-          "lineHeight": {
-            "mobileXs": 14,
-            "mobileSm": 14,
-            "tablet": 16,
-            "desktopXs": 18,
-            "desktopSm": 18,
-            "desktopMd": 18
-          }
+          "lineHeight": 14
         }
       },
       "caption": {
