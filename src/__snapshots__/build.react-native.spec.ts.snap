@@ -950,6 +950,26 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "2xl": 48,
           "3xl": 56,
           "4xl": 64
+        },
+        "component": {
+          "3xs": 8,
+          "2xs": 12,
+          "xs": 16,
+          "sm": 20,
+          "md": 24,
+          "lg": 32,
+          "xl": 40,
+          "2xl": 48,
+          "3xl": 56,
+          "4xl": 64,
+          "5xl": 72,
+          "6xl": 80,
+          "7xl": 88,
+          "8xl": 96,
+          "9xl": 104,
+          "10xl": 112,
+          "11xl": 120,
+          "12xl": 128
         }
       },
       "hero": {
@@ -1373,7 +1393,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "paddingHorizontal": 16,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 56
           },
           "default": {
             "background": "#277777",
@@ -1383,6 +1404,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "hover": {
             "background": "#1f5c5c",
             "border": "#277777",
+            "content": "#ffffff"
+          },
+          "pressed": {
+            "background": "#277777",
+            "border": "#91b9b9",
             "content": "#ffffff"
           },
           "disabled": {
@@ -1397,21 +1423,24 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "paddingHorizontal": 8,
             "gap": 4,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 40
           },
           "md": {
             "paddingVertical": 12,
             "paddingHorizontal": 12,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 48
           },
           "lg": {
             "paddingVertical": 16,
             "paddingHorizontal": 16,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 56
           },
           "default": {
             "background": "#e6ebeb",
@@ -1421,6 +1450,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "hover": {
             "background": "#d9dedf",
             "border": "#b4b7bc",
+            "content": "#121621"
+          },
+          "pressed": {
+            "background": "#e6ebeb",
+            "border": "#859090",
             "content": "#121621"
           },
           "disabled": {
@@ -1447,6 +1481,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
           },
           "hover": {
             "content": "#525d5d"
+          },
+          "pressed": {
+            "content": "#6b7676"
           },
           "disabled": {
             "content": "#9ca4a6"
@@ -1513,6 +1550,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "border": "#859090",
             "content": "#121621"
           },
+          "pressed": {
+            "background": "#b4b7bc",
+            "border": "#859090",
+            "content": "#121621"
+          },
           "disabled": {
             "background": "#f5f7f7",
             "border": "#9ca4a6",
@@ -1536,6 +1578,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "border": "#277777",
             "content": "#ffffff"
           },
+          "pressed": {
+            "background": "#277777",
+            "border": "#277777",
+            "content": "#ffffff"
+          },
           "disabled": {
             "background": "#f5f7f7",
             "border": "#9ca4a6",
@@ -1550,21 +1597,24 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "borderWidth": 1,
             "paddingHorizontal": 8,
             "paddingVertical": 8,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 40
           },
           "md": {
             "radius": 4,
             "borderWidth": 1,
             "paddingHorizontal": 12,
             "paddingVertical": 12,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 48
           },
           "lg": {
             "radius": 4,
             "borderWidth": 1,
             "paddingHorizontal": 12,
             "paddingVertical": 16,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 56
           }
         },
         "placeholder": {
@@ -2333,6 +2383,26 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "2xl": 48,
           "3xl": 56,
           "4xl": 64
+        },
+        "component": {
+          "3xs": 8,
+          "2xs": 12,
+          "xs": 16,
+          "sm": 20,
+          "md": 24,
+          "lg": 32,
+          "xl": 40,
+          "2xl": 48,
+          "3xl": 56,
+          "4xl": 64,
+          "5xl": 72,
+          "6xl": 80,
+          "7xl": 88,
+          "8xl": 96,
+          "9xl": 104,
+          "10xl": 112,
+          "11xl": 120,
+          "12xl": 128
         }
       },
       "hero": {
@@ -2756,7 +2826,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "paddingHorizontal": 16,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 56
           },
           "default": {
             "background": "#277777",
@@ -2766,6 +2837,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "hover": {
             "background": "#1f5c5c",
             "border": "#91b9b9",
+            "content": "#ffffff"
+          },
+          "pressed": {
+            "background": "#277777",
+            "border": "#1f5c5c",
             "content": "#ffffff"
           },
           "disabled": {
@@ -2780,21 +2856,24 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "paddingHorizontal": 8,
             "gap": 4,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 40
           },
           "md": {
             "paddingVertical": 12,
             "paddingHorizontal": 12,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 48
           },
           "lg": {
             "paddingVertical": 16,
             "paddingHorizontal": 16,
             "gap": 8,
             "radius": 4,
-            "borderWidth": 1
+            "borderWidth": 1,
+            "minHeight": 56
           },
           "default": {
             "background": "#2a2f38",
@@ -2804,6 +2883,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "hover": {
             "background": "#353a42",
             "border": "#676d77",
+            "content": "#e9ebef"
+          },
+          "pressed": {
+            "background": "#2a2f38",
+            "border": "#bdc1cb",
             "content": "#e9ebef"
           },
           "disabled": {
@@ -2830,6 +2914,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
           },
           "hover": {
             "content": "#bdc1cb"
+          },
+          "pressed": {
+            "content": "#9da3b0"
           },
           "disabled": {
             "content": "#676d77"
@@ -2896,6 +2983,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "border": "#bdc1cb",
             "content": "#e9ebef"
           },
+          "pressed": {
+            "background": "#676d77",
+            "border": "#bdc1cb",
+            "content": "#e9ebef"
+          },
           "disabled": {
             "background": "#181d27",
             "border": "#676d77",
@@ -2919,6 +3011,11 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "border": "#91b9b9",
             "content": "#ffffff"
           },
+          "pressed": {
+            "background": "#277777",
+            "border": "#91b9b9",
+            "content": "#ffffff"
+          },
           "disabled": {
             "background": "#181d27",
             "border": "#676d77",
@@ -2933,21 +3030,24 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "borderWidth": 1,
             "paddingHorizontal": 8,
             "paddingVertical": 8,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 40
           },
           "md": {
             "radius": 4,
             "borderWidth": 1,
             "paddingHorizontal": 12,
             "paddingVertical": 12,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 48
           },
           "lg": {
             "radius": 4,
             "borderWidth": 1,
             "paddingHorizontal": 12,
             "paddingVertical": 16,
-            "gap": 8
+            "gap": 8,
+            "minHeight": 56
           }
         },
         "placeholder": {
