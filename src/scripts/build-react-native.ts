@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { pathToFileURL } from 'node:url'
 import util from 'node:util'
 
 import { breakpoints, themes, viewports } from '../configs/modes.ts'
@@ -24,7 +25,7 @@ interface HighLevelTokens {
 
 const loadFile = async (inputFolder: string, filename: string) => {
   const filePath = path.resolve(inputFolder, filename)
-  const module = (await import(filePath)) as {
+  const module = (await import(pathToFileURL(filePath).href)) as {
     default: Record<string, unknown>
   }
   return module.default
