@@ -607,6 +607,80 @@
         "$type": "dimension",
         "$value": "{dimension.64}"
       }
+    },
+    "component": {
+      "3xs": {
+        "$type": "dimension",
+        "$value": "{dimension.8}"
+      },
+      "2xs": {
+        "$type": "dimension",
+        "$value": "{dimension.12}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "{dimension.16}"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{dimension.20}"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{dimension.24}"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{dimension.32}"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{dimension.40}"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{dimension.48}"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "{dimension.56}"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "{dimension.64}"
+      },
+      "5xl": {
+        "$type": "dimension",
+        "$value": "{dimension.72}"
+      },
+      "6xl": {
+        "$type": "dimension",
+        "$value": "{dimension.80}"
+      },
+      "7xl": {
+        "$type": "dimension",
+        "$value": "{dimension.88}"
+      },
+      "8xl": {
+        "$type": "dimension",
+        "$value": "{dimension.96}"
+      },
+      "9xl": {
+        "$type": "dimension",
+        "$value": "{dimension.104}"
+      },
+      "10xl": {
+        "$type": "dimension",
+        "$value": "{dimension.112}"
+      },
+      "11xl": {
+        "$type": "dimension",
+        "$value": "{dimension.120}"
+      },
+      "12xl": {
+        "$type": "dimension",
+        "$value": "{dimension.128}"
+      }
     }
   }
 }
