@@ -316,7 +316,7 @@ export const TypographyFontFamilyPrimary: string;
 export const TypographyFontFamilyPrimaryFallbacks: string;
 export const TypographyFontFamilySecondary: string;
 export const TypographyFontFamilySecondaryFallbacks: string;
-export const RadiusNone: number;
+export const RadiusNone: string;
 export const Radius2xs: string;
 export const RadiusXs: string;
 export const RadiusSm: string;
@@ -333,7 +333,7 @@ export const Glow: {
     { color: string; position: number },
   ];
 };
-export const Dimension0: number;
+export const Dimension0: string;
 export const Dimension1: string;
 export const Dimension2: string;
 export const Dimension4: string;
@@ -390,7 +390,7 @@ export const LineHeight2xl: string;
 export const LineHeight3xl: string;
 export const LineHeight4xl: string;
 export const LineHeight5xl: string;
-export const LetterSpacingNone: number;
+export const LetterSpacingNone: string;
 export const FontWeightLight: string;
 export const FontWeightRegular: string;
 export const FontWeightMedium: string;
