@@ -542,6 +542,12 @@
       "$type": "dimension",
       "$value": "360px"
     },
+    "wrapper": {
+      "padding-vert": {
+        "$type": "dimension",
+        "$value": "{spacing.2xl}"
+      }
+    },
     "content": {
       "max-width": {
         "xs": {
@@ -563,13 +569,15 @@
         "xl": {
           "$type": "dimension",
           "$value": "1024px"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "1280px"
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "1440px"
         }
-      }
-    },
-    "wrapper": {
-      "padding-vert": {
-        "$type": "dimension",
-        "$value": "{spacing.2xl}"
       }
     }
   },

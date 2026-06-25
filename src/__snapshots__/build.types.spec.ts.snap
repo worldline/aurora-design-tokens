@@ -102,10 +102,16 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceNeutralMediumHover'
   | 'surfaceNeutralHigh'
   | 'surfaceNeutralHighHover'
+  | 'surfaceNeutralLowGradientStart'
+  | 'surfaceNeutralLowGradientEnd'
+  | 'surfaceNeutralHighGradientStart'
+  | 'surfaceNeutralHighGradientEnd'
   | 'surfaceBrandBackground'
   | 'surfaceBrandSolid'
   | 'surfaceBrandSolidHover'
   | 'surfaceBrandSubtile'
+  | 'surfaceBrandGradientStart'
+  | 'surfaceBrandGradientEnd'
   | 'surfaceInfoSolid'
   | 'surfaceInfoSubtile'
   | 'surfaceSuccessSolid'
@@ -115,17 +121,24 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfacePage'
   | 'surfaceInvert'
   | 'surfaceErrorSolid'
+  | 'surfaceErrorSolidHover'
   | 'surfaceErrorSubtile'
+  | 'surfaceErrorGradientStart'
+  | 'surfaceErrorGradientEnd'
+  | 'surfaceInvertAlphaLow'
+  | 'surfaceInvertAlphaHigh'
   | 'surfaceDisabled'
-  | 'surfaceOverlay'
+  | 'surfaceScrim'
   | 'surfaceShadow'
   | 'surfaceGradientStart'
   | 'surfaceGradientEnd'
+  | 'surfaceGlass'
   | 'contentPrimaryStatic'
   | 'contentPrimary'
   | 'contentSecondary'
   | 'contentTertiary'
   | 'contentPlaceholder'
+  | 'contentInvertStatic'
   | 'contentInvert'
   | 'contentDisabled'
   | 'contentBrand'
@@ -136,11 +149,17 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'contentWarning'
   | 'contentError'
   | 'borderDisabled'
+  | 'borderDividerLight'
+  | 'borderDividerDark'
   | 'borderNeutralLow'
   | 'borderNeutralMedium'
   | 'borderNeutralHigh'
+  | 'borderNeutralGradientStart'
+  | 'borderNeutralGradientEnd'
   | 'borderBrandSolid'
   | 'borderBrandSubtile'
+  | 'borderBrandGradientStart'
+  | 'borderBrandGradientEnd'
   | 'borderInfoSolid'
   | 'borderInfoSubtile'
   | 'borderSuccessSolid'
@@ -149,6 +168,8 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'borderWarningSubtile'
   | 'borderErrorSolid'
   | 'borderErrorSubtile'
+  | 'borderErrorGradientStart'
+  | 'borderErrorGradientEnd'
 "
 `;
 
@@ -325,14 +346,6 @@ export const RadiusLg: string;
 export const RadiusXl: string;
 export const Radius2xl: string;
 export const RadiusRounded: string;
-export const Glow: {
-  type: string;
-  angle: number;
-  stops: [
-    { color: string; position: number },
-    { color: string; position: number },
-  ];
-};
 export const Dimension0: string;
 export const Dimension1: string;
 export const Dimension2: string;

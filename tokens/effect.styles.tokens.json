@@ -18,66 +18,6 @@
       }
     ]
   },
-  "interactive-default": {
-    "$type": "shadow",
-    "$value": [
-      {
-        "offsetX": "0px",
-        "offsetY": "1px",
-        "blur": "3px",
-        "spread": "0px",
-        "color": "{surface.shadow}"
-      }
-    ]
-  },
-  "interactive-hover": {
-    "$type": "shadow",
-    "$value": [
-      {
-        "offsetX": "0px",
-        "offsetY": "3px",
-        "blur": "6px",
-        "spread": "0px",
-        "color": "{surface.shadow}"
-      }
-    ]
-  },
-  "interactive-overlay": {
-    "$type": "shadow",
-    "$value": [
-      {
-        "offsetX": "0px",
-        "offsetY": "10px",
-        "blur": "20px",
-        "spread": "0px",
-        "color": "{surface.shadow}"
-      }
-    ]
-  },
-  "content-overlay": {
-    "$type": "shadow",
-    "$value": [
-      {
-        "offsetX": "0px",
-        "offsetY": "14px",
-        "blur": "28px",
-        "spread": "0px",
-        "color": "{surface.shadow}"
-      }
-    ]
-  },
-  "content-style": {
-    "$type": "shadow",
-    "$value": [
-      {
-        "offsetX": "0px",
-        "offsetY": "0px",
-        "blur": "38px",
-        "spread": "0px",
-        "color": "{surface.shadow}"
-      }
-    ]
-  },
   "button-primary-shadow": {
     "$type": "shadow",
     "$value": [
@@ -90,5 +30,107 @@
         "inset": true
       }
     ]
+  },
+  "overlay-background": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": "0px",
+        "offsetY": "14px",
+        "blur": "28px",
+        "spread": "0px",
+        "color": "{surface.shadow}"
+      },
+      {
+        "backgroundBlur": true,
+        "blur": "{dimension.16}"
+      }
+    ]
+  },
+  "elevation": {
+    "interactive": {
+      "default": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "1px",
+            "blur": "3px",
+            "spread": "0px",
+            "color": "{surface.shadow}"
+          }
+        ]
+      },
+      "hover": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "3px",
+            "blur": "6px",
+            "spread": "0px",
+            "color": "{surface.shadow}"
+          }
+        ]
+      },
+      "overlay": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "10px",
+            "blur": "20px",
+            "spread": "0px",
+            "color": "{surface.shadow}"
+          }
+        ]
+      }
+    },
+    "content": {
+      "overlay": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "14px",
+            "blur": "28px",
+            "spread": "0px",
+            "color": "{surface.shadow}"
+          }
+        ]
+      },
+      "style": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "38px",
+            "spread": "0px",
+            "color": "{surface.shadow}"
+          }
+        ]
+      }
+    }
+  },
+  "blur": {
+    "scrim": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "backgroundBlur": true,
+          "blur": "{dimension.24}"
+        }
+      ]
+    },
+    "glass": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "backgroundBlur": true,
+          "blur": "{dimension.16}"
+        }
+      ]
+    }
   }
 }

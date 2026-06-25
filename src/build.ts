@@ -4,11 +4,13 @@ import { config } from './config.ts'
 import { globalsConfig } from './configs/globals.ts'
 import { highLevelFactory, modes, themes, viewports } from './configs/modes.ts'
 import { typescriptTypes } from './formats/typescript-types.ts'
+import { backgroundBlur } from './preprocessors/background-blur.ts'
 import { typography } from './preprocessors/typography.ts'
 import { buildCss } from './scripts/build-css.ts'
 import { buildReactNative } from './scripts/build-react-native.ts'
 import { auroraCssTransformGroup } from './transforms/aurora-css-transform-group.ts'
 import { auroraReactNativeTransformGroup } from './transforms/aurora-react-native-transform-group.ts'
+import { blurIntensity } from './transforms/blur-intensity.ts'
 import { fontsPxToRem } from './transforms/fonts-px-to-rem.ts'
 import { gradient } from './transforms/gradient.ts'
 import { reactNativeBoxShadow } from './transforms/react-native-box-shadow.ts'
@@ -17,12 +19,14 @@ import { stripUnit } from './transforms/strip-unit.ts'
 import { zeroPx } from './transforms/zero-px.ts'
 
 StyleDictionary.registerPreprocessor(typography)
+StyleDictionary.registerPreprocessor(backgroundBlur)
 StyleDictionary.registerTransform(gradient)
 StyleDictionary.registerTransform(reverseShadowOrder)
 StyleDictionary.registerTransform(zeroPx)
 StyleDictionary.registerTransform(fontsPxToRem)
 StyleDictionary.registerTransform(reactNativeBoxShadow)
 StyleDictionary.registerTransform(stripUnit)
+StyleDictionary.registerTransform(blurIntensity)
 StyleDictionary.registerTransformGroup(auroraCssTransformGroup)
 StyleDictionary.registerTransformGroup(auroraReactNativeTransformGroup)
 StyleDictionary.registerFormat(typescriptTypes)

@@ -1,0 +1,16 @@
+{
+  "elevation": {
+    "divider-shadow": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "-1px",
+          "blur": "0px",
+          "spread": "0px",
+          "color": "{divider.shadow}"
+        }
+      ]
+    }
+  }
+}

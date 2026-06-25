@@ -3,6 +3,7 @@ import type { Config, TransformedToken } from 'style-dictionary/types'
 
 import { config } from '../config.ts'
 import { typescriptTypes } from '../formats/typescript-types.ts'
+import { backgroundBlur } from '../preprocessors/background-blur.ts'
 import { typography } from '../preprocessors/typography.ts'
 import { auroraCssTransformGroup } from '../transforms/aurora-css-transform-group.ts'
 import { auroraReactNativeTransformGroup } from '../transforms/aurora-react-native-transform-group.ts'
@@ -32,7 +33,11 @@ const breakpoints = {
 
 const colorModeFactory: ConfigFactory = (mode) => ({
   ...globalsConfig,
-  source: [...globalsConfig.source, `tokens/theme.${mode.name}*.json`],
+  source: [
+    ...globalsConfig.source,
+    `tokens/theme.${mode.name}*.json`,
+    'tokens/color.styles.*.json',
+  ],
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,
@@ -96,7 +101,6 @@ const viewportModeFactory: ConfigFactory = (mode) => ({
     ...globalsConfig.source,
     `tokens/viewport.${mode.name}*.json`,
     'tokens/text.styles.*.json',
-    'tokens/color.*.json',
   ],
   preprocessors: [typography.name],
   platforms: {
@@ -163,8 +167,9 @@ const highLevelFactory = (theme: string, viewport: string): Config => ({
     'tokens/dimension.*.json',
     'tokens/text.styles.*.json',
     'tokens/effect.*.json',
+    'tokens/core.effect.*.json',
   ],
-  preprocessors: [typography.name],
+  preprocessors: [typography.name, backgroundBlur.name],
   platforms: {
     css: {
       transformGroup: auroraCssTransformGroup.name,

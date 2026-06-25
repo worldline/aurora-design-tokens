@@ -15,5 +15,147 @@
         }
       ]
     }
+  },
+  "gradient": {
+    "surface": {
+      "brand": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 125,
+          "stops": [
+            {
+              "color": "{surface.brand.gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{surface.brand.gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "neutral-low": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 125,
+          "stops": [
+            {
+              "color": "{surface.neutral.low-gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{surface.neutral.low-gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "neutral-high": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 125,
+          "stops": [
+            {
+              "color": "{surface.neutral.high-gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{surface.neutral.high-gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "destructive": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 125,
+          "stops": [
+            {
+              "color": "{surface.error.gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{surface.error.gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "overlay": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 180,
+          "stops": [
+            {
+              "color": "{surface.neutral.low-gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{surface.neutral.low-gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    "border": {
+      "brand": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 134,
+          "stops": [
+            {
+              "color": "{border.brand.gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{border.brand.gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "neutral": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 134,
+          "stops": [
+            {
+              "color": "{border.neutral.gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{border.neutral.gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      },
+      "destructive": {
+        "$type": "gradient",
+        "$value": {
+          "type": "linear",
+          "angle": 134,
+          "stops": [
+            {
+              "color": "{border.error.gradient-start}",
+              "position": 0
+            },
+            {
+              "color": "{border.error.gradient-end}",
+              "position": 1
+            }
+          ]
+        }
+      }
+    }
   }
 }

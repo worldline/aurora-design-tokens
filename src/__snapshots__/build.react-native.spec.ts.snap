@@ -144,20 +144,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
       "2xl": 24,
       "rounded": 9999
     },
-    "glow": {
-      "type": "radial",
-      "angle": 180,
-      "stops": [
-        {
-          "color": "rgba(255, 255, 255, 0.5)",
-          "position": 0
-        },
-        {
-          "color": "rgba(255, 255, 255, 0)",
-          "position": 1
-        }
-      ]
-    },
     "dimension": {
       "0": 0,
       "1": 1,
@@ -363,20 +349,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
   },
   "themes": {
     "light": {
-      "glow": {
-        "type": "radial",
-        "angle": 180,
-        "stops": [
-          {
-            "color": "rgba(255, 255, 255, 0.5)",
-            "position": 0
-          },
-          {
-            "color": "rgba(255, 255, 255, 0)",
-            "position": 1
-          }
-        ]
-      },
       "surface": {
         "neutral": {
           "low": "#ffffff",
@@ -384,13 +356,19 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "medium": "#e6ebeb",
           "mediumHover": "#d9dedf",
           "high": "#b4b7bc",
-          "highHover": "#9ca4a6"
+          "highHover": "#9ca4a6",
+          "lowGradientStart": "#ffffff",
+          "lowGradientEnd": "#f5f7f7",
+          "highGradientStart": "#676d77",
+          "highGradientEnd": "#000000"
         },
         "brand": {
           "background": "#277777",
           "solid": "#277777",
           "solidHover": "#1f5c5c",
-          "subtile": "#e6f0ef"
+          "subtile": "#e6f0ef",
+          "gradientStart": "#277777",
+          "gradientEnd": "#1f5c5c"
         },
         "info": {
           "solid": "#1793b2",
@@ -408,13 +386,19 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "invert": "#121621",
         "error": {
           "solid": "#f04438",
-          "subtile": "#fee4e2"
+          "solidHover": "#b42318",
+          "subtile": "#fee4e2",
+          "gradientStart": "#f97066",
+          "gradientEnd": "#f04438"
         },
+        "invertAlphaLow": "rgba(0, 0, 0, 0.03)",
+        "invertAlphaHigh": "rgba(0, 0, 0, 0.08)",
         "disabled": "#f5f7f7",
-        "overlay": "rgba(0, 0, 0, 0.35)",
+        "scrim": "rgba(0, 0, 0, 0.35)",
         "shadow": "rgba(0, 0, 0, 0.16)",
         "gradientStart": "rgba(255, 255, 255, 0.98)",
-        "gradientEnd": "rgba(255, 255, 255, 0)"
+        "gradientEnd": "rgba(255, 255, 255, 0)",
+        "glass": "rgba(255, 255, 255, 0.92)"
       },
       "content": {
         "primaryStatic": "#121621",
@@ -422,6 +406,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "secondary": "#525d5d",
         "tertiary": "#6b7676",
         "placeholder": "#6b7676",
+        "invertStatic": "#ffffff",
         "invert": "#ffffff",
         "disabled": "#9ca4a6",
         "brand": "#277777",
@@ -434,14 +419,20 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "border": {
         "disabled": "#9ca4a6",
+        "dividerLight": "#ffffff",
+        "dividerDark": "#e6ebeb",
         "neutral": {
           "low": "#e6ebeb",
           "medium": "#b4b7bc",
-          "high": "#859090"
+          "high": "#859090",
+          "gradientStart": "#e6ebeb",
+          "gradientEnd": "#b4b7bc"
         },
         "brand": {
           "solid": "#277777",
-          "subtile": "#91b9b9"
+          "subtile": "#91b9b9",
+          "gradientStart": "#91b9b9",
+          "gradientEnd": "#174242"
         },
         "info": {
           "solid": "#066076",
@@ -457,7 +448,141 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "error": {
           "solid": "#b42318",
-          "subtile": "#ffa9a3"
+          "subtile": "#ffa9a3",
+          "gradientStart": "#fee4e2",
+          "gradientEnd": "#ffa9a3"
+        }
+      },
+      "glow": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "rgba(255, 255, 255, 0.5)",
+            "position": 0
+          },
+          {
+            "color": "rgba(255, 255, 255, 0)",
+            "position": 1
+          }
+        ]
+      },
+      "gradient": {
+        "surface": {
+          "brand": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#277777",
+                "position": 0
+              },
+              {
+                "color": "#1f5c5c",
+                "position": 1
+              }
+            ]
+          },
+          "neutralLow": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#ffffff",
+                "position": 0
+              },
+              {
+                "color": "#f5f7f7",
+                "position": 1
+              }
+            ]
+          },
+          "neutralHigh": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#676d77",
+                "position": 0
+              },
+              {
+                "color": "#000000",
+                "position": 1
+              }
+            ]
+          },
+          "destructive": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#f97066",
+                "position": 0
+              },
+              {
+                "color": "#f04438",
+                "position": 1
+              }
+            ]
+          },
+          "overlay": {
+            "type": "linear",
+            "angle": 180,
+            "stops": [
+              {
+                "color": "#ffffff",
+                "position": 0
+              },
+              {
+                "color": "#f5f7f7",
+                "position": 1
+              }
+            ]
+          }
+        },
+        "border": {
+          "brand": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#91b9b9",
+                "position": 0
+              },
+              {
+                "color": "#174242",
+                "position": 1
+              }
+            ]
+          },
+          "neutral": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#e6ebeb",
+                "position": 0
+              },
+              {
+                "color": "#b4b7bc",
+                "position": 1
+              }
+            ]
+          },
+          "destructive": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#fee4e2",
+                "position": 0
+              },
+              {
+                "color": "#ffa9a3",
+                "position": 1
+              }
+            ]
+          }
         }
       },
       "typescale": {
@@ -920,15 +1045,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "desktopSm": 1280,
           "desktopMd": 1440
         },
-        "content": {
-          "maxWidth": {
-            "xs": 360,
-            "sm": 408,
-            "md": 640,
-            "lg": 800,
-            "xl": 1024
-          }
-        },
         "wrapper": {
           "paddingVert": {
             "mobileXs": 32,
@@ -937,6 +1053,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopXs": 64,
             "desktopSm": 64,
             "desktopMd": 64
+          }
+        },
+        "content": {
+          "maxWidth": {
+            "xs": 360,
+            "sm": 408,
+            "md": 640,
+            "lg": 800,
+            "xl": 1024,
+            "2xl": 1280,
+            "3xl": 1440
           }
         }
       },
@@ -1371,7 +1498,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "button": {
-        "primary": {
+        "brand": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -1409,6 +1536,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "pressed": {
             "background": "#277777",
             "border": "#91b9b9",
+            "content": "#ffffff"
+          },
+          "disabled": {
+            "background": "#f5f7f7",
+            "border": "#9ca4a6",
+            "content": "#9ca4a6"
+          }
+        },
+        "primary": {
+          "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
+            "gap": 4,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 40
+          },
+          "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 48
+          },
+          "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 56
+          },
+          "default": {
+            "background": "#121621",
+            "border": "#859090",
+            "content": "#ffffff"
+          },
+          "hover": {
+            "background": "#9ca4a6",
+            "border": "#859090",
+            "content": "#121621"
+          },
+          "pressed": {
+            "background": "#121621",
+            "border": "#e6ebeb",
             "content": "#ffffff"
           },
           "disabled": {
@@ -1455,6 +1628,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "pressed": {
             "background": "#e6ebeb",
             "border": "#859090",
+            "content": "#121621"
+          },
+          "disabled": {
+            "background": "#f5f7f7",
+            "border": "#9ca4a6",
+            "content": "#9ca4a6"
+          }
+        },
+        "destructive": {
+          "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
+            "gap": 4,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 40
+          },
+          "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 48
+          },
+          "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 56
+          },
+          "default": {
+            "background": "#f04438",
+            "border": "#b42318",
+            "content": "#121621"
+          },
+          "hover": {
+            "background": "#b42318",
+            "border": "#b42318",
+            "content": "#ffffff"
+          },
+          "pressed": {
+            "background": "#f04438",
+            "border": "#ffa9a3",
             "content": "#121621"
           },
           "disabled": {
@@ -1551,7 +1770,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "content": "#121621"
           },
           "pressed": {
-            "background": "#b4b7bc",
+            "background": "#e6ebeb",
             "border": "#859090",
             "content": "#121621"
           },
@@ -1723,6 +1942,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
           }
         }
       },
+      "divider": {
+        "shadow": "#e6ebeb"
+      },
       "focusRing": [
         {
           "offsetX": 0,
@@ -1739,51 +1961,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "#277777"
         }
       ],
-      "interactiveDefault": [
-        {
-          "offsetX": 0,
-          "offsetY": 1,
-          "blurRadius": 3,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "interactiveHover": [
-        {
-          "offsetX": 0,
-          "offsetY": 3,
-          "blurRadius": 6,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "interactiveOverlay": [
-        {
-          "offsetX": 0,
-          "offsetY": 10,
-          "blurRadius": 20,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "contentOverlay": [
-        {
-          "offsetX": 0,
-          "offsetY": 14,
-          "blurRadius": 28,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "contentStyle": [
-        {
-          "offsetX": 0,
-          "offsetY": 0,
-          "blurRadius": 38,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
       "buttonPrimaryShadow": [
         {
           "offsetX": 0,
@@ -1793,23 +1970,83 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "rgba(0, 0, 0, 0.16)",
           "inset": true
         }
-      ]
-    },
-    "dark": {
-      "glow": {
-        "type": "radial",
-        "angle": 180,
-        "stops": [
+      ],
+      "overlayBackgroundShadow": [
+        {
+          "offsetX": 0,
+          "offsetY": 14,
+          "blurRadius": 28,
+          "spreadDistance": 0,
+          "color": "rgba(0, 0, 0, 0.16)"
+        }
+      ],
+      "overlayBackgroundBlur": 80,
+      "elevation": {
+        "interactive": {
+          "default": [
+            {
+              "offsetX": 0,
+              "offsetY": 1,
+              "blurRadius": 3,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "hover": [
+            {
+              "offsetX": 0,
+              "offsetY": 3,
+              "blurRadius": 6,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "overlay": [
+            {
+              "offsetX": 0,
+              "offsetY": 10,
+              "blurRadius": 20,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ]
+        },
+        "content": {
+          "overlay": [
+            {
+              "offsetX": 0,
+              "offsetY": 14,
+              "blurRadius": 28,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "style": [
+            {
+              "offsetX": 0,
+              "offsetY": 0,
+              "blurRadius": 38,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ]
+        },
+        "dividerShadow": [
           {
-            "color": "rgba(255, 255, 255, 0.5)",
-            "position": 0
-          },
-          {
-            "color": "rgba(255, 255, 255, 0)",
-            "position": 1
+            "offsetX": 0,
+            "offsetY": -1,
+            "blurRadius": 0,
+            "spreadDistance": 0,
+            "color": "#e6ebeb"
           }
         ]
       },
+      "blur": {
+        "scrim": 100,
+        "glass": 80
+      }
+    },
+    "dark": {
       "surface": {
         "neutral": {
           "low": "#181d27",
@@ -1817,13 +2054,19 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "medium": "#2a2f38",
           "mediumHover": "#353a42",
           "high": "#676d77",
-          "highHover": "#9da3b0"
+          "highHover": "#9da3b0",
+          "lowGradientStart": "#2a2f38",
+          "lowGradientEnd": "#181d27",
+          "highGradientStart": "#ffffff",
+          "highGradientEnd": "#f5f7f7"
         },
         "brand": {
           "background": "#121621",
           "solid": "#277777",
           "solidHover": "#1f5c5c",
-          "subtile": "#174242"
+          "subtile": "#174242",
+          "gradientStart": "#277777",
+          "gradientEnd": "#1f5c5c"
         },
         "info": {
           "solid": "#47b2cd",
@@ -1841,13 +2084,19 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "invert": "#ffffff",
         "error": {
           "solid": "#f97066",
-          "subtile": "#55160c"
+          "solidHover": "#b42318",
+          "subtile": "#55160c",
+          "gradientStart": "#f97066",
+          "gradientEnd": "#f04438"
         },
+        "invertAlphaLow": "rgba(255, 255, 255, 0.03)",
+        "invertAlphaHigh": "rgba(255, 255, 255, 0.08)",
         "disabled": "#181d27",
-        "overlay": "rgba(0, 0, 0, 0.35)",
+        "scrim": "rgba(0, 0, 0, 0.35)",
         "shadow": "rgba(0, 0, 0, 0.16)",
         "gradientStart": "rgba(0, 0, 0, 0.98)",
-        "gradientEnd": "rgba(0, 0, 0, 0)"
+        "gradientEnd": "rgba(0, 0, 0, 0)",
+        "glass": "rgba(0, 0, 0, 0.92)"
       },
       "content": {
         "primaryStatic": "#121621",
@@ -1855,6 +2104,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "secondary": "#bdc1cb",
         "tertiary": "#9da3b0",
         "placeholder": "#9da3b0",
+        "invertStatic": "#ffffff",
         "invert": "#121621",
         "disabled": "#676d77",
         "brand": "#91b9b9",
@@ -1867,14 +2117,20 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "border": {
         "disabled": "#676d77",
+        "dividerLight": "#2a2f38",
+        "dividerDark": "#121621",
         "neutral": {
           "low": "#2a2f38",
           "medium": "#676d77",
-          "high": "#bdc1cb"
+          "high": "#bdc1cb",
+          "gradientStart": "#676d77",
+          "gradientEnd": "#2a2f38"
         },
         "brand": {
           "solid": "#91b9b9",
-          "subtile": "#1f5c5c"
+          "subtile": "#1f5c5c",
+          "gradientStart": "#91b9b9",
+          "gradientEnd": "#174242"
         },
         "info": {
           "solid": "#47b2cd",
@@ -1890,7 +2146,141 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "error": {
           "solid": "#f97066",
-          "subtile": "#b42318"
+          "subtile": "#b42318",
+          "gradientStart": "#f97066",
+          "gradientEnd": "#d92d20"
+        }
+      },
+      "glow": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "rgba(255, 255, 255, 0.5)",
+            "position": 0
+          },
+          {
+            "color": "rgba(255, 255, 255, 0)",
+            "position": 1
+          }
+        ]
+      },
+      "gradient": {
+        "surface": {
+          "brand": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#277777",
+                "position": 0
+              },
+              {
+                "color": "#1f5c5c",
+                "position": 1
+              }
+            ]
+          },
+          "neutralLow": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#2a2f38",
+                "position": 0
+              },
+              {
+                "color": "#181d27",
+                "position": 1
+              }
+            ]
+          },
+          "neutralHigh": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#ffffff",
+                "position": 0
+              },
+              {
+                "color": "#f5f7f7",
+                "position": 1
+              }
+            ]
+          },
+          "destructive": {
+            "type": "linear",
+            "angle": 125,
+            "stops": [
+              {
+                "color": "#f97066",
+                "position": 0
+              },
+              {
+                "color": "#f04438",
+                "position": 1
+              }
+            ]
+          },
+          "overlay": {
+            "type": "linear",
+            "angle": 180,
+            "stops": [
+              {
+                "color": "#2a2f38",
+                "position": 0
+              },
+              {
+                "color": "#181d27",
+                "position": 1
+              }
+            ]
+          }
+        },
+        "border": {
+          "brand": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#91b9b9",
+                "position": 0
+              },
+              {
+                "color": "#174242",
+                "position": 1
+              }
+            ]
+          },
+          "neutral": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#676d77",
+                "position": 0
+              },
+              {
+                "color": "#2a2f38",
+                "position": 1
+              }
+            ]
+          },
+          "destructive": {
+            "type": "linear",
+            "angle": 134,
+            "stops": [
+              {
+                "color": "#f97066",
+                "position": 0
+              },
+              {
+                "color": "#d92d20",
+                "position": 1
+              }
+            ]
+          }
         }
       },
       "typescale": {
@@ -2353,15 +2743,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "desktopSm": 1280,
           "desktopMd": 1440
         },
-        "content": {
-          "maxWidth": {
-            "xs": 360,
-            "sm": 408,
-            "md": 640,
-            "lg": 800,
-            "xl": 1024
-          }
-        },
         "wrapper": {
           "paddingVert": {
             "mobileXs": 32,
@@ -2370,6 +2751,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopXs": 64,
             "desktopSm": 64,
             "desktopMd": 64
+          }
+        },
+        "content": {
+          "maxWidth": {
+            "xs": 360,
+            "sm": 408,
+            "md": 640,
+            "lg": 800,
+            "xl": 1024,
+            "2xl": 1280,
+            "3xl": 1440
           }
         }
       },
@@ -2804,7 +3196,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "button": {
-        "primary": {
+        "brand": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -2843,6 +3235,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "background": "#277777",
             "border": "#1f5c5c",
             "content": "#ffffff"
+          },
+          "disabled": {
+            "background": "#181d27",
+            "border": "#676d77",
+            "content": "#676d77"
+          }
+        },
+        "primary": {
+          "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
+            "gap": 4,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 40
+          },
+          "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 48
+          },
+          "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 56
+          },
+          "default": {
+            "background": "#ffffff",
+            "border": "#bdc1cb",
+            "content": "#121621"
+          },
+          "hover": {
+            "background": "#9da3b0",
+            "border": "#bdc1cb",
+            "content": "#121621"
+          },
+          "pressed": {
+            "background": "#ffffff",
+            "border": "#2a2f38",
+            "content": "#121621"
           },
           "disabled": {
             "background": "#181d27",
@@ -2889,6 +3327,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "background": "#2a2f38",
             "border": "#bdc1cb",
             "content": "#e9ebef"
+          },
+          "disabled": {
+            "background": "#181d27",
+            "border": "#676d77",
+            "content": "#676d77"
+          }
+        },
+        "destructive": {
+          "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
+            "gap": 4,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 40
+          },
+          "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 48
+          },
+          "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
+            "gap": 8,
+            "radius": 4,
+            "borderWidth": 1,
+            "minHeight": 56
+          },
+          "default": {
+            "background": "#f97066",
+            "border": "#f97066",
+            "content": "#121621"
+          },
+          "hover": {
+            "background": "#b42318",
+            "border": "#f97066",
+            "content": "#ffffff"
+          },
+          "pressed": {
+            "background": "#f97066",
+            "border": "#b42318",
+            "content": "#121621"
           },
           "disabled": {
             "background": "#181d27",
@@ -2984,7 +3468,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "content": "#e9ebef"
           },
           "pressed": {
-            "background": "#676d77",
+            "background": "#2a2f38",
             "border": "#bdc1cb",
             "content": "#e9ebef"
           },
@@ -3156,6 +3640,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
           }
         }
       },
+      "divider": {
+        "shadow": "#121621"
+      },
       "focusRing": [
         {
           "offsetX": 0,
@@ -3172,51 +3659,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "#277777"
         }
       ],
-      "interactiveDefault": [
-        {
-          "offsetX": 0,
-          "offsetY": 1,
-          "blurRadius": 3,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "interactiveHover": [
-        {
-          "offsetX": 0,
-          "offsetY": 3,
-          "blurRadius": 6,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "interactiveOverlay": [
-        {
-          "offsetX": 0,
-          "offsetY": 10,
-          "blurRadius": 20,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "contentOverlay": [
-        {
-          "offsetX": 0,
-          "offsetY": 14,
-          "blurRadius": 28,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
-      "contentStyle": [
-        {
-          "offsetX": 0,
-          "offsetY": 0,
-          "blurRadius": 38,
-          "spreadDistance": 0,
-          "color": "rgba(0, 0, 0, 0.16)"
-        }
-      ],
       "buttonPrimaryShadow": [
         {
           "offsetX": 0,
@@ -3226,7 +3668,81 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "rgba(0, 0, 0, 0.16)",
           "inset": true
         }
-      ]
+      ],
+      "overlayBackgroundShadow": [
+        {
+          "offsetX": 0,
+          "offsetY": 14,
+          "blurRadius": 28,
+          "spreadDistance": 0,
+          "color": "rgba(0, 0, 0, 0.16)"
+        }
+      ],
+      "overlayBackgroundBlur": 80,
+      "elevation": {
+        "interactive": {
+          "default": [
+            {
+              "offsetX": 0,
+              "offsetY": 1,
+              "blurRadius": 3,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "hover": [
+            {
+              "offsetX": 0,
+              "offsetY": 3,
+              "blurRadius": 6,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "overlay": [
+            {
+              "offsetX": 0,
+              "offsetY": 10,
+              "blurRadius": 20,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ]
+        },
+        "content": {
+          "overlay": [
+            {
+              "offsetX": 0,
+              "offsetY": 14,
+              "blurRadius": 28,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ],
+          "style": [
+            {
+              "offsetX": 0,
+              "offsetY": 0,
+              "blurRadius": 38,
+              "spreadDistance": 0,
+              "color": "rgba(0, 0, 0, 0.16)"
+            }
+          ]
+        },
+        "dividerShadow": [
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "blurRadius": 0,
+            "spreadDistance": 0,
+            "color": "#121621"
+          }
+        ]
+      },
+      "blur": {
+        "scrim": 100,
+        "glass": 80
+      }
     }
   },
   "breakpoints": {

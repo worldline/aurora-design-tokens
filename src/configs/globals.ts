@@ -16,7 +16,6 @@ import { fontsPxToRem } from '../transforms/fonts-px-to-rem.ts'
 export const globalsConfig = {
   source: [
     'tokens/brand.worldline.*.json',
-    'tokens/color.styles.*.json',
     'tokens/dimension.*.json',
     'tokens/typography.all.*.json',
     'tokens/motion.all.*.json',
@@ -43,7 +42,6 @@ export const globalsConfig = {
             token.filePath.includes('brand.') ||
             token.filePath.includes('dimension.') ||
             token.filePath.includes('typography.all.') ||
-            token.filePath.includes('color.styles.') ||
             token.filePath.includes('motion.all.'),
           options: {
             outputReferences: true,
