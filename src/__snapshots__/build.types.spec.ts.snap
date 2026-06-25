@@ -86,16 +86,16 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'feedbackWarning700'
   | 'feedbackWarning800'
   | 'feedbackWarning900'
-  | 'feedbackError50'
-  | 'feedbackError100'
-  | 'feedbackError200'
-  | 'feedbackError300'
-  | 'feedbackError400'
-  | 'feedbackError500'
-  | 'feedbackError600'
-  | 'feedbackError700'
-  | 'feedbackError800'
-  | 'feedbackError900'
+  | 'feedbackDanger50'
+  | 'feedbackDanger100'
+  | 'feedbackDanger200'
+  | 'feedbackDanger300'
+  | 'feedbackDanger400'
+  | 'feedbackDanger500'
+  | 'feedbackDanger600'
+  | 'feedbackDanger700'
+  | 'feedbackDanger800'
+  | 'feedbackDanger900'
   | 'surfaceNeutralLow'
   | 'surfaceNeutralLowHover'
   | 'surfaceNeutralMedium'
@@ -120,11 +120,11 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceWarningSubtile'
   | 'surfacePage'
   | 'surfaceInvert'
-  | 'surfaceErrorSolid'
-  | 'surfaceErrorSolidHover'
-  | 'surfaceErrorSubtile'
-  | 'surfaceErrorGradientStart'
-  | 'surfaceErrorGradientEnd'
+  | 'surfaceDangerSolid'
+  | 'surfaceDangerSolidHover'
+  | 'surfaceDangerSubtile'
+  | 'surfaceDangerGradientStart'
+  | 'surfaceDangerGradientEnd'
   | 'surfaceInvertAlphaLow'
   | 'surfaceInvertAlphaHigh'
   | 'surfaceDisabled'
@@ -147,7 +147,7 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'contentInfo'
   | 'contentSuccess'
   | 'contentWarning'
-  | 'contentError'
+  | 'contentDanger'
   | 'borderDisabled'
   | 'borderDividerLight'
   | 'borderDividerDark'
@@ -166,10 +166,10 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'borderSuccessSubtile'
   | 'borderWarningSolid'
   | 'borderWarningSubtile'
-  | 'borderErrorSolid'
-  | 'borderErrorSubtile'
-  | 'borderErrorGradientStart'
-  | 'borderErrorGradientEnd'
+  | 'borderDangerSolid'
+  | 'borderDangerSubtile'
+  | 'borderDangerGradientStart'
+  | 'borderDangerGradientEnd'
 "
 `;
 
@@ -314,25 +314,25 @@ export const ColorFeedbackWarning700: string;
 export const ColorFeedbackWarning800: string;
 /** 835C36 */
 export const ColorFeedbackWarning900: string;
-export const ColorFeedbackError50: string;
+export const ColorFeedbackDanger50: string;
 /** FADFDF */
-export const ColorFeedbackError100: string;
+export const ColorFeedbackDanger100: string;
 /** F1A4A0 */
-export const ColorFeedbackError200: string;
+export const ColorFeedbackDanger200: string;
 /** D96962 */
-export const ColorFeedbackError300: string;
+export const ColorFeedbackDanger300: string;
 /** EB5B55 */
-export const ColorFeedbackError400: string;
+export const ColorFeedbackDanger400: string;
 /** FF3D3D */
-export const ColorFeedbackError500: string;
+export const ColorFeedbackDanger500: string;
 /** D3384A */
-export const ColorFeedbackError600: string;
+export const ColorFeedbackDanger600: string;
 /** D50000 */
-export const ColorFeedbackError700: string;
+export const ColorFeedbackDanger700: string;
 /** CB0101 */
-export const ColorFeedbackError800: string;
+export const ColorFeedbackDanger800: string;
 /** 921927 */
-export const ColorFeedbackError900: string;
+export const ColorFeedbackDanger900: string;
 export const TypographyFontFamilyPrimary: string;
 export const TypographyFontFamilyPrimaryFallbacks: string;
 export const TypographyFontFamilySecondary: string;

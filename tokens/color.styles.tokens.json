@@ -76,11 +76,11 @@
           "angle": 125,
           "stops": [
             {
-              "color": "{surface.error.gradient-start}",
+              "color": "{surface.danger.gradient-start}",
               "position": 0
             },
             {
-              "color": "{surface.error.gradient-end}",
+              "color": "{surface.danger.gradient-end}",
               "position": 1
             }
           ]
@@ -146,11 +146,11 @@
           "angle": 134,
           "stops": [
             {
-              "color": "{border.error.gradient-start}",
+              "color": "{border.danger.gradient-start}",
               "position": 0
             },
             {
-              "color": "{border.error.gradient-end}",
+              "color": "{border.danger.gradient-end}",
               "position": 1
             }
           ]

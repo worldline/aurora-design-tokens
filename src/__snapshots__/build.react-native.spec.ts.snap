@@ -111,7 +111,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "800": "#93370d",
           "900": "#4e1d09"
         },
-        "error": {
+        "danger": {
           "50": "#fef3f2",
           "100": "#fee4e2",
           "200": "#fecdca",
@@ -384,7 +384,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "page": "#f5f7f7",
         "invert": "#121621",
-        "error": {
+        "danger": {
           "solid": "#f04438",
           "solidHover": "#b42318",
           "subtile": "#fee4e2",
@@ -415,7 +415,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "info": "#066076",
         "success": "#067647",
         "warning": "#b54708",
-        "error": "#b42318"
+        "danger": "#b42318"
       },
       "border": {
         "disabled": "#9ca4a6",
@@ -446,7 +446,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "solid": "#b54708",
           "subtile": "#fec84b"
         },
-        "error": {
+        "danger": {
           "solid": "#b42318",
           "subtile": "#ffa9a3",
           "gradientStart": "#fee4e2",
@@ -1498,7 +1498,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "button": {
-        "brand": {
+        "primary": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -1544,7 +1544,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "content": "#9ca4a6"
           }
         },
-        "primary": {
+        "primaryNeutral": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -1943,6 +1943,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "divider": {
+        "line": "#ffffff",
         "shadow": "#e6ebeb"
       },
       "focusRing": [
@@ -2082,7 +2083,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "page": "#121621",
         "invert": "#ffffff",
-        "error": {
+        "danger": {
           "solid": "#f97066",
           "solidHover": "#b42318",
           "subtile": "#55160c",
@@ -2113,7 +2114,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "info": "#47b2cd",
         "success": "#47cd89",
         "warning": "#fdb022",
-        "error": "#f97066"
+        "danger": "#f97066"
       },
       "border": {
         "disabled": "#676d77",
@@ -2144,7 +2145,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "solid": "#fdb022",
           "subtile": "#b54708"
         },
-        "error": {
+        "danger": {
           "solid": "#f97066",
           "subtile": "#b42318",
           "gradientStart": "#f97066",
@@ -3196,7 +3197,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "button": {
-        "brand": {
+        "primary": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -3242,7 +3243,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "content": "#676d77"
           }
         },
-        "primary": {
+        "primaryNeutral": {
           "sm": {
             "paddingVertical": 8,
             "paddingHorizontal": 8,
@@ -3641,6 +3642,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
         }
       },
       "divider": {
+        "line": "#2a2f38",
         "shadow": "#121621"
       },
       "focusRing": [

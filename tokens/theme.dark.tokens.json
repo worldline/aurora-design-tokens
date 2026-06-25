@@ -106,26 +106,26 @@
       "$type": "color",
       "$value": "{color.neutral.light.white}"
     },
-    "error": {
+    "danger": {
       "solid": {
         "$type": "color",
-        "$value": "{color.feedback.error.400}"
+        "$value": "{color.feedback.danger.400}"
       },
       "solid-hover": {
         "$type": "color",
-        "$value": "{color.feedback.error.700}"
+        "$value": "{color.feedback.danger.700}"
       },
       "subtile": {
         "$type": "color",
-        "$value": "{color.feedback.error.900}"
+        "$value": "{color.feedback.danger.900}"
       },
       "gradient-start": {
         "$type": "color",
-        "$value": "{color.feedback.error.400}"
+        "$value": "{color.feedback.danger.400}"
       },
       "gradient-end": {
         "$type": "color",
-        "$value": "{color.feedback.error.500}"
+        "$value": "{color.feedback.danger.500}"
       }
     },
     "invert-alpha-low": {
@@ -218,9 +218,9 @@
       "$type": "color",
       "$value": "{color.feedback.warning.400}"
     },
-    "error": {
+    "danger": {
       "$type": "color",
-      "$value": "{color.feedback.error.400}"
+      "$value": "{color.feedback.danger.400}"
     }
   },
   "border": {
@@ -306,22 +306,22 @@
         "$value": "{color.feedback.warning.700}"
       }
     },
-    "error": {
+    "danger": {
       "solid": {
         "$type": "color",
-        "$value": "{color.feedback.error.400}"
+        "$value": "{color.feedback.danger.400}"
       },
       "subtile": {
         "$type": "color",
-        "$value": "{color.feedback.error.700}"
+        "$value": "{color.feedback.danger.700}"
       },
       "gradient-start": {
         "$type": "color",
-        "$value": "{color.feedback.error.400}"
+        "$value": "{color.feedback.danger.400}"
       },
       "gradient-end": {
         "$type": "color",
-        "$value": "{color.feedback.error.600}"
+        "$value": "{color.feedback.danger.600}"
       }
     }
   }

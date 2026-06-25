@@ -386,7 +386,7 @@
           "$description": "835C36"
         }
       },
-      "error": {
+      "danger": {
         "50": {
           "$type": "color",
           "$value": "#fef3f2"

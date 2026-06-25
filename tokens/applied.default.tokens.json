@@ -1,6 +1,6 @@
 {
   "button": {
-    "brand": {
+    "primary": {
       "sm": {
         "padding-vertical": {
           "$type": "dimension",
@@ -136,7 +136,7 @@
         }
       }
     },
-    "primary": {
+    "primary-neutral": {
       "sm": {
         "padding-vertical": {
           "$type": "dimension",
@@ -490,11 +490,11 @@
       "default": {
         "background": {
           "$type": "color",
-          "$value": "{surface.error.solid}"
+          "$value": "{surface.danger.solid}"
         },
         "border": {
           "$type": "color",
-          "$value": "{border.error.solid}"
+          "$value": "{border.danger.solid}"
         },
         "content": {
           "$type": "color",
@@ -504,11 +504,11 @@
       "hover": {
         "background": {
           "$type": "color",
-          "$value": "{surface.error.solid-hover}"
+          "$value": "{surface.danger.solid-hover}"
         },
         "border": {
           "$type": "color",
-          "$value": "{border.error.solid}"
+          "$value": "{border.danger.solid}"
         },
         "content": {
           "$type": "color",
@@ -518,11 +518,11 @@
       "pressed": {
         "background": {
           "$type": "color",
-          "$value": "{surface.error.solid}"
+          "$value": "{surface.danger.solid}"
         },
         "border": {
           "$type": "color",
-          "$value": "{border.error.subtile}"
+          "$value": "{border.danger.subtile}"
         },
         "content": {
           "$type": "color",
@@ -707,11 +707,11 @@
     "error": {
       "background": {
         "$type": "color",
-        "$value": "{surface.error.subtile}"
+        "$value": "{surface.danger.subtile}"
       },
       "content": {
         "$type": "color",
-        "$value": "{content.error}"
+        "$value": "{content.danger}"
       }
     }
   },
@@ -1095,15 +1095,15 @@
     "error": {
       "border": {
         "$type": "color",
-        "$value": "{border.error.solid}"
+        "$value": "{border.danger.solid}"
       },
       "error_message": {
         "$type": "color",
-        "$value": "{content.error}"
+        "$value": "{content.danger}"
       },
       "icon": {
         "$type": "color",
-        "$value": "{content.error}"
+        "$value": "{content.danger}"
       }
     }
   },
@@ -1288,6 +1288,10 @@
     }
   },
   "divider": {
+    "line": {
+      "$type": "color",
+      "$value": "{border.divider-light}"
+    },
     "shadow": {
       "$type": "color",
       "$value": "{border.divider-dark}"
