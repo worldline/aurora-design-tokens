@@ -14,6 +14,8 @@ import { blurIntensity } from './transforms/blur-intensity.ts'
 import { fontsPxToRem } from './transforms/fonts-px-to-rem.ts'
 import { gradient } from './transforms/gradient.ts'
 import { reactNativeBoxShadow } from './transforms/react-native-box-shadow.ts'
+import { reactNativeMotionDuration } from './transforms/react-native-motion-duration.ts'
+import { reactNativeMotionEasing } from './transforms/react-native-motion-easing.ts'
 import { reverseShadowOrder } from './transforms/reverse-shadow-order.ts'
 import { stripUnit } from './transforms/strip-unit.ts'
 import { zeroPx } from './transforms/zero-px.ts'
@@ -25,6 +27,8 @@ StyleDictionary.registerTransform(reverseShadowOrder)
 StyleDictionary.registerTransform(zeroPx)
 StyleDictionary.registerTransform(fontsPxToRem)
 StyleDictionary.registerTransform(reactNativeBoxShadow)
+StyleDictionary.registerTransform(reactNativeMotionDuration)
+StyleDictionary.registerTransform(reactNativeMotionEasing)
 StyleDictionary.registerTransform(stripUnit)
 StyleDictionary.registerTransform(blurIntensity)
 StyleDictionary.registerTransformGroup(auroraCssTransformGroup)

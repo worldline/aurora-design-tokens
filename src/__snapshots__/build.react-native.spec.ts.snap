@@ -220,25 +220,73 @@ exports[`build react native > should output the react native tokens file 1`] = `
     "motion": {
       "primitive": {
         "duration": {
-          "0": "0ms",
-          "100": "100ms",
-          "150": "150ms",
-          "200": "200ms",
-          "300": "300ms",
-          "400": "400ms",
-          "500": "500ms",
-          "800": "800ms",
-          "1000": "1000ms",
-          "1200": "1200ms",
-          "2500": "2500ms"
+          "0": 0,
+          "100": 100,
+          "150": 150,
+          "200": 200,
+          "300": 300,
+          "400": 400,
+          "500": 500,
+          "800": 800,
+          "1000": 1000,
+          "1200": 1200,
+          "2500": 2500
         },
         "easing": {
-          "linear": "cubic-bezier(0, 0, 1, 1)",
-          "ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
-          "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
-          "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
-          "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
-          "emphasized": "cubic-bezier(0.2, 0, 0, 1)"
+          "linear": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "ease": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.25,
+              0.1,
+              0.25,
+              1
+            ]
+          },
+          "easeIn": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.4,
+              0,
+              1,
+              1
+            ]
+          },
+          "easeOut": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0,
+              0,
+              0.2,
+              1
+            ]
+          },
+          "easeInOut": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.4,
+              0,
+              0.2,
+              1
+            ]
+          },
+          "emphasized": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.2,
+              0,
+              0,
+              1
+            ]
+          }
         },
         "iteration": {
           "once": "1",
@@ -255,93 +303,213 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "behavior": {
         "interaction": {
-          "duration": "150ms",
-          "easing": "cubic-bezier(0, 0, 0.2, 1)",
+          "duration": 150,
+          "easing": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0,
+              0,
+              0.2,
+              1
+            ]
+          },
           "iteration": "1",
           "delay": "0ms"
         },
         "feedback": {
-          "duration": "200ms",
-          "easing": "cubic-bezier(0, 0, 0.2, 1)",
+          "duration": 200,
+          "easing": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0,
+              0,
+              0.2,
+              1
+            ]
+          },
           "iteration": "1",
           "delay": "0ms"
         },
         "transition": {
-          "duration": "300ms",
-          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "duration": 300,
+          "easing": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.4,
+              0,
+              0.2,
+              1
+            ]
+          },
           "iteration": "1",
           "delay": "0ms"
         },
         "navigation": {
-          "duration": "400ms",
-          "easing": "cubic-bezier(0.2, 0, 0, 1)",
+          "duration": 400,
+          "easing": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.2,
+              0,
+              0,
+              1
+            ]
+          },
           "iteration": "1",
           "delay": "0ms"
         },
         "preloading": {
-          "duration": "2500ms",
-          "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "duration": 2500,
+          "easing": {
+            "name": "cubic-bezier",
+            "controlPoints": [
+              0.4,
+              0,
+              0.2,
+              1
+            ]
+          },
           "iteration": "infinite",
           "delay": "0ms"
         }
       },
       "spinner": {
-        "duration": "1000ms",
-        "easing": "cubic-bezier(0, 0, 1, 1)",
+        "duration": 1000,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
         "iteration": "infinite",
         "delay": "0ms"
       },
       "pulse": {
-        "duration": "500ms",
-        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "duration": 500,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "infinite",
         "delay": "0ms"
       },
       "shimmer": {
-        "duration": "1200ms",
-        "easing": "cubic-bezier(0, 0, 1, 1)",
+        "duration": 1200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
         "iteration": "infinite",
         "delay": "0ms"
       },
       "fadeIn": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "fadeOut": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "slideIn": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "slideOut": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "scaleIn": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0, 0, 0.2, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "scaleOut": {
-        "duration": "300ms",
-        "easing": "cubic-bezier(0.4, 0, 1, 1)",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0.4,
+            0,
+            1,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       },
       "ripple": {
-        "duration": "200ms",
-        "easing": "cubic-bezier(0, 0, 0.2, 1)",
+        "duration": 200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        },
         "iteration": "1",
         "delay": "0ms"
       }
@@ -1885,8 +2053,16 @@ exports[`build react native > should output the react native tokens file 1`] = `
       "skeleton": {
         "background": "#b4b7bc",
         "highlight": "#e6ebeb",
-        "duration": "1200ms",
-        "easing": "cubic-bezier(0, 0, 1, 1)",
+        "duration": 1200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
         "iteration": "infinite",
         "delay": "0ms"
       },
@@ -3584,8 +3760,16 @@ exports[`build react native > should output the react native tokens file 1`] = `
       "skeleton": {
         "background": "#676d77",
         "highlight": "#2a2f38",
-        "duration": "1200ms",
-        "easing": "cubic-bezier(0, 0, 1, 1)",
+        "duration": 1200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
         "iteration": "infinite",
         "delay": "0ms"
       },

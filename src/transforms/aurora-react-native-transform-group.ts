@@ -3,6 +3,8 @@ import { transformGroups } from 'style-dictionary/enums'
 
 import { blurIntensity } from './blur-intensity.ts'
 import { reactNativeBoxShadow } from './react-native-box-shadow.ts'
+import { reactNativeMotionDuration } from './react-native-motion-duration.ts'
+import { reactNativeMotionEasing } from './react-native-motion-easing.ts'
 import { reverseShadowOrder } from './reverse-shadow-order.ts'
 import { stripUnit } from './strip-unit.ts'
 
@@ -13,6 +15,8 @@ export const auroraReactNativeTransformGroup = {
       transformGroups.reactNative
     ].filter((transform) => !['size/object'].includes(transform)),
     stripUnit.name,
+    reactNativeMotionDuration.name,
+    reactNativeMotionEasing.name,
     reverseShadowOrder.name,
     reactNativeBoxShadow.name,
     blurIntensity.name,
