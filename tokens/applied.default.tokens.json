@@ -546,33 +546,69 @@
     },
     "link": {
       "sm": {
+        "padding-vertical": {
+          "$type": "dimension",
+          "$value": "{spacing.xs}"
+        },
+        "padding-horizontal": {
+          "$type": "dimension",
+          "$value": "{spacing.xs}"
+        },
         "gap": {
           "$type": "dimension",
           "$value": "{spacing.2xs}"
         },
         "radius": {
           "$type": "dimension",
-          "$value": "{radius.2xs}"
+          "$value": "{radius.xs}"
+        },
+        "min-height": {
+          "$type": "dimension",
+          "$value": "{size.component.xl}"
         }
       },
       "md": {
+        "padding-vertical": {
+          "$type": "dimension",
+          "$value": "{spacing.sm}"
+        },
+        "padding-horizontal": {
+          "$type": "dimension",
+          "$value": "{spacing.sm}"
+        },
         "gap": {
           "$type": "dimension",
           "$value": "{spacing.xs}"
         },
         "radius": {
           "$type": "dimension",
-          "$value": "{radius.2xs}"
+          "$value": "{radius.xs}"
+        },
+        "min-height": {
+          "$type": "dimension",
+          "$value": "{size.component.2xl}"
         }
       },
       "lg": {
+        "padding-vertical": {
+          "$type": "dimension",
+          "$value": "{spacing.md}"
+        },
+        "padding-horizontal": {
+          "$type": "dimension",
+          "$value": "{spacing.md}"
+        },
         "gap": {
           "$type": "dimension",
           "$value": "{spacing.xs}"
         },
         "radius": {
           "$type": "dimension",
-          "$value": "{radius.2xs}"
+          "$value": "{radius.xs}"
+        },
+        "min-height": {
+          "$type": "dimension",
+          "$value": "{size.component.3xl}"
         }
       },
       "default": {
@@ -719,7 +755,7 @@
     "inactive": {
       "padding-vertical": {
         "$type": "dimension",
-        "$value": "{spacing.xs}"
+        "$value": "{spacing.none}"
       },
       "padding-horizontal": {
         "$type": "dimension",
@@ -731,7 +767,7 @@
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.2xs}"
+        "$value": "{spacing.none}"
       },
       "radius": {
         "$type": "dimension",
@@ -740,6 +776,10 @@
       "border-width": {
         "$type": "dimension",
         "$value": "{border-width.thin}"
+      },
+      "min-height": {
+        "$type": "dimension",
+        "$value": "{size.component.xl}"
       },
       "default": {
         "background": {

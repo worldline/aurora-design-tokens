@@ -58,6 +58,19 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "800": "rgba(0, 0, 0, 0.08)",
           "900": "rgba(0, 0, 0, 0.03)",
           "1000": "rgba(0, 0, 0, 0)"
+        },
+        "neutral": {
+          "50": "rgba(24, 29, 39, 0.98)",
+          "100": "rgba(24, 29, 39, 0.94)",
+          "200": "rgba(24, 29, 39, 0.92)",
+          "300": "rgba(24, 29, 39, 0.8)",
+          "400": "rgba(24, 29, 39, 0.56)",
+          "500": "rgba(24, 29, 39, 0.5)",
+          "600": "rgba(24, 29, 39, 0.35)",
+          "700": "rgba(24, 29, 39, 0.16)",
+          "800": "rgba(24, 29, 39, 0.08)",
+          "900": "rgba(24, 29, 39, 0.03)",
+          "1000": "rgba(24, 29, 39, 0)"
         }
       },
       "brand": {
@@ -551,7 +564,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "subtile": "#fef0c7"
         },
         "page": "#f5f7f7",
-        "invert": "#121621",
         "danger": {
           "solid": "#f04438",
           "solidHover": "#b42318",
@@ -559,13 +571,12 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gradientStart": "#f97066",
           "gradientEnd": "#f04438"
         },
+        "invert": "#121621",
         "invertAlphaLow": "rgba(0, 0, 0, 0.03)",
         "invertAlphaHigh": "rgba(0, 0, 0, 0.08)",
         "disabled": "#f5f7f7",
         "scrim": "rgba(0, 0, 0, 0.35)",
         "shadow": "rgba(0, 0, 0, 0.16)",
-        "gradientStart": "rgba(255, 255, 255, 0.98)",
-        "gradientEnd": "rgba(255, 255, 255, 0)",
         "glass": "rgba(255, 255, 255, 0.92)"
       },
       "content": {
@@ -1852,16 +1863,25 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "link": {
           "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
             "gap": 4,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 40
           },
           "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
             "gap": 8,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 48
           },
           "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
             "gap": 8,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 56
           },
           "default": {
             "content": "#121621"
@@ -1921,12 +1941,13 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "filters": {
         "inactive": {
-          "paddingVertical": 8,
+          "paddingVertical": 0,
           "paddingHorizontal": 8,
           "paddingLabel": 4,
-          "gap": 4,
+          "gap": 0,
           "radius": 9999,
           "borderWidth": 1,
+          "minHeight": 40,
           "default": {
             "background": "#e6ebeb",
             "border": "#859090",
@@ -2220,7 +2241,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "blur": {
         "scrim": 100,
-        "glass": 80
+        "glass": 40
       }
     },
     "dark": {
@@ -2258,7 +2279,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "subtile": "#4e1d09"
         },
         "page": "#121621",
-        "invert": "#ffffff",
         "danger": {
           "solid": "#f97066",
           "solidHover": "#b42318",
@@ -2266,14 +2286,13 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gradientStart": "#f97066",
           "gradientEnd": "#f04438"
         },
+        "invert": "#ffffff",
         "invertAlphaLow": "rgba(255, 255, 255, 0.03)",
         "invertAlphaHigh": "rgba(255, 255, 255, 0.08)",
         "disabled": "#181d27",
         "scrim": "rgba(0, 0, 0, 0.35)",
         "shadow": "rgba(0, 0, 0, 0.16)",
-        "gradientStart": "rgba(0, 0, 0, 0.98)",
-        "gradientEnd": "rgba(0, 0, 0, 0)",
-        "glass": "rgba(0, 0, 0, 0.92)"
+        "glass": "rgba(24, 29, 39, 0.92)"
       },
       "content": {
         "primaryStatic": "#121621",
@@ -3559,16 +3578,25 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "link": {
           "sm": {
+            "paddingVertical": 8,
+            "paddingHorizontal": 8,
             "gap": 4,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 40
           },
           "md": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 12,
             "gap": 8,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 48
           },
           "lg": {
+            "paddingVertical": 16,
+            "paddingHorizontal": 16,
             "gap": 8,
-            "radius": 2
+            "radius": 4,
+            "minHeight": 56
           },
           "default": {
             "content": "#e9ebef"
@@ -3628,12 +3656,13 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "filters": {
         "inactive": {
-          "paddingVertical": 8,
+          "paddingVertical": 0,
           "paddingHorizontal": 8,
           "paddingLabel": 4,
-          "gap": 4,
+          "gap": 0,
           "radius": 9999,
           "borderWidth": 1,
+          "minHeight": 40,
           "default": {
             "background": "#2a2f38",
             "border": "#bdc1cb",
@@ -3927,7 +3956,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "blur": {
         "scrim": 100,
-        "glass": 80
+        "glass": 40
       }
     }
   },

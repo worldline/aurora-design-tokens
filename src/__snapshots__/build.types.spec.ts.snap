@@ -46,6 +46,17 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'alphaBlack800'
   | 'alphaBlack900'
   | 'alphaBlack1000'
+  | 'alphaNeutral50'
+  | 'alphaNeutral100'
+  | 'alphaNeutral200'
+  | 'alphaNeutral300'
+  | 'alphaNeutral400'
+  | 'alphaNeutral500'
+  | 'alphaNeutral600'
+  | 'alphaNeutral700'
+  | 'alphaNeutral800'
+  | 'alphaNeutral900'
+  | 'alphaNeutral1000'
   | 'brandPrimary50'
   | 'brandPrimary100'
   | 'brandPrimary200'
@@ -119,19 +130,17 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceWarningSolid'
   | 'surfaceWarningSubtile'
   | 'surfacePage'
-  | 'surfaceInvert'
   | 'surfaceDangerSolid'
   | 'surfaceDangerSolidHover'
   | 'surfaceDangerSubtile'
   | 'surfaceDangerGradientStart'
   | 'surfaceDangerGradientEnd'
+  | 'surfaceInvert'
   | 'surfaceInvertAlphaLow'
   | 'surfaceInvertAlphaHigh'
   | 'surfaceDisabled'
   | 'surfaceScrim'
   | 'surfaceShadow'
-  | 'surfaceGradientStart'
-  | 'surfaceGradientEnd'
   | 'surfaceGlass'
   | 'contentPrimaryStatic'
   | 'contentPrimary'
@@ -247,6 +256,17 @@ export const ColorAlphaBlack700: string;
 export const ColorAlphaBlack800: string;
 export const ColorAlphaBlack900: string;
 export const ColorAlphaBlack1000: string;
+export const ColorAlphaNeutral50: string;
+export const ColorAlphaNeutral100: string;
+export const ColorAlphaNeutral200: string;
+export const ColorAlphaNeutral300: string;
+export const ColorAlphaNeutral400: string;
+export const ColorAlphaNeutral500: string;
+export const ColorAlphaNeutral600: string;
+export const ColorAlphaNeutral700: string;
+export const ColorAlphaNeutral800: string;
+export const ColorAlphaNeutral900: string;
+export const ColorAlphaNeutral1000: string;
 export const ColorBrandPrimary50: string;
 export const ColorBrandPrimary100: string;
 export const ColorBrandPrimary200: string;

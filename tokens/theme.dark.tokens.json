@@ -102,10 +102,6 @@
       "$type": "color",
       "$value": "{color.neutral.dark.900}"
     },
-    "invert": {
-      "$type": "color",
-      "$value": "{color.neutral.light.white}"
-    },
     "danger": {
       "solid": {
         "$type": "color",
@@ -128,6 +124,10 @@
         "$value": "{color.feedback.danger.500}"
       }
     },
+    "invert": {
+      "$type": "color",
+      "$value": "{color.neutral.light.white}"
+    },
     "invert-alpha-low": {
       "$type": "color",
       "$value": "{color.alpha.white.900}"
@@ -148,17 +148,9 @@
       "$type": "color",
       "$value": "{color.alpha.black.700}"
     },
-    "gradient-start": {
-      "$type": "color",
-      "$value": "{color.alpha.black.50}"
-    },
-    "gradient-end": {
-      "$type": "color",
-      "$value": "{color.alpha.black.1000}"
-    },
     "glass": {
       "$type": "color",
-      "$value": "{color.alpha.black.200}"
+      "$value": "{color.alpha.neutral.200}"
     }
   },
   "content": {
