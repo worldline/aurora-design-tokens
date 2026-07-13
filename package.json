@@ -58,7 +58,7 @@
     "@eslint/js": "10.0.1",
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/gitlab": "13.3.2",
+    "@semantic-release/gitlab": "13.3.3",
     "@semantic-release/npm": "13.1.5",
     "@semantic-release/release-notes-generator": "14.1.1",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
