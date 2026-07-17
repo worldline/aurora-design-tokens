@@ -7,7 +7,7 @@
   "type": "module",
   "main": "index.js",
   "engines": {
-    "node": ">=24"
+    "node": ">=26"
   },
   "exports": {
     "./style.css": "./build/css/style.css",
