@@ -131,6 +131,15 @@
           "blur": "{dimension.8}"
         }
       ]
+    },
+    "navigation": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "backgroundBlur": true,
+          "blur": "{dimension.8}"
+        }
+      ]
     }
   }
 }

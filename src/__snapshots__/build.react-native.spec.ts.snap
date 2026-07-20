@@ -564,6 +564,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "subtile": "#fef0c7"
         },
         "page": "#f5f7f7",
+        "invert": "#121621",
         "danger": {
           "solid": "#f04438",
           "solidHover": "#b42318",
@@ -571,7 +572,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gradientStart": "#f97066",
           "gradientEnd": "#f04438"
         },
-        "invert": "#121621",
         "invertAlphaLow": "rgba(0, 0, 0, 0.03)",
         "invertAlphaHigh": "rgba(0, 0, 0, 0.08)",
         "disabled": "#f5f7f7",
@@ -1863,25 +1863,25 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "link": {
           "sm": {
-            "paddingVertical": 8,
-            "paddingHorizontal": 8,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 4,
             "radius": 4,
-            "minHeight": 40
+            "minHeight": 8
           },
           "md": {
-            "paddingVertical": 12,
-            "paddingHorizontal": 12,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 8,
             "radius": 4,
-            "minHeight": 48
+            "minHeight": 8
           },
           "lg": {
-            "paddingVertical": 16,
-            "paddingHorizontal": 16,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 8,
             "radius": 4,
-            "minHeight": 56
+            "minHeight": 8
           },
           "default": {
             "content": "#121621"
@@ -1976,6 +1976,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gap": 4,
           "radius": 9999,
           "borderWidth": 1,
+          "minHeight": 40,
           "default": {
             "background": "#277777",
             "border": "#277777",
@@ -2241,7 +2242,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "blur": {
         "scrim": 100,
-        "glass": 40
+        "glass": 40,
+        "navigation": 40
       }
     },
     "dark": {
@@ -2279,6 +2281,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "subtile": "#4e1d09"
         },
         "page": "#121621",
+        "invert": "#ffffff",
         "danger": {
           "solid": "#f97066",
           "solidHover": "#b42318",
@@ -2286,7 +2289,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gradientStart": "#f97066",
           "gradientEnd": "#f04438"
         },
-        "invert": "#ffffff",
         "invertAlphaLow": "rgba(255, 255, 255, 0.03)",
         "invertAlphaHigh": "rgba(255, 255, 255, 0.08)",
         "disabled": "#181d27",
@@ -3578,25 +3580,25 @@ exports[`build react native > should output the react native tokens file 1`] = `
         },
         "link": {
           "sm": {
-            "paddingVertical": 8,
-            "paddingHorizontal": 8,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 4,
             "radius": 4,
-            "minHeight": 40
+            "minHeight": 8
           },
           "md": {
-            "paddingVertical": 12,
-            "paddingHorizontal": 12,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 8,
             "radius": 4,
-            "minHeight": 48
+            "minHeight": 8
           },
           "lg": {
-            "paddingVertical": 16,
-            "paddingHorizontal": 16,
+            "paddingVertical": 0,
+            "paddingHorizontal": 0,
             "gap": 8,
             "radius": 4,
-            "minHeight": 56
+            "minHeight": 8
           },
           "default": {
             "content": "#e9ebef"
@@ -3691,6 +3693,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "gap": 4,
           "radius": 9999,
           "borderWidth": 1,
+          "minHeight": 40,
           "default": {
             "background": "#277777",
             "border": "#91b9b9",
@@ -3956,7 +3959,8 @@ exports[`build react native > should output the react native tokens file 1`] = `
       },
       "blur": {
         "scrim": 100,
-        "glass": 40
+        "glass": 40,
+        "navigation": 40
       }
     }
   },
