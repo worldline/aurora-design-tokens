@@ -2179,7 +2179,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "rgba(0, 0, 0, 0.16)"
         }
       ],
-      "overlayBackgroundBlur": 80,
+      "overlayBackgroundBlur": 20,
       "elevation": {
         "interactive": {
           "default": [
@@ -2241,9 +2241,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
         ]
       },
       "blur": {
-        "scrim": 100,
-        "glass": 40,
-        "navigation": 40
+        "scrim": 30,
+        "glass": 10,
+        "navigation": 10
       }
     },
     "dark": {
@@ -3896,7 +3896,7 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "color": "rgba(0, 0, 0, 0.16)"
         }
       ],
-      "overlayBackgroundBlur": 80,
+      "overlayBackgroundBlur": 20,
       "elevation": {
         "interactive": {
           "default": [
@@ -3958,9 +3958,9 @@ exports[`build react native > should output the react native tokens file 1`] = `
         ]
       },
       "blur": {
-        "scrim": 100,
-        "glass": 40,
-        "navigation": 40
+        "scrim": 30,
+        "glass": 10,
+        "navigation": 10
       }
     }
   },

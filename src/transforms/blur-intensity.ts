@@ -9,7 +9,7 @@ import { stringToNumber } from '../util/string.ts'
  *
  * There is no perfect mapping between the two but this should be close enough.
  */
-const EXPO_BLUR_SCALE = 0.2
+const EXPO_BLUR_MULTIPLIER = 1.25
 
 export const blurIntensity = {
   name: 'blurIntensity',
@@ -19,7 +19,7 @@ export const blurIntensity = {
   transform: (token: TransformedToken) => {
     try {
       const blurValue = getBlurValue(token)
-      return Math.min(Math.round(blurValue / EXPO_BLUR_SCALE), 100)
+      return Math.min(Math.round(blurValue * EXPO_BLUR_MULTIPLIER), 100)
     } catch (error) {
       throw new Error(
         `Invalid blur token at path: ${token.path.join('.')}: ${error instanceof Error ? error.message : String(error)}`,

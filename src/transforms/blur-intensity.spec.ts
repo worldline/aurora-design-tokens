@@ -19,22 +19,22 @@ describe('blurIntensity', () => {
   describe('transform', () => {
     it('should convert px blur to Expo-inspired intensity when string', () => {
       const token = { $type: 'blur', $value: '16px' } as TransformedToken
-      expect(blurIntensity.transform(token)).toBe(80)
+      expect(blurIntensity.transform(token)).toBe(20)
     })
 
     it('should convert px blur to Expo-inspired intensity when number', () => {
       const token = { $type: 'blur', $value: 16 } as unknown as TransformedToken
-      expect(blurIntensity.transform(token)).toBe(80)
+      expect(blurIntensity.transform(token)).toBe(20)
     })
 
     it('should cap intensity at 100', () => {
-      const token = { $type: 'blur', $value: '30px' } as TransformedToken
+      const token = { $type: 'blur', $value: '100px' } as TransformedToken
       expect(blurIntensity.transform(token)).toBe(100)
     })
 
     it('should round to nearest integer', () => {
       const token = { $type: 'blur', $value: '5px' } as TransformedToken
-      expect(blurIntensity.transform(token)).toBe(25)
+      expect(blurIntensity.transform(token)).toBe(6)
     })
 
     it('should throw for non-numeric values', () => {
