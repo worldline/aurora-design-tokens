@@ -3,7 +3,8 @@
     "hero": {
       "font-family": {
         "$type": "string",
-        "$value": "{typography.font-family.primary}"
+        "$value": "{typography.font-family.primary}",
+        "$description": "Font-family for the Hero text role"
       },
       "font-size": {
         "$type": "dimension",
@@ -617,6 +618,10 @@
       }
     },
     "component": {
+      "4xs": {
+        "$type": "dimension",
+        "$value": "{dimension.4}"
+      },
       "3xs": {
         "$type": "dimension",
         "$value": "{dimension.8}"

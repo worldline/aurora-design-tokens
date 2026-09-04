@@ -130,12 +130,12 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceWarningSolid'
   | 'surfaceWarningSubtile'
   | 'surfacePage'
-  | 'surfaceInvert'
   | 'surfaceDangerSolid'
   | 'surfaceDangerSolidHover'
   | 'surfaceDangerSubtile'
   | 'surfaceDangerGradientStart'
   | 'surfaceDangerGradientEnd'
+  | 'surfaceInvert'
   | 'surfaceInvertAlphaLow'
   | 'surfaceInvertAlphaHigh'
   | 'surfaceDisabled'
@@ -429,6 +429,13 @@ export const FontWeightRegular: string;
 export const FontWeightMedium: string;
 export const FontWeightSemibold: string;
 export const FontWeightBold: string;
+export const MotionPrimitiveIterationOnce: string;
+export const MotionPrimitiveIterationInfinite: string;
+export const MotionPrimitiveVelocity100: string;
+export const MotionPrimitiveVelocity200: string;
+export const MotionPrimitiveVelocity300: string;
+export const MotionPrimitiveVelocity500: string;
+export const MotionPrimitiveVelocity800: string;
 export const MotionPrimitiveDuration0: string;
 export const MotionPrimitiveDuration100: string;
 export const MotionPrimitiveDuration150: string;
@@ -440,79 +447,82 @@ export const MotionPrimitiveDuration800: string;
 export const MotionPrimitiveDuration1000: string;
 export const MotionPrimitiveDuration1200: string;
 export const MotionPrimitiveDuration2500: string;
-export const MotionPrimitiveEasingLinear: string;
-export const MotionPrimitiveEasingEase: string;
-export const MotionPrimitiveEasingEaseIn: string;
-export const MotionPrimitiveEasingEaseOut: string;
-export const MotionPrimitiveEasingEaseInOut: string;
-export const MotionPrimitiveEasingEmphasized: string;
-export const MotionPrimitiveIterationOnce: string;
-export const MotionPrimitiveIterationInfinite: string;
 export const MotionPrimitiveDelay0: string;
 export const MotionPrimitiveDelay50: string;
 export const MotionPrimitiveDelay100: string;
 export const MotionPrimitiveDelay150: string;
 export const MotionPrimitiveDelay200: string;
 export const MotionPrimitiveDelay300: string;
-export const MotionBehaviorInteractionDuration: string;
-export const MotionBehaviorInteractionEasing: string;
+export const MotionPrimitiveEasingLinear: string;
+export const MotionPrimitiveEasingEase: string;
+export const MotionPrimitiveEasingEaseIn: string;
+export const MotionPrimitiveEasingEaseOut: string;
+export const MotionPrimitiveEasingEaseInOut: string;
+export const MotionPrimitiveEasingEmphasized: string;
 export const MotionBehaviorInteractionIteration: string;
+export const MotionBehaviorInteractionDuration: string;
 export const MotionBehaviorInteractionDelay: string;
-export const MotionBehaviorFeedbackDuration: string;
-export const MotionBehaviorFeedbackEasing: string;
+export const MotionBehaviorInteractionEasing: string;
 export const MotionBehaviorFeedbackIteration: string;
+export const MotionBehaviorFeedbackDuration: string;
 export const MotionBehaviorFeedbackDelay: string;
-export const MotionBehaviorTransitionDuration: string;
-export const MotionBehaviorTransitionEasing: string;
+export const MotionBehaviorFeedbackEasing: string;
 export const MotionBehaviorTransitionIteration: string;
+export const MotionBehaviorTransitionDuration: string;
 export const MotionBehaviorTransitionDelay: string;
-export const MotionBehaviorNavigationDuration: string;
-export const MotionBehaviorNavigationEasing: string;
+export const MotionBehaviorTransitionEasing: string;
 export const MotionBehaviorNavigationIteration: string;
+export const MotionBehaviorNavigationDuration: string;
 export const MotionBehaviorNavigationDelay: string;
-export const MotionBehaviorPreloadingDuration: string;
-export const MotionBehaviorPreloadingEasing: string;
+export const MotionBehaviorNavigationEasing: string;
 export const MotionBehaviorPreloadingIteration: string;
+export const MotionBehaviorPreloadingDuration: string;
 export const MotionBehaviorPreloadingDelay: string;
+export const MotionBehaviorPreloadingEasing: string;
+export const MotionSpinnerIteration: string;
 export const MotionSpinnerDuration: string;
 export const MotionSpinnerEasing: string;
-export const MotionSpinnerIteration: string;
 export const MotionSpinnerDelay: string;
+export const MotionPulseIteration: string;
 export const MotionPulseDuration: string;
 export const MotionPulseEasing: string;
-export const MotionPulseIteration: string;
 export const MotionPulseDelay: string;
+export const MotionShimmerIteration: string;
 export const MotionShimmerDuration: string;
 export const MotionShimmerEasing: string;
-export const MotionShimmerIteration: string;
 export const MotionShimmerDelay: string;
+export const MotionFadeInIteration: string;
 export const MotionFadeInDuration: string;
 export const MotionFadeInEasing: string;
-export const MotionFadeInIteration: string;
 export const MotionFadeInDelay: string;
+export const MotionFadeOutIteration: string;
 export const MotionFadeOutDuration: string;
 export const MotionFadeOutEasing: string;
-export const MotionFadeOutIteration: string;
 export const MotionFadeOutDelay: string;
+export const MotionSlideInIteration: string;
 export const MotionSlideInDuration: string;
 export const MotionSlideInEasing: string;
-export const MotionSlideInIteration: string;
 export const MotionSlideInDelay: string;
+export const MotionSlideOutIteration: string;
 export const MotionSlideOutDuration: string;
 export const MotionSlideOutEasing: string;
-export const MotionSlideOutIteration: string;
 export const MotionSlideOutDelay: string;
+export const MotionScaleInIteration: string;
 export const MotionScaleInDuration: string;
 export const MotionScaleInEasing: string;
-export const MotionScaleInIteration: string;
 export const MotionScaleInDelay: string;
+export const MotionScaleOutIteration: string;
 export const MotionScaleOutDuration: string;
 export const MotionScaleOutEasing: string;
-export const MotionScaleOutIteration: string;
 export const MotionScaleOutDelay: string;
+export const MotionRippleIteration: string;
 export const MotionRippleDuration: string;
 export const MotionRippleEasing: string;
-export const MotionRippleIteration: string;
 export const MotionRippleDelay: string;
+export const GestureDragThreshold: string;
+export const GesturePinchThreshold: string;
+export const GesturePullToRefreshThreshold: string;
+export const GestureSwipeThreshold: string;
+export const GestureSwipeVelocity: string;
 "
 `;

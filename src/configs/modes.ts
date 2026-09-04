@@ -24,8 +24,9 @@ interface ModeDefinition {
 
 const breakpoints = {
   'mobile-xs': 360,
-  'mobile-sm': 480,
-  tablet: 768,
+  'mobile-sm': 393,
+  'tablet-sm': 480,
+  'tablet-md': 768,
   'desktop-xs': 1024,
   'desktop-sm': 1280,
   'desktop-md': null,

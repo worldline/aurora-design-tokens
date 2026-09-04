@@ -102,10 +102,6 @@
       "$type": "color",
       "$value": "{color.neutral.dark.900}"
     },
-    "invert": {
-      "$type": "color",
-      "$value": "{color.neutral.light.white}"
-    },
     "danger": {
       "solid": {
         "$type": "color",
@@ -127,6 +123,10 @@
         "$type": "color",
         "$value": "{color.feedback.danger.500}"
       }
+    },
+    "invert": {
+      "$type": "color",
+      "$value": "{color.neutral.light.white}"
     },
     "invert-alpha-low": {
       "$type": "color",

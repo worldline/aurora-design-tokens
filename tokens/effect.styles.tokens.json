@@ -123,7 +123,7 @@
         }
       ]
     },
-    "glass": {
+    "navigation": {
       "$type": "shadow",
       "$value": [
         {
@@ -132,7 +132,7 @@
         }
       ]
     },
-    "navigation": {
+    "glass": {
       "$type": "shadow",
       "$value": [
         {

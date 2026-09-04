@@ -1,19 +1,89 @@
 {
   "glow": {
-    "$type": "gradient",
-    "$value": {
-      "type": "radial",
-      "angle": 180,
-      "stops": [
-        {
-          "color": "{color.alpha.white.500}",
-          "position": 0
-        },
-        {
-          "color": "{color.alpha.white.1000}",
-          "position": 1
-        }
-      ]
+    "white": {
+      "$type": "gradient",
+      "$value": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "{color.alpha.white.500}",
+            "position": 0
+          },
+          {
+            "color": "{color.alpha.white.1000}",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "brand": {
+      "$type": "gradient",
+      "$value": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "{surface.brand.solid}",
+            "position": 0
+          },
+          {
+            "color": "{surface.neutral.low-gradient-end}",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "success": {
+      "$type": "gradient",
+      "$value": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "{surface.success.solid}",
+            "position": 0
+          },
+          {
+            "color": "{surface.neutral.low-gradient-end}",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "warning": {
+      "$type": "gradient",
+      "$value": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "{surface.warning.solid}",
+            "position": 0
+          },
+          {
+            "color": "{surface.neutral.low-gradient-end}",
+            "position": 1
+          }
+        ]
+      }
+    },
+    "danger": {
+      "$type": "gradient",
+      "$value": {
+        "type": "radial",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "{surface.danger.solid}",
+            "position": 0
+          },
+          {
+            "color": "{surface.neutral.low-gradient-end}",
+            "position": 1
+          }
+        ]
+      }
     }
   },
   "gradient": {

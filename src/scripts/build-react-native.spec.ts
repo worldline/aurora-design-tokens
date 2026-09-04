@@ -171,7 +171,8 @@ describe('build-react-native', () => {
       expect(result.breakpoints).toEqual({
         mobileXs: breakpoints['mobile-xs'],
         mobileSm: breakpoints['mobile-sm'],
-        tablet: breakpoints.tablet,
+        tabletSm: breakpoints['tablet-sm'],
+        tabletMd: breakpoints['tablet-md'],
         desktopXs: breakpoints['desktop-xs'],
         desktopSm: breakpoints['desktop-sm'],
         desktopMd: breakpoints['desktop-md'],
