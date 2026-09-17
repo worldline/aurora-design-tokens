@@ -272,6 +272,50 @@
           "$value": "{font-weight.regular}"
         }
       },
+      "md-bold": {
+        "font-family": {
+          "$type": "string",
+          "$value": "{typography.font-family.secondary}"
+        },
+        "font-size": {
+          "$type": "dimension",
+          "$value": "{font-size.3xs}"
+        },
+        "line-height": {
+          "$type": "dimension",
+          "$value": "{line-height.3xs}"
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": "{letter-spacing.none}"
+        },
+        "font-weight": {
+          "$type": "dimension",
+          "$value": "{font-weight.bold}"
+        }
+      },
+      "md-primary-semibold": {
+        "font-family": {
+          "$type": "string",
+          "$value": "{typography.font-family.primary}"
+        },
+        "font-size": {
+          "$type": "dimension",
+          "$value": "{font-size.3xs}"
+        },
+        "line-height": {
+          "$type": "dimension",
+          "$value": "{line-height.3xs}"
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": "{letter-spacing.none}"
+        },
+        "font-weight": {
+          "$type": "dimension",
+          "$value": "{font-weight.semibold}"
+        }
+      },
       "sm": {
         "font-family": {
           "$type": "string",
@@ -292,6 +336,28 @@
         "font-weight": {
           "$type": "dimension",
           "$value": "{font-weight.regular}"
+        }
+      },
+      "sm-medium": {
+        "font-family": {
+          "$type": "string",
+          "$value": "{typography.font-family.secondary}"
+        },
+        "font-size": {
+          "$type": "dimension",
+          "$value": "{font-size.4xs}"
+        },
+        "line-height": {
+          "$type": "dimension",
+          "$value": "{line-height.4xs}"
+        },
+        "letter-spacing": {
+          "$type": "dimension",
+          "$value": "{letter-spacing.none}"
+        },
+        "font-weight": {
+          "$type": "dimension",
+          "$value": "{font-weight.medium}"
         }
       }
     },
@@ -543,12 +609,6 @@
       "$type": "dimension",
       "$value": "768px"
     },
-    "wrapper": {
-      "padding-vert": {
-        "$type": "dimension",
-        "$value": "{spacing.5xl}"
-      }
-    },
     "content": {
       "max-width": {
         "xs": {
@@ -579,6 +639,12 @@
           "$type": "dimension",
           "$value": "1440px"
         }
+      }
+    },
+    "wrapper": {
+      "padding-vert": {
+        "$type": "dimension",
+        "$value": "{spacing.5xl}"
       }
     }
   },

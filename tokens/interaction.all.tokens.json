@@ -4,18 +4,42 @@
       "threshold": {
         "$type": "dimension",
         "$value": "{dimension.8}"
+      },
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.200}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-out}"
       }
     },
     "pinch": {
       "threshold": {
         "$type": "dimension",
         "$value": "0.1px"
+      },
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.200}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-out}"
       }
     },
     "pull-to-refresh": {
       "threshold": {
         "$type": "dimension",
         "$value": "{dimension.80}"
+      },
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.300}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-out}"
       }
     },
     "swipe": {
@@ -26,6 +50,20 @@
       "velocity": {
         "$type": "string",
         "$value": "{motion.primitive.velocity.300}"
+      },
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.300}"
+      },
+      "easing": {
+        "$type": "string",
+        "$value": "{motion.primitive.easing.ease-out}"
+      }
+    },
+    "long-press": {
+      "duration": {
+        "$type": "string",
+        "$value": "{motion.primitive.duration.500}"
       }
     }
   }

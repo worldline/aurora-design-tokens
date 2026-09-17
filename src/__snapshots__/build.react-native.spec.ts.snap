@@ -536,17 +536,60 @@ exports[`build react native > should output the react native tokens file 1`] = `
     },
     "gesture": {
       "drag": {
-        "threshold": 8
+        "threshold": 8,
+        "duration": 200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        }
       },
       "pinch": {
-        "threshold": 0.1
+        "threshold": 0.1,
+        "duration": 200,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        }
       },
       "pullToRefresh": {
-        "threshold": 80
+        "threshold": 80,
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        }
       },
       "swipe": {
         "threshold": 64,
-        "velocity": "300px/s"
+        "velocity": "300px/s",
+        "duration": 300,
+        "easing": {
+          "name": "cubic-bezier",
+          "controlPoints": [
+            0,
+            0,
+            0.2,
+            1
+          ]
+        }
+      },
+      "longPress": {
+        "duration": 500
       }
     }
   },
@@ -1128,6 +1171,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "letterSpacing": 0,
             "fontWeight": 400
           },
+          "mdBold": {
+            "fontFamily": "Inter",
+            "fontSize": {
+              "mobileXs": 14,
+              "mobileSm": 14,
+              "tabletSm": 16,
+              "tabletMd": 16,
+              "desktopXs": 16,
+              "desktopSm": 16,
+              "desktopMd": 16
+            },
+            "lineHeight": {
+              "mobileXs": 18,
+              "mobileSm": 18,
+              "tabletSm": 22,
+              "tabletMd": 22,
+              "desktopXs": 22,
+              "desktopSm": 22,
+              "desktopMd": 22
+            },
+            "letterSpacing": 0,
+            "fontWeight": 700
+          },
+          "mdPrimarySemibold": {
+            "fontFamily": "Raleway",
+            "fontSize": {
+              "mobileXs": 14,
+              "mobileSm": 14,
+              "tabletSm": 16,
+              "tabletMd": 16,
+              "desktopXs": 16,
+              "desktopSm": 16,
+              "desktopMd": 16
+            },
+            "lineHeight": {
+              "mobileXs": 18,
+              "mobileSm": 18,
+              "tabletSm": 22,
+              "tabletMd": 22,
+              "desktopXs": 22,
+              "desktopSm": 22,
+              "desktopMd": 22
+            },
+            "letterSpacing": 0,
+            "fontWeight": 600
+          },
           "sm": {
             "fontFamily": "Inter",
             "fontSize": {
@@ -1150,6 +1239,29 @@ exports[`build react native > should output the react native tokens file 1`] = `
             },
             "letterSpacing": 0,
             "fontWeight": 400
+          },
+          "smMedium": {
+            "fontFamily": "Inter",
+            "fontSize": {
+              "mobileXs": 13,
+              "mobileSm": 13,
+              "tabletSm": 14,
+              "tabletMd": 14,
+              "desktopXs": 14,
+              "desktopSm": 14,
+              "desktopMd": 14
+            },
+            "lineHeight": {
+              "mobileXs": 16,
+              "mobileSm": 16,
+              "tabletSm": 18,
+              "tabletMd": 18,
+              "desktopXs": 18,
+              "desktopSm": 18,
+              "desktopMd": 18
+            },
+            "letterSpacing": 0,
+            "fontWeight": 500
           }
         },
         "label": {
@@ -1344,17 +1456,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "desktopSm": 1280,
           "desktopMd": 1440
         },
-        "wrapper": {
-          "paddingVert": {
-            "mobileXs": 32,
-            "mobileSm": 32,
-            "tabletSm": 64,
-            "tabletMd": 64,
-            "desktopXs": 64,
-            "desktopSm": 64,
-            "desktopMd": 64
-          }
-        },
         "content": {
           "maxWidth": {
             "xs": 360,
@@ -1364,6 +1465,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "xl": 1024,
             "2xl": 1280,
             "3xl": 1440
+          }
+        },
+        "wrapper": {
+          "paddingVert": {
+            "mobileXs": 32,
+            "mobileSm": 32,
+            "tabletSm": 64,
+            "tabletMd": 64,
+            "desktopXs": 64,
+            "desktopSm": 64,
+            "desktopMd": 64
           }
         }
       },
@@ -1671,6 +1783,50 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopMd": 22
           }
         },
+        "mdBold": {
+          "fontFamily": "Inter",
+          "fontSize": {
+            "mobileXs": 14,
+            "mobileSm": 14,
+            "tabletSm": 16,
+            "tabletMd": 16,
+            "desktopXs": 16,
+            "desktopSm": 16,
+            "desktopMd": 16
+          },
+          "fontWeight": 700,
+          "lineHeight": {
+            "mobileXs": 18,
+            "mobileSm": 18,
+            "tabletSm": 22,
+            "tabletMd": 22,
+            "desktopXs": 22,
+            "desktopSm": 22,
+            "desktopMd": 22
+          }
+        },
+        "mdPrimarySemibold": {
+          "fontFamily": "Raleway",
+          "fontSize": {
+            "mobileXs": 14,
+            "mobileSm": 14,
+            "tabletSm": 16,
+            "tabletMd": 16,
+            "desktopXs": 16,
+            "desktopSm": 16,
+            "desktopMd": 16
+          },
+          "fontWeight": 600,
+          "lineHeight": {
+            "mobileXs": 18,
+            "mobileSm": 18,
+            "tabletSm": 22,
+            "tabletMd": 22,
+            "desktopXs": 22,
+            "desktopSm": 22,
+            "desktopMd": 22
+          }
+        },
         "sm": {
           "fontFamily": "Inter",
           "fontSize": {
@@ -1683,6 +1839,28 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopMd": 14
           },
           "fontWeight": 400,
+          "lineHeight": {
+            "mobileXs": 16,
+            "mobileSm": 16,
+            "tabletSm": 18,
+            "tabletMd": 18,
+            "desktopXs": 18,
+            "desktopSm": 18,
+            "desktopMd": 18
+          }
+        },
+        "smMedium": {
+          "fontFamily": "Inter",
+          "fontSize": {
+            "mobileXs": 13,
+            "mobileSm": 13,
+            "tabletSm": 14,
+            "tabletMd": 14,
+            "desktopXs": 14,
+            "desktopSm": 14,
+            "desktopMd": 14
+          },
+          "fontWeight": 500,
           "lineHeight": {
             "mobileXs": 16,
             "mobileSm": 16,
@@ -2983,6 +3161,52 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "letterSpacing": 0,
             "fontWeight": 400
           },
+          "mdBold": {
+            "fontFamily": "Inter",
+            "fontSize": {
+              "mobileXs": 14,
+              "mobileSm": 14,
+              "tabletSm": 16,
+              "tabletMd": 16,
+              "desktopXs": 16,
+              "desktopSm": 16,
+              "desktopMd": 16
+            },
+            "lineHeight": {
+              "mobileXs": 18,
+              "mobileSm": 18,
+              "tabletSm": 22,
+              "tabletMd": 22,
+              "desktopXs": 22,
+              "desktopSm": 22,
+              "desktopMd": 22
+            },
+            "letterSpacing": 0,
+            "fontWeight": 700
+          },
+          "mdPrimarySemibold": {
+            "fontFamily": "Raleway",
+            "fontSize": {
+              "mobileXs": 14,
+              "mobileSm": 14,
+              "tabletSm": 16,
+              "tabletMd": 16,
+              "desktopXs": 16,
+              "desktopSm": 16,
+              "desktopMd": 16
+            },
+            "lineHeight": {
+              "mobileXs": 18,
+              "mobileSm": 18,
+              "tabletSm": 22,
+              "tabletMd": 22,
+              "desktopXs": 22,
+              "desktopSm": 22,
+              "desktopMd": 22
+            },
+            "letterSpacing": 0,
+            "fontWeight": 600
+          },
           "sm": {
             "fontFamily": "Inter",
             "fontSize": {
@@ -3005,6 +3229,29 @@ exports[`build react native > should output the react native tokens file 1`] = `
             },
             "letterSpacing": 0,
             "fontWeight": 400
+          },
+          "smMedium": {
+            "fontFamily": "Inter",
+            "fontSize": {
+              "mobileXs": 13,
+              "mobileSm": 13,
+              "tabletSm": 14,
+              "tabletMd": 14,
+              "desktopXs": 14,
+              "desktopSm": 14,
+              "desktopMd": 14
+            },
+            "lineHeight": {
+              "mobileXs": 16,
+              "mobileSm": 16,
+              "tabletSm": 18,
+              "tabletMd": 18,
+              "desktopXs": 18,
+              "desktopSm": 18,
+              "desktopMd": 18
+            },
+            "letterSpacing": 0,
+            "fontWeight": 500
           }
         },
         "label": {
@@ -3199,17 +3446,6 @@ exports[`build react native > should output the react native tokens file 1`] = `
           "desktopSm": 1280,
           "desktopMd": 1440
         },
-        "wrapper": {
-          "paddingVert": {
-            "mobileXs": 32,
-            "mobileSm": 32,
-            "tabletSm": 64,
-            "tabletMd": 64,
-            "desktopXs": 64,
-            "desktopSm": 64,
-            "desktopMd": 64
-          }
-        },
         "content": {
           "maxWidth": {
             "xs": 360,
@@ -3219,6 +3455,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "xl": 1024,
             "2xl": 1280,
             "3xl": 1440
+          }
+        },
+        "wrapper": {
+          "paddingVert": {
+            "mobileXs": 32,
+            "mobileSm": 32,
+            "tabletSm": 64,
+            "tabletMd": 64,
+            "desktopXs": 64,
+            "desktopSm": 64,
+            "desktopMd": 64
           }
         }
       },
@@ -3526,6 +3773,50 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopMd": 22
           }
         },
+        "mdBold": {
+          "fontFamily": "Inter",
+          "fontSize": {
+            "mobileXs": 14,
+            "mobileSm": 14,
+            "tabletSm": 16,
+            "tabletMd": 16,
+            "desktopXs": 16,
+            "desktopSm": 16,
+            "desktopMd": 16
+          },
+          "fontWeight": 700,
+          "lineHeight": {
+            "mobileXs": 18,
+            "mobileSm": 18,
+            "tabletSm": 22,
+            "tabletMd": 22,
+            "desktopXs": 22,
+            "desktopSm": 22,
+            "desktopMd": 22
+          }
+        },
+        "mdPrimarySemibold": {
+          "fontFamily": "Raleway",
+          "fontSize": {
+            "mobileXs": 14,
+            "mobileSm": 14,
+            "tabletSm": 16,
+            "tabletMd": 16,
+            "desktopXs": 16,
+            "desktopSm": 16,
+            "desktopMd": 16
+          },
+          "fontWeight": 600,
+          "lineHeight": {
+            "mobileXs": 18,
+            "mobileSm": 18,
+            "tabletSm": 22,
+            "tabletMd": 22,
+            "desktopXs": 22,
+            "desktopSm": 22,
+            "desktopMd": 22
+          }
+        },
         "sm": {
           "fontFamily": "Inter",
           "fontSize": {
@@ -3538,6 +3829,28 @@ exports[`build react native > should output the react native tokens file 1`] = `
             "desktopMd": 14
           },
           "fontWeight": 400,
+          "lineHeight": {
+            "mobileXs": 16,
+            "mobileSm": 16,
+            "tabletSm": 18,
+            "tabletMd": 18,
+            "desktopXs": 18,
+            "desktopSm": 18,
+            "desktopMd": 18
+          }
+        },
+        "smMedium": {
+          "fontFamily": "Inter",
+          "fontSize": {
+            "mobileXs": 13,
+            "mobileSm": 13,
+            "tabletSm": 14,
+            "tabletMd": 14,
+            "desktopXs": 14,
+            "desktopSm": 14,
+            "desktopMd": 14
+          },
+          "fontWeight": 500,
           "lineHeight": {
             "mobileXs": 16,
             "mobileSm": 16,

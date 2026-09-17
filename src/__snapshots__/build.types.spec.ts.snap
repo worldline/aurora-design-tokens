@@ -196,7 +196,10 @@ exports[`build types > should output the typographies typescript file 1`] = `
   | 'titleSm'
   | 'bodyLg'
   | 'bodyMd'
+  | 'bodyMdBold'
+  | 'bodyMdPrimarySemibold'
   | 'bodySm'
+  | 'bodySmMedium'
   | 'labelLg'
   | 'labelMd'
   | 'labelSm'
@@ -520,9 +523,18 @@ export const MotionRippleDuration: string;
 export const MotionRippleEasing: string;
 export const MotionRippleDelay: string;
 export const GestureDragThreshold: string;
+export const GestureDragDuration: string;
+export const GestureDragEasing: string;
 export const GesturePinchThreshold: string;
+export const GesturePinchDuration: string;
+export const GesturePinchEasing: string;
 export const GesturePullToRefreshThreshold: string;
+export const GesturePullToRefreshDuration: string;
+export const GesturePullToRefreshEasing: string;
 export const GestureSwipeThreshold: string;
 export const GestureSwipeVelocity: string;
+export const GestureSwipeDuration: string;
+export const GestureSwipeEasing: string;
+export const GestureLongPressDuration: string;
 "
 `;
