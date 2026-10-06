@@ -557,6 +557,12 @@
       "$type": "dimension",
       "$value": "{dimension.32}"
     },
+    "adaptive": {
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{dimension.32}"
+      }
+    },
     "3xl": {
       "$type": "dimension",
       "$value": "{dimension.40}"

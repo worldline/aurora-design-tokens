@@ -515,6 +515,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-32);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -738,6 +739,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-32);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -961,6 +963,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-32);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -1584,6 +1587,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-16);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -1807,6 +1811,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-16);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -2030,6 +2035,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-24);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);
@@ -2253,6 +2259,7 @@ exports[`build css > should output the consolidated CSS file 1`] = `
     --au-spacing-lg: var(--au-dimension-20);
     --au-spacing-xl: var(--au-dimension-24);
     --au-spacing-2xl: var(--au-dimension-32);
+    --au-spacing-adaptive-2xl: var(--au-dimension-24);
     --au-spacing-3xl: var(--au-dimension-40);
     --au-spacing-4xl: var(--au-dimension-48);
     --au-spacing-5xl: var(--au-dimension-64);

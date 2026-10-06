@@ -1424,6 +1424,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "lg": 20,
         "xl": 24,
         "2xl": 32,
+        "adaptive": {
+          "2xl": {
+            "mobileXs": 16,
+            "mobileSm": 16,
+            "tabletSm": 24,
+            "tabletMd": 24,
+            "desktopXs": 32,
+            "desktopSm": 32,
+            "desktopMd": 32
+          }
+        },
         "3xl": 40,
         "4xl": 48,
         "5xl": 64,
@@ -3414,6 +3425,17 @@ exports[`build react native > should output the react native tokens file 1`] = `
         "lg": 20,
         "xl": 24,
         "2xl": 32,
+        "adaptive": {
+          "2xl": {
+            "mobileXs": 16,
+            "mobileSm": 16,
+            "tabletSm": 24,
+            "tabletMd": 24,
+            "desktopXs": 32,
+            "desktopSm": 32,
+            "desktopMd": 32
+          }
+        },
         "3xl": 40,
         "4xl": 48,
         "5xl": 64,
