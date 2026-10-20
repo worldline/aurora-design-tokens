@@ -2,6 +2,7 @@ import StyleDictionary from 'style-dictionary'
 import { transformGroups } from 'style-dictionary/enums'
 
 import { blurIntensity } from './blur-intensity.ts'
+import { gradientHorizontalAngle } from './gradient-horizontal-angle.ts'
 import { reactNativeBoxShadow } from './react-native-box-shadow.ts'
 import { reactNativeMotionDuration } from './react-native-motion-duration.ts'
 import { reactNativeMotionEasing } from './react-native-motion-easing.ts'
@@ -20,5 +21,6 @@ export const auroraReactNativeTransformGroup = {
     reverseShadowOrder.name,
     reactNativeBoxShadow.name,
     blurIntensity.name,
+    gradientHorizontalAngle.name,
   ],
 }

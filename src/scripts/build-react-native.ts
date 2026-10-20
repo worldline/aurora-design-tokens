@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url'
 import util from 'node:util'
 
 import { breakpoints, themes, viewports } from '../configs/modes.ts'
-import { deeplyMapKeys } from '../util/object.ts'
+import { deeplyMapKeys, deepMerge } from '../util/object.ts'
 import { kebabCaseToCamelCase } from '../util/string.ts'
 
 interface ColorModeTokens {
@@ -80,13 +80,12 @@ const buildTokens = (
       themes: Object.fromEntries(
         colorTokens.map(({ color, tokens }) => [
           color,
-          {
-            ...tokens,
-            ...mergeViewports(viewportTokens),
-            ...mergeViewports(
+          deepMerge(
+            deepMerge(tokens, mergeViewports(viewportTokens)),
+            mergeViewports(
               highLevelTokens.filter((highLevel) => highLevel.color === color),
             ),
-          },
+          ),
         ]),
       ),
       breakpoints,

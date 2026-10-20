@@ -5,6 +5,10 @@
         "$type": "color",
         "$value": "{color.neutral.light.white}"
       },
+      "low-transparent": {
+        "$type": "color",
+        "$value": "{color.alpha.white.1000}"
+      },
       "low-hover": {
         "$type": "color",
         "$value": "{color.neutral.light.50}"
@@ -66,6 +70,78 @@
       "gradient-end": {
         "$type": "color",
         "$value": "{color.brand.primary.700}"
+      }
+    },
+    "data": {
+      "primary": {
+        "gradient-start": {
+          "$type": "color",
+          "$value": "{color.data.primary.50}"
+        },
+        "gradient-end": {
+          "$type": "color",
+          "$value": "{color.data.primary.500}"
+        },
+        "glow": {
+          "$type": "color",
+          "$value": "{color.alpha.white.1000}"
+        }
+      },
+      "secondary": {
+        "gradient-start": {
+          "$type": "color",
+          "$value": "{color.data.secondary.50}"
+        },
+        "gradient-end": {
+          "$type": "color",
+          "$value": "{color.data.secondary.500}"
+        },
+        "glow": {
+          "$type": "color",
+          "$value": "{color.alpha.white.1000}"
+        }
+      },
+      "tertiary": {
+        "gradient-start": {
+          "$type": "color",
+          "$value": "{color.data.tertiary.50}"
+        },
+        "gradient-end": {
+          "$type": "color",
+          "$value": "{color.data.tertiary.500}"
+        },
+        "glow": {
+          "$type": "color",
+          "$value": "{color.alpha.white.1000}"
+        }
+      },
+      "quaternary": {
+        "gradient-start": {
+          "$type": "color",
+          "$value": "{color.data.quaternary.50}"
+        },
+        "gradient-end": {
+          "$type": "color",
+          "$value": "{color.data.quaternary.500}"
+        },
+        "glow": {
+          "$type": "color",
+          "$value": "{color.alpha.white.1000}"
+        }
+      },
+      "reference": {
+        "gradient-start": {
+          "$type": "color",
+          "$value": "{color.neutral.light.400}"
+        },
+        "gradient-end": {
+          "$type": "color",
+          "$value": "{color.neutral.light.600}"
+        },
+        "glow": {
+          "$type": "color",
+          "$value": "{color.alpha.white.1000}"
+        }
       }
     },
     "info": {
@@ -151,6 +227,10 @@
     "glass": {
       "$type": "color",
       "$value": "{color.alpha.white.200}"
+    },
+    "glass-dark": {
+      "$type": "color",
+      "$value": "{color.alpha.neutral.200}"
     }
   },
   "content": {
@@ -266,6 +346,28 @@
       "gradient-end": {
         "$type": "color",
         "$value": "{color.brand.primary.900}"
+      }
+    },
+    "data": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.data.primary.50}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.data.secondary.50}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.data.tertiary.50}"
+      },
+      "quaternary": {
+        "$type": "color",
+        "$value": "{color.data.quaternary.50}"
+      },
+      "reference": {
+        "$type": "color",
+        "$value": "{color.neutral.light.400}"
       }
     },
     "info": {

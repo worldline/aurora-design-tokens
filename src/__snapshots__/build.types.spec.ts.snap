@@ -67,6 +67,14 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'brandPrimary700'
   | 'brandPrimary800'
   | 'brandPrimary900'
+  | 'dataPrimary50'
+  | 'dataPrimary500'
+  | 'dataSecondary50'
+  | 'dataSecondary500'
+  | 'dataTertiary50'
+  | 'dataTertiary500'
+  | 'dataQuaternary50'
+  | 'dataQuaternary500'
   | 'feedbackInfo50'
   | 'feedbackInfo100'
   | 'feedbackInfo200'
@@ -108,6 +116,7 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'feedbackDanger800'
   | 'feedbackDanger900'
   | 'surfaceNeutralLow'
+  | 'surfaceNeutralLowTransparent'
   | 'surfaceNeutralLowHover'
   | 'surfaceNeutralMedium'
   | 'surfaceNeutralMediumHover'
@@ -123,6 +132,21 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceBrandSubtile'
   | 'surfaceBrandGradientStart'
   | 'surfaceBrandGradientEnd'
+  | 'surfaceDataPrimaryGradientStart'
+  | 'surfaceDataPrimaryGradientEnd'
+  | 'surfaceDataPrimaryGlow'
+  | 'surfaceDataSecondaryGradientStart'
+  | 'surfaceDataSecondaryGradientEnd'
+  | 'surfaceDataSecondaryGlow'
+  | 'surfaceDataTertiaryGradientStart'
+  | 'surfaceDataTertiaryGradientEnd'
+  | 'surfaceDataTertiaryGlow'
+  | 'surfaceDataQuaternaryGradientStart'
+  | 'surfaceDataQuaternaryGradientEnd'
+  | 'surfaceDataQuaternaryGlow'
+  | 'surfaceDataReferenceGradientStart'
+  | 'surfaceDataReferenceGradientEnd'
+  | 'surfaceDataReferenceGlow'
   | 'surfaceInfoSolid'
   | 'surfaceInfoSubtile'
   | 'surfaceSuccessSolid'
@@ -142,6 +166,7 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'surfaceScrim'
   | 'surfaceShadow'
   | 'surfaceGlass'
+  | 'surfaceGlassDark'
   | 'contentPrimaryStatic'
   | 'contentPrimary'
   | 'contentSecondary'
@@ -169,6 +194,11 @@ exports[`build types > should output the colors typescript file 1`] = `
   | 'borderBrandSubtile'
   | 'borderBrandGradientStart'
   | 'borderBrandGradientEnd'
+  | 'borderDataPrimary'
+  | 'borderDataSecondary'
+  | 'borderDataTertiary'
+  | 'borderDataQuaternary'
+  | 'borderDataReference'
   | 'borderInfoSolid'
   | 'borderInfoSubtile'
   | 'borderSuccessSolid'
@@ -280,6 +310,14 @@ export const ColorBrandPrimary600: string;
 export const ColorBrandPrimary700: string;
 export const ColorBrandPrimary800: string;
 export const ColorBrandPrimary900: string;
+export const ColorDataPrimary50: string;
+export const ColorDataPrimary500: string;
+export const ColorDataSecondary50: string;
+export const ColorDataSecondary500: string;
+export const ColorDataTertiary50: string;
+export const ColorDataTertiary500: string;
+export const ColorDataQuaternary50: string;
+export const ColorDataQuaternary500: string;
 export const ColorFeedbackInfo50: string;
 /** E4F6E2 */
 export const ColorFeedbackInfo100: string;

@@ -12,6 +12,7 @@ import { auroraCssTransformGroup } from './transforms/aurora-css-transform-group
 import { auroraReactNativeTransformGroup } from './transforms/aurora-react-native-transform-group.ts'
 import { blurIntensity } from './transforms/blur-intensity.ts'
 import { fontsPxToRem } from './transforms/fonts-px-to-rem.ts'
+import { gradientHorizontalAngle } from './transforms/gradient-horizontal-angle.ts'
 import { gradient } from './transforms/gradient.ts'
 import { reactNativeBoxShadow } from './transforms/react-native-box-shadow.ts'
 import { reactNativeMotionDuration } from './transforms/react-native-motion-duration.ts'
@@ -23,6 +24,7 @@ import { zeroPx } from './transforms/zero-px.ts'
 StyleDictionary.registerPreprocessor(typography)
 StyleDictionary.registerPreprocessor(backgroundBlur)
 StyleDictionary.registerTransform(gradient)
+StyleDictionary.registerTransform(gradientHorizontalAngle)
 StyleDictionary.registerTransform(reverseShadowOrder)
 StyleDictionary.registerTransform(zeroPx)
 StyleDictionary.registerTransform(fontsPxToRem)

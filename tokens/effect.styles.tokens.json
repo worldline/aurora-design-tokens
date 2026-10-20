@@ -111,6 +111,21 @@
           }
         ]
       }
+    },
+    "data": {
+      "gauge": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "2px",
+            "blur": "6px",
+            "spread": "0px",
+            "color": "{surface.shadow}",
+            "inset": true
+          }
+        ]
+      }
     }
   },
   "blur": {
@@ -140,6 +155,110 @@
           "blur": "{dimension.8}"
         }
       ]
+    }
+  },
+  "glow": {
+    "data": {
+      "primary": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "6px",
+            "spread": "1px",
+            "color": "{color.alpha.white.400}",
+            "inset": true
+          },
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "14px",
+            "spread": "0px",
+            "color": "{surface.data.primary.glow}"
+          }
+        ]
+      },
+      "secondary": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "6px",
+            "spread": "1px",
+            "color": "{color.alpha.white.400}",
+            "inset": true
+          },
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "14px",
+            "spread": "0px",
+            "color": "{surface.data.secondary.glow}"
+          }
+        ]
+      },
+      "tertiary": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "6px",
+            "spread": "1px",
+            "color": "{color.alpha.white.400}",
+            "inset": true
+          },
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "14px",
+            "spread": "0px",
+            "color": "{surface.data.tertiary.glow}"
+          }
+        ]
+      },
+      "quaternary": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "6px",
+            "spread": "1px",
+            "color": "{color.alpha.white.400}",
+            "inset": true
+          },
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "14px",
+            "spread": "0px",
+            "color": "{surface.data.quaternary.glow}"
+          }
+        ]
+      },
+      "reference": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "6px",
+            "spread": "1px",
+            "color": "{color.alpha.white.400}",
+            "inset": true
+          },
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "14px",
+            "spread": "0px",
+            "color": "{surface.data.reference.glow}"
+          }
+        ]
+      }
     }
   }
 }

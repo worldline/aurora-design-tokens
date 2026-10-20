@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { deeplyMapKeys } from './object.ts'
+import { deeplyMapKeys, deepMerge } from './object.ts'
 
 describe('object utils', () => {
   describe('deeplyMapKeys', () => {
@@ -35,6 +35,45 @@ describe('object utils', () => {
       const input = { a: { b: 1 } }
       deeplyMapKeys(input, (k) => k.toUpperCase())
       expect(input).toEqual({ a: { b: 1 } })
+    })
+  })
+
+  describe('deepMerge', () => {
+    it('should combine nested objects that share a parent key', () => {
+      const result = deepMerge(
+        { glow: { white: 1, brand: 2 } },
+        { glow: { data: { primary: 3 } } },
+      )
+      expect(result).toEqual({
+        glow: { white: 1, brand: 2, data: { primary: 3 } },
+      })
+    })
+
+    it('should add keys that only exist in one object', () => {
+      expect(deepMerge({ a: 1 }, { b: 2 })).toEqual({ a: 1, b: 2 })
+    })
+
+    it('should throw with the full path when a leaf collides', () => {
+      expect(() =>
+        deepMerge(
+          { glow: { data: { primary: 1 } } },
+          { glow: { data: { primary: 2 } } },
+        ),
+      ).toThrow('Token collision at glow.data.primary')
+    })
+
+    it('should throw when an object collides with a leaf', () => {
+      expect(() => deepMerge({ a: 1 }, { a: { b: 2 } })).toThrow(
+        'Token collision at a',
+      )
+    })
+
+    it('should not mutate the inputs', () => {
+      const a = { x: { y: 1 } }
+      const b = { x: { z: 2 } }
+      deepMerge(a, b)
+      expect(a).toEqual({ x: { y: 1 } })
+      expect(b).toEqual({ x: { z: 2 } })
     })
   })
 })

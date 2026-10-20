@@ -120,6 +120,29 @@ describe('build-react-native', () => {
       })
     })
 
+    it('should keep sibling keys when color and high-level tokens share a parent group', () => {
+      const result = buildTokens(
+        {},
+        [{ color: 'light', tokens: { glow: { white: '#fff' } } }],
+        [],
+        [
+          {
+            color: 'light',
+            viewport: 'mobile',
+            tokens: { glow: { data: { primary: 'a' } } },
+          },
+          {
+            color: 'light',
+            viewport: 'desktop',
+            tokens: { glow: { data: { primary: 'a' } } },
+          },
+        ],
+      )
+      expect(result.themes.light).toMatchObject({
+        glow: { white: '#fff', data: { primary: 'a' } },
+      })
+    })
+
     it('should merge color tokens with high-level viewport tokens per theme', () => {
       const result = buildTokens(
         {},

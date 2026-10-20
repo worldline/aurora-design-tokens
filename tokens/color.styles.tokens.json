@@ -172,6 +172,182 @@
             }
           ]
         }
+      },
+      "data": {
+        "vertical": {
+          "primary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.primary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.primary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "secondary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.secondary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.secondary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "tertiary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.tertiary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.tertiary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "quaternary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.quaternary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.quaternary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "reference": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.reference.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.reference.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          }
+        },
+        "horizontal": {
+          "primary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.primary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.primary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "secondary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.secondary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.secondary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "tertiary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.tertiary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.tertiary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "quaternary": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.quaternary.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.quaternary.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          },
+          "reference": {
+            "$type": "gradient",
+            "$value": {
+              "type": "linear",
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "{surface.data.reference.gradient-start}",
+                  "position": 0
+                },
+                {
+                  "color": "{surface.data.reference.gradient-end}",
+                  "position": 1
+                }
+              ]
+            }
+          }
+        }
       }
     },
     "border": {

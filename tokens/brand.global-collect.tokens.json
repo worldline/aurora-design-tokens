@@ -278,6 +278,48 @@
         }
       }
     },
+    "data": {
+      "primary": {
+        "50": {
+          "$type": "color",
+          "$value": "#00a693"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#277777"
+        }
+      },
+      "secondary": {
+        "50": {
+          "$type": "color",
+          "$value": "#e5a34d"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#d1892b"
+        }
+      },
+      "tertiary": {
+        "50": {
+          "$type": "color",
+          "$value": "#7673be"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#605cb1"
+        }
+      },
+      "quaternary": {
+        "50": {
+          "$type": "color",
+          "$value": "#39b3d2"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#268da7"
+        }
+      }
+    },
     "feedback": {
       "info": {
         "50": {
