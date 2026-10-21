@@ -1,6 +1,6 @@
 {
   "name": "@worldline/aurora-design-tokens",
-  "version": "1.26.0",
+  "version": "1.27.0",
   "description": "create style sheets from design tokens files",
   "license": "Apache-2.0",
   "author": "",
